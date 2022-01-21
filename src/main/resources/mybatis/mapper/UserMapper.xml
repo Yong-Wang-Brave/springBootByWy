@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.demo.mapper.UserMapper">
+
+    <select id="updateUser" parameterType="com.wy.demo.entity.UserReq"  >
+       update test set name=#{username} , pass_word=#{password}, password_chiper=#{passwordChiper},
+       password_hash=#{passwordHash} where id = #{id}
+    </select>
+</mapper>
