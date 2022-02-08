@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @Service
-/**  过滤器的实现   过滤器的实现
+/**  过滤器的实现   过滤器的实现  过滤器的实现
  * 要实现从session中获取参数，处理后，放到session中
  * 1 继承OncePerRequestFilter，获取请求头的内容，放入session,放入拦截器链
  * 2 config 内容应该没用
