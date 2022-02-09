@@ -30,6 +30,6 @@ public class GlobalExceptionHandler {
     @ResponseBody
     public String handlerException(Exception ex){
         ex.printStackTrace();
-        return "失败，请刷新重试";
+        return ex.getMessage();
     }
 }

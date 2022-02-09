@@ -25,4 +25,12 @@ public class ValidatedTestController {
         return "success";
  
     }
+    //校验实体类与 对应的分组
+    @RequestMapping("/addAll")
+    @ResponseBody
+    public void exam(@RequestBody ParamsVo  paramsVo ){
+        ValidatorUtil.validateEntity(paramsVo,Add.class);
+
+    };
+
 }
