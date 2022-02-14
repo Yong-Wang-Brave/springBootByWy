@@ -29,7 +29,7 @@ import java.util.Properties;
         )
 
 
-@Component
+//@Component
 //这个注解很关键
 public class DataInterceptor implements Interceptor {
 
