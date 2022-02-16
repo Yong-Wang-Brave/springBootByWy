@@ -16,6 +16,9 @@ import java.util.Map;
  * 2）线程池会重用，
  * 3）ThreadLocal 适用于变量在线程间隔离，而在方法或类间共享的场景。
  * 所以每个线程使用之后，都要清除
+ *
+ *
+ * 人话：tomcat的运行交易，线程会复用，新的交易会分配旧的线程，旧线程的数据不清除，肯定会出问题。
  */
 public class demo {
     private ThreadLocal<Integer> currentUser = ThreadLocal.withInitial(() -> null);
