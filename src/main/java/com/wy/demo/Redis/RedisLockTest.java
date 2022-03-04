@@ -1,6 +1,9 @@
 package com.wy.demo.Redis;
 
 import cn.hutool.core.util.IdUtil;
+import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -11,11 +14,30 @@ import java.time.format.DateTimeFormatter;
 @Component
 public class RedisLockTest {
 
+    @Autowired
+    private RedisUtils redisUtil;
+//   @Autowired
+//   private Redis redis1;
+//    @Autowired
+//    private Redis redis2;
+/*    @Autowired
+    @Qualifier(value = "redis1")
+    private  Redis redis3;*/
     @Resource
-    private RedisUtils redisUtils;
+    private  Redis redis2;
+
+   @Resource(type = com.wy.demo.Redis.Redis.class )
+    private  Redis redis1;
+
+
+
+
+
+
 
     @Scheduled(cron = "* * * * * ?")
     public void push() {
+        System.out.println(redis1.getClass().toString());
         LocalDateTime now = LocalDateTime.now();
         lock(now);
     }
@@ -31,7 +53,7 @@ public class RedisLockTest {
         String redisLockValue = IdUtil.simpleUUID();
 
         try {
-            if (redisUtils.lock(key, redisLockValue, 30 * 60 * 60l)) {
+            if (redisUtil.lock(key, redisLockValue, 30 * 60 * 60l)) {
                 System.out.println("加锁成功");
             } else {
                 System.out.println("加锁失败，任务处理中");
@@ -40,7 +62,7 @@ public class RedisLockTest {
         } catch (Exception e) {
             System.out.println("任务失败");
         } finally {
-            redisUtils.unlock(key, redisLockValue);
+            redisUtil.unlock(key, redisLockValue);
         }
 
     }
