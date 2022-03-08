@@ -11,7 +11,7 @@ import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-@Component
+//@Component
 public class RedisLockTest {
 
     @Autowired

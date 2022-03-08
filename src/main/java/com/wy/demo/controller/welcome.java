@@ -35,5 +35,15 @@ public class welcome {
         return "welcome token authentication";
     }
 
+    @GetMapping("/get")
+    public String get() {
+        log.info("get");
+        return "get";
+    }
 
+    @GetMapping("/online2")
+    public String online() {
+        log.info("online");
+        return "online";
+    }
 }
