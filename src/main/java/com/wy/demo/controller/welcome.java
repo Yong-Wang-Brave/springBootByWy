@@ -1,6 +1,7 @@
 package com.wy.demo.controller;
 
 
+import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.entity.User;
 import com.wy.demo.entity.UserReq;
 import com.wy.demo.mapper.UserMapper;
@@ -42,8 +43,10 @@ public class welcome {
     }
 
     @GetMapping("/online2")
-    public String online() {
+    public String online() throws Exception {
         log.info("online");
-        return "online";
+       // return "online";
+     //   throw new ServiceeException("nimei");
+        throw  new Exception("NIMEI ");
     }
 }
