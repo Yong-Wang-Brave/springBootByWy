@@ -5,6 +5,7 @@ import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.entity.User;
 import com.wy.demo.entity.UserReq;
 import com.wy.demo.mapper.UserMapper;
+import com.wy.demo.springCloud.feign.FeignServiceWy;
 import lombok.extern.log4j.Log4j2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,8 @@ public class welcome {
 
     @Autowired
     UserMapper userMapper;
+    @Autowired
+    FeignServiceWy feignServiceWy;
 
     @PostMapping("/update")
     public String welcome(@RequestBody UserReq userReq,@SessionAttribute(value = "wy",required = false)String wy) {
@@ -49,4 +52,10 @@ public class welcome {
      //   throw new ServiceeException("nimei");
         throw  new Exception("NIMEI ");
     }
+    @GetMapping("/putUsername")
+    public User getUser(String username){
+        User user = feignServiceWy.combineUser(username);
+
+       return user;
+    };
 }

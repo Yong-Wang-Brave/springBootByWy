@@ -9,7 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-@Configuration
+//@Configuration
 public class WebConfig2 implements WebMvcConfigurer {
     @Autowired
     MyInterceptor myInterceptor;
@@ -23,7 +23,7 @@ public class WebConfig2 implements WebMvcConfigurer {
      * 注册过滤器
      * @return
      */
-    @Bean
+  //  @Bean
     public FilterRegistrationBean filterRegistrationBean(){
         FilterRegistrationBean filterRegistration = new FilterRegistrationBean();
         filterRegistration.setFilter(new MyFilter());
