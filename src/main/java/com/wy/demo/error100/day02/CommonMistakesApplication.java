@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.error100.day02;
 
 import lombok.extern.slf4j.Slf4j;
@@ -42,3 +43,4 @@ public class CommonMistakesApplication {
     }
 }
 
+*/
