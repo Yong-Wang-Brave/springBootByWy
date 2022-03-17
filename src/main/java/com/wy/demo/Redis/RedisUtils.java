@@ -33,11 +33,11 @@ public class RedisUtils {
     }
 
     /**
-     * LUA 解锁脚本，保证原子性
+     * LUA 解锁脚本，保证原子性,只所以判断相等，是自己的线程解锁自己的线程
      */
     private static final String UN_LOCK_LUA ="if redis.call('get',KEYS[1])== ARGV[1] then return redis.call('del',KEYS[1])" +
          " else return  0 end";
- private static final Long SUCCESS =1L;
+ public static final Long SUCCESS =1L;
 
 private static final String POSTPONE_LOCK_LUA ="if redis.call('get',KEYS[1]) ==ARGV[1] then return redis.call('expire',KEYS[1]," +
         "ARGV[2]) end";
