@@ -10,7 +10,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 public class ThreadPoolConfig {
 
     @Bean(name="threadPoolTaskExecutor")
-    //只有加上bean注解才会被注入
+    //只有加上bean注解才会被注入  这个名字其实无所谓
     public ThreadPoolTaskExecutor threadPoolTaskExecutor() {
         ThreadPoolTaskExecutor pool = new ThreadPoolTaskExecutor();
         //队列满，线程被拒绝执行策略;用调用者所在的线程来执行任务

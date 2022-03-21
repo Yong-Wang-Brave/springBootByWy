@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 
     @Component
     public class TestThread2 {
-
+//只要注入就行，就会自动匹配ThreadPoolConfig
         @Autowired
         ThreadPoolTaskExcutor   threadPoolTaskExcutor;
 
