@@ -2,6 +2,10 @@
   * Copyright 2022 json.cn 
   */
 package com.wy.demo.bejson_gen_beans.cn.json.pojo;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.List;
 
 /**
@@ -10,22 +14,13 @@ import java.util.List;
  * @author json.cn (i@json.cn)
  * @website http://www.json.cn/java2pojo/
  */
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class JsonRootBean {
 
     private List<Message> message;
     private Meta meta;
-    public void setMessage(List<Message> message) {
-         this.message = message;
-     }
-     public List<Message> getMessage() {
-         return message;
-     }
 
-    public void setMeta(Meta meta) {
-         this.meta = meta;
-     }
-     public Meta getMeta() {
-         return meta;
-     }
 
 }

@@ -1,0 +1,64 @@
+server:
+  port: 8083
+  ssl:
+    enabled: true
+    key-store: classpath:7461445_www.brave-wang.top.pfx
+    key-store-password: S37y0l4d
+    key-store-type: PKCS12
+  tomcat:
+    max-threads: 5
+    accept-count: 5
+spring:
+  application:
+    name: springBoot-8001
+  #datasource:
+    #username: root
+    #password: 111
+    #url: jdbc:mariadb://47.103.14.231:3306/shop?characterEncoding=utf-8&useSSL=false&useTimezone=true&serverTimezone=GMT%2B8
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/shop
+    username: root
+    password: 111
+    driver-class-name: com.mysql.jdbc.Driver
+mybatis:
+  mapper-locations:classpath: mybatis/mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+  type-handlers-package: com.wy.demo.mybatis.typehandler
+logging:
+  level:
+    com:
+      wy:
+        demo:
+          mapper: debug
+      my:
+        wy:
+          mybatis:
+            mappers: trace
+ribbon:
+  ReadTimeout: 3000
+  ConnectTimeout: 30000
+  SocketTimeout: 30000
+  MaxAutoRetries: 1
+  MaxAutoRetriesNextServer: ''
+  OkToRetryOnAllOperations: false
+feign:
+  httpclient:
+    enabled: true
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      circuitBreaker:
+        sleepWindowInMilliseconds: 30000
+        forceClosed: true
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000
+          strategy: SEMAPHORE
+          semaphore:
+            maxConcurrentRequests: 100

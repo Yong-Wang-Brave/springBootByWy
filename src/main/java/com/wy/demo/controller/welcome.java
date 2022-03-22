@@ -3,7 +3,9 @@ package com.wy.demo.controller;
 
 import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
+import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Message;
+import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
 import com.wy.demo.entity.User;
 import com.wy.demo.entity.UserReq;
 import com.wy.demo.mapper.UserMapper;
@@ -71,7 +73,7 @@ public class welcome {
 
 
     @GetMapping("/getAllCourse")
-    public   List<Message>  getAll(){
+    public   JsonRootBean getAll(){
         List<SortCourse> courses = sortCourseMapper.findSortCourse();
         List<Message> messages =new ArrayList<>();
         //赛选出0层的放入messages
@@ -108,9 +110,13 @@ public class welcome {
 
         }
 
-
-
-        return messages;
+        JsonRootBean jsonRootBean =new JsonRootBean();
+        jsonRootBean.setMessage(messages);
+       Meta meta =new Meta();
+        meta.setMsg("sucess");
+        meta.setStatus(200);
+        jsonRootBean.setMeta(meta);
+        return jsonRootBean;
     };
 
 
