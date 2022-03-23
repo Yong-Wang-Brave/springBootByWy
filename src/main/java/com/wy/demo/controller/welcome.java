@@ -1,6 +1,7 @@
 package com.wy.demo.controller;
 
 
+import com.alibaba.druid.stat.DruidStatManagerFacade;
 import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
@@ -51,6 +52,11 @@ public class welcome {
         return "welcome token authentication";
     }
 
+    @GetMapping("/stat")
+    public Object druidStat(){
+        // 获取数据源的监控数据
+        return DruidStatManagerFacade.getInstance().getDataSourceStatDataList();
+    }
     @GetMapping("/get")
     public String get() {
         log.info("get");
