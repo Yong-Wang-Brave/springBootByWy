@@ -17,9 +17,14 @@ https://blog.csdn.net/u012102536/article/details/123521594
 参考文档：https://blog.csdn.net/u012102536/article/details/123690114
 文件夹：
 
-20220224 如何读取配置文件的属性
+20220324 如何读取配置文件的属性
 路径： 启动时自动执行代码\读取properties的文件
 
-20220224 枚举类提取成公共的
+20220324 枚举类提取成公共的
 参考的：https://blog.csdn.net/u012102536/article/details/123711166
 路径 enumDemo-枚举工具类
+
+20220324 guava中map的使用
+参考： https://blog.csdn.net/u012102536/article/details/123715177
+路径：guava
+说明：multimap  双键table rangeMap
