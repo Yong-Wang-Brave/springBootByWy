@@ -28,3 +28,7 @@ https://blog.csdn.net/u012102536/article/details/123521594
 参考： https://blog.csdn.net/u012102536/article/details/123715177
 路径：guava
 说明：multimap  双键table rangeMap
+
+20220325 自定义注解实现自定义统一返回
+参考：https://blog.csdn.net/u012102536/article/details/123730699
+路径：亮点：自定义注解实现统一返回
