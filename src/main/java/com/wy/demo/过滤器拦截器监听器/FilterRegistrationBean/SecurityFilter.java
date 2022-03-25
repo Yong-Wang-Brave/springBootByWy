@@ -1,7 +1,5 @@
 package com.wy.demo.过滤器拦截器监听器.FilterRegistrationBean;
 
-import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
-import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
