@@ -35,11 +35,11 @@ public class ResponseResultHandler  implements ResponseBodyAdvice<Object> {
         log.info("进入返回体重写格式处理中。。。。");
         if ((o instanceof List)) {
 
-            return Result.sucess(o);
+            return Result2.sucess(o);
         }else{
             log.info("返回值异常 做包装处理中");
 
-            return Result.failure();
+            return Result2.failure();
         }
 
     }

@@ -42,7 +42,6 @@ public class OrderController {
     @ResponseResult
     public List<SortCourse> getSortCourse(){
         List<SortCourse> sortCourse = sortCourseMapper.findSortCourse();
-        int i=3/0;
         return sortCourse;
 
     }
