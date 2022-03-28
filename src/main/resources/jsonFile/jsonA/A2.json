@@ -1,0 +1,16 @@
+[
+  {
+    "name": "gradeThree",
+    "descrition": "糖尿病人群三级管理方案",
+    "priority":0,
+    "condition": "A2",
+    "actions": [""]
+  },
+  {
+    "name": "gradeThree",
+    "descrition": "糖尿病人群三级管理方案1",
+    "priority":2,
+    "condition": "A2",
+    "actions": [""]
+  }
+]
