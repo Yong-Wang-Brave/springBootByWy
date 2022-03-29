@@ -29,7 +29,7 @@ private  String rulesPath;
 private  MVELRuleFactory ruleFactory;
 public JSONController(){this.ruleFactory=new MVELRuleFactory(new JsonRuleDefinitionReader());}
 
-     @Scheduled(cron="* * * * * *")
+    // @Scheduled(cron="* * * * * *")
     public void LoadFromProperties() {
         Resource resource = new ClassPathResource(rulesPath);
         if (!resource.isFile()) {

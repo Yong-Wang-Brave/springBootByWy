@@ -31,3 +31,12 @@ build/
 
 ### VS Code ###
 .vscode/
+/java_pid218272.a2s.index
+/java_pid218272.domIn.index
+/java_pid218272.domOut.index
+/java_pid218272.idx.index
+/java_pid218272.inbound.index
+/java_pid218272.o2c.index
+/java_pid218272.o2hprof.index
+/java_pid218272.o2ret.index
+/java_pid218272.outbound.index
