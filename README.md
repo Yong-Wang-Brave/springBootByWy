@@ -43,3 +43,6 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20220329 切面实现接口调用前后的执行时间出入参等  ；内存溢出demo
 路径：aop切面  ;OverDemo.java
+
+20220239 全局拼接异常 
+路径：GlobalExceptionHandler2的BindException
