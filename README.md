@@ -46,3 +46,7 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20220239 全局拼接异常 
 路径：GlobalExceptionHandler2的BindException
+
+20220330 日志文件配置
+路径：log日志
+参考：https://blog.csdn.net/u012102536/article/details/123853515
