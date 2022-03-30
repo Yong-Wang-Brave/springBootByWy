@@ -50,3 +50,6 @@ https://blog.csdn.net/u012102536/article/details/123521594
 20220330 日志文件配置
 路径：log日志
 参考：https://blog.csdn.net/u012102536/article/details/123853515
+
+20220330 全局流水号
+路径：全局日志id

@@ -1,4 +1,5 @@
 package com.wy.demo.log日志.log4j;
+import com.wy.demo.log日志.log4j2.Main;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

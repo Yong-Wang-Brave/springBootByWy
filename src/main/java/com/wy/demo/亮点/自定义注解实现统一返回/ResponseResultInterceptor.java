@@ -8,7 +8,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.xml.ws.handler.Handler;
 import java.lang.reflect.Method;
 
 //请求拦截器
