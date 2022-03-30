@@ -13,10 +13,14 @@ import org.springframework.stereotype.Component;
 public class ErrorMessageRunner implements ApplicationRunner {
     @Autowired
     ErrorMessage errorMessage;
+    @Autowired
+    RibbonProperties ribbonProperties;
     @Override
     public void run(ApplicationArguments args) throws Exception {
 errorMessage.getLevel().forEach((k,v)->{
     System.out.println(k+" : "+v);
 });
+        System.out.println("....................................");
+        System.out.println(ribbonProperties);
     }
 }

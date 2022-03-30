@@ -14,6 +14,6 @@ public class TestCommandLineRunner implements CommandLineRunner {
     @Override
     public void run(String... strings) throws Exception {
         System.out.println("order2:TestCommandLineRunner");
-        JSONController.LoadFromProperties();
+       // JSONController.LoadFromProperties();
     }
 }
