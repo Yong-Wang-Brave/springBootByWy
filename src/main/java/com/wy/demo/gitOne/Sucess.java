@@ -7,5 +7,6 @@ public class Sucess {
         System.out.println("提交3");
         System.out.println("提交4");
         System.out.println("pushlocal");
+        System.out.println("pushlocal2");
     }
 }
