@@ -8,6 +8,7 @@ public class TestGit {
         System.out.println("d");
         System.out.println("e");
         System.out.println("master");
-
+        System.out.println("feature1");
+        System.out.println("feature1继续开发");
     }
 }
