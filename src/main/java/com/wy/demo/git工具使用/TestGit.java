@@ -10,6 +10,8 @@ public class TestGit {
         System.out.println("master");
         System.out.println("feature1");
         System.out.println("feature1继续开发");
-        System.out.println("主分支修改");
+        System.out.println("featur2");
+        System.out.println("feature2继续开发");
     }
+
 }
