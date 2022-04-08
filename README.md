@@ -56,3 +56,8 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20200331 git工具使用
 路径：git工具使用
+
+
+20220407  GitHub Copilot 的入门
+路径： 机器人
+参考：https://github.com/github/copilot-docs/blob/main/docs/jetbrains/gettingstarted.md#getting-started-with-github-copilot-in-jetbrains
