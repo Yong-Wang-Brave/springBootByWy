@@ -70,3 +70,6 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20220418 lambda peek的使用
 路径：lambda
+
+20220418  mybatis拦截器 拦截拼接sql  打印sql
+路径：mybatiesInterceptor2

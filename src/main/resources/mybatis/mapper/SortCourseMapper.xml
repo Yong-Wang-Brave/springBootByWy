@@ -12,7 +12,7 @@
 
 
     <select id="findSortCourse" resultMap="BaseResultMapper">
-        select * from t_sortcourse
+        select * from t_sortcourse where cat_id is not null
     </select>
 
 </mapper>
