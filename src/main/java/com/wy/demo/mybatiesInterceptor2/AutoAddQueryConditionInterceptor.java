@@ -26,7 +26,7 @@ import java.util.Properties;
  * @description: TODO
  * @date 2021/8/1720:51
  */
-@Component
+//@Component
 @Intercepts({
         @Signature(
                 type = StatementHandler.class, method = "prepare", args = {Connection.class, Integer.class

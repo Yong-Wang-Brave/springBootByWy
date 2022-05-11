@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration>
+    <classPathEntry
+            location="D:\ruanjian\apache-maven-3.6.3-bin\mavenresposity\mysql\mysql-connector-java\5.1.30\mysql-connector-java-5.1.30.jar"/>
+    <context id="mysqlTables" targetRuntime="MyBatis3" defaultModelType="flat">
+        <property name="javaFileEncoding" value="UTF-8"/>
+        <!-- 分页相关-->
+        <plugin type="org.mybatis.generator.plugins.RowBoundsPlugin"></plugin>
+        <!--
+                带上序列化接口
+        -->
+        <plugin type="org.mybatis.generator.plugins.SerializablePlugin"></plugin>
+
+        <commentGenerator>
+            <!--
+                        是否取消注释
+            -->
+            <property name="suppressAllComments" value="true"/>
+            <!--增加原生注解-->
+            <property name="addRemarkComments" value="true"/>
+            <!--是否生成注解时间戳-->
+            <property name="suppressDate" value="true"/>
+            <property name="columnRemarks" value="true"/>
+            <property name="dateFormat" value="yyyy-MM-dd HH:mm:ss"/>
+        </commentGenerator>
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://127.0.0.1:3306/shop?useUnicode=true&amp;characterEncoding
+=utf-8&amp;useSSL=true&amp;serverTimezone=Asia/Shanghai" userId="root" password="111"/>
+
+        <javaTypeResolver>
+            <property name="forceBigDecimals" value="true"/>
+        </javaTypeResolver>
+
+
+        <!--
+                根据工程修改targetPackage,工程目录新建do子目录
+        -->
+
+        <javaModelGenerator targetPackage="com.wy.demo.mybatis.generator.dto" targetProject="src/main/java">
+            <property name="enableSubPackages" value="true"/>
+            <property name="trimStrings" value="true"/>
+        </javaModelGenerator>
+
+
+        <sqlMapGenerator targetPackage="mybatis/mapper"
+                         targetProject="src/main/resources">
+            <property name="enableSubPackages" value="true"></property>
+
+        </sqlMapGenerator>
+
+        <javaClientGenerator targetPackage="com.wy.demo.mybatis.generator.mapper.generator"
+                             targetProject="src/main/java" type="XMLMAPPER">
+            <property name="enableSubPackages" value="true"></property>
+        </javaClientGenerator>
+        <!--
+                添加表与实体类的映射，实体类以DO结尾，表和表中的字段以下划线划分
+        -->
+        <table tableName="user" domainObjectName="UserDTO" enableCountByExample="true"
+               enableUpdateByExample="true" enableDeleteByExample="true"
+               enableSelectByExample="true" selectByExampleQueryId="true">
+            <generatedKey column="ID" sqlStatement="Mysql" identity="true"></generatedKey>
+        </table>
+
+    </context>
+</generatorConfiguration>
