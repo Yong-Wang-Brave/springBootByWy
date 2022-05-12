@@ -85,3 +85,6 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20220511 mybaits自动生成代码
 路径：mybatis/generator
+
+20220512 swagger添加
+路径：config  SwaggerConfiguration

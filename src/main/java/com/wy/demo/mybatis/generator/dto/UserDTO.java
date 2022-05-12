@@ -1,14 +1,18 @@
 package com.wy.demo.mybatis.generator.dto;
 
+import io.swagger.annotations.ApiModelProperty;
+import lombok.Data;
+
 import java.io.Serializable;
-
+@Data
 public class UserDTO implements Serializable {
+    @ApiModelProperty(value = "用户ID")
     private Long id;
-
+@ApiModelProperty(value = "用户名")
     private String name;
-
+@ApiModelProperty(value = "用户年龄")
     private Short age;
-
+@ApiModelProperty(value = "用户城市")
     private String city;
 
     private static final long serialVersionUID = 1L;
