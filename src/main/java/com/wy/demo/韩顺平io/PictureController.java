@@ -5,7 +5,7 @@ import cn.hutool.core.io.FileTypeUtil;
 import cn.hutool.core.util.RandomUtil;
 import cn.hutool.core.util.StrUtil;
 import com.wy.demo.Exception.ServiceException;
-import com.wy.demo.亮点.自定义注解实现统一返回.Result2;
+import com.wy.demo.lightspot.UnitedReturn.Result2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

@@ -1,14 +1,12 @@
-package com.wy.demo.亮点.自定义注解实现统一返回.controller;
+package com.wy.demo.lightspot.UnitedReturn.controller;
 
-import com.wy.demo.mapper.UserMapper;
 import com.wy.demo.mybatis.entity.SortCourse;
 import com.wy.demo.mybatis.mappers.SortCourseMapper;
-import com.wy.demo.亮点.自定义注解实现统一返回.ResponseResult;
-import com.wy.demo.亮点.自定义注解实现统一返回.Result;
-import com.wy.demo.亮点.自定义注解实现统一返回.ResultCode;
+import com.wy.demo.lightspot.UnitedReturn.ResponseResult;
+import com.wy.demo.lightspot.UnitedReturn.Result;
+import com.wy.demo.lightspot.UnitedReturn.ResultCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

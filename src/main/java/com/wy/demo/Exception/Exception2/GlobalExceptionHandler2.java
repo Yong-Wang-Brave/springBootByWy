@@ -1,14 +1,18 @@
 package com.wy.demo.Exception.Exception2;
 
 
+import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.netflix.hystrix.exception.HystrixRuntimeException;
 import com.wy.demo.Exception.ServiceException;
+import com.wy.demo.lightspot.UnitedReturn.Result2;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.core.annotation.Order;
+import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.BindException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
@@ -102,6 +106,13 @@ public class GlobalExceptionHandler2 {
         String message = e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining("!"));
         log.error(message, e);
         return Result.error(message);
+    }
+
+    @ExceptionHandler(HttpMessageNotReadableException.class)
+    @ResponseBody
+    public Result2 handlerException(MismatchedInputException ex){
+        log.error("Exception{}",ex.getMessage());
+        return Result2.failure(ex.getMessage());
     }
 
 }

@@ -88,3 +88,7 @@ https://blog.csdn.net/u012102536/article/details/123521594
 
 20220512 swagger添加
 路径：config  SwaggerConfiguration
+
+20220518 工具类添加
+路径：Tools  
+参考：https://mp.weixin.qq.com/s/eknljWG9W8QBH5o3Yl_ECA

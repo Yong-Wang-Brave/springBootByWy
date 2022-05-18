@@ -1,4 +1,4 @@
-package com.wy.demo.亮点.自定义注解实现统一返回;
+package com.wy.demo.lightspot.UnitedReturn;
 
 import java.lang.annotation.*;
 

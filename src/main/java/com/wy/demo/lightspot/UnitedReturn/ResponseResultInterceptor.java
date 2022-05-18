@@ -1,4 +1,4 @@
-package com.wy.demo.亮点.自定义注解实现统一返回;
+package com.wy.demo.lightspot.UnitedReturn;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

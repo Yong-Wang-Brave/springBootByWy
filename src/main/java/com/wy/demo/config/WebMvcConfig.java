@@ -1,7 +1,7 @@
 package com.wy.demo.config;
 
 
-import com.wy.demo.亮点.自定义注解实现统一返回.ResponseResultInterceptor;
+import com.wy.demo.lightspot.UnitedReturn.ResponseResultInterceptor;
 import com.wy.demo.全局日志id.TraceInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;

@@ -1,11 +1,8 @@
-package com.wy.demo.亮点.自定义注解实现统一返回;
+package com.wy.demo.lightspot.UnitedReturn;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-
-import java.io.Serializable;
 
 @Data
 @AllArgsConstructor
