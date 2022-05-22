@@ -2,13 +2,14 @@ package com.wy.demo.controller;
 
 
 import com.alibaba.druid.stat.DruidStatManagerFacade;
-import com.wy.demo.Exception.Exception2.ServiceeException;
+import com.wy.demo.SpringContext.SpringUtils;
+import com.wy.demo.SpringContext.SpringContextHolder;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Message;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
 import com.wy.demo.controller.dto.Student;
-import com.wy.demo.entity.User;
+import com.wy.demo.controller.dto.User;
 import com.wy.demo.entity.UserReq;
 import com.wy.demo.mapper.UserMapper;
 import com.wy.demo.mybatis.entity.SortCourse;
@@ -18,8 +19,10 @@ import lombok.extern.log4j.Log4j2;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.util.ArrayList;
 import java.util.List;
@@ -54,6 +57,17 @@ public class welcome {
         return "welcome token authentication";
     }
 
+    @PostMapping("/update2")
+    public static String welcome(HttpServletRequest request,@SessionAttribute(value = "applicationContext",required = false)ApplicationContext applicationContext) {
+        log.info(request.getHeader("wy"));
+
+        User bean = SpringUtils.getBean(User.class);
+
+        User stu = SpringContextHolder.getBean(User.class);
+
+        return "welcome token authentication";
+    }
+
     @GetMapping("/stat")
     public Object druidStat(){
         // 获取数据源的监控数据
@@ -74,8 +88,8 @@ public class welcome {
     }
     @GetMapping("/putUsername")
     public User getUser(String username){
-        User user = feignServiceWy.combineUser(username);
-
+       // User user = feignServiceWy.combineUser(username);
+        User user =null;
        return user;
     };
 

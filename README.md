@@ -92,3 +92,11 @@ https://blog.csdn.net/u012102536/article/details/123521594
 20220518 工具类添加
 路径：Tools  
 参考：https://mp.weixin.qq.com/s/eknljWG9W8QBH5o3Yl_ECA
+
+20220520   从request的head里面获取属性。
+扩展：目录： filter.headToSession
+
+20200522 从容器中获取对象
+目录：com.wy.demo.SpringContext
+场景：静态方法中无法直接使用@AutoWired对象
+参考：https://blog.csdn.net/u012102536/article/details/124915772
