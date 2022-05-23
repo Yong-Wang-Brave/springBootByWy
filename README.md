@@ -100,3 +100,9 @@ https://blog.csdn.net/u012102536/article/details/123521594
 目录：com.wy.demo.SpringContext
 场景：静态方法中无法直接使用@AutoWired对象
 参考：https://blog.csdn.net/u012102536/article/details/124915772
+
+20220523 logback日志文件
+目录（文件）：logback.xml
+提示：需要吧xml中的log字眼全部注释掉。
+参考：hhttps://blog.csdn.net/u012102536/article/details/124931331
+提示：可以参照另一个github项目mybatisDemo
