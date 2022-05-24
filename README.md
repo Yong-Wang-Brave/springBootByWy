@@ -106,3 +106,8 @@ https://blog.csdn.net/u012102536/article/details/123521594
 提示：需要吧xml中的log字眼全部注释掉。
 参考：hhttps://blog.csdn.net/u012102536/article/details/124931331
 提示：可以参照另一个github项目mybatisDemo
+
+
+20220524 字符集乱码解决
+目录：luanma
+链接：攀博课堂
