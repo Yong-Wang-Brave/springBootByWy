@@ -111,3 +111,8 @@ https://blog.csdn.net/u012102536/article/details/123521594
 20220524 字符集乱码解决
 目录：luanma
 链接：攀博课堂
+
+20220525 如何保证 Controller 的并发安全
+目录：线程安全
+链接：https://mp.weixin.qq.com/s/ZXyQeY1Xa0GvK4yuyCdELQ
+提示：controller不要定义变量。因为是单例的 线程不安全。
