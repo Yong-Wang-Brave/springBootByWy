@@ -134,3 +134,12 @@ https://blog.csdn.net/u012102536/article/details/123521594
 目录：自定义注解  demo1 demo2
 场景：1）有注解标注的会当成切点  2）有注解的会被拦截
 https://blog.csdn.net/u012102536/article/details/124987988
+
+
+20220526 java8函数消灭if else
+目录：java8 
+场景：函数的妙用
+1)处理抛出异常的if
+2)处理if分支操作
+3)如果存在值执行消费操作，否则执行基于空的操作
+https://blog.csdn.net/u012102536/article/details/12499333
