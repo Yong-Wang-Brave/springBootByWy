@@ -128,3 +128,9 @@ https://blog.csdn.net/u012102536/article/details/123521594
 20220525 HandlerMethodArgumentResolver的例子
 目录：other.小案例20220526
 场景：获取用户名，直接根据实体类就可以填充
+链接：https://blog.csdn.net/u012102536/article/details/124986131
+
+20200526 自定义注解demo 
+目录：自定义注解  demo1 demo2
+场景：1）有注解标注的会当成切点  2）有注解的会被拦截
+https://blog.csdn.net/u012102536/article/details/124987988
