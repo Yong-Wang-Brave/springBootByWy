@@ -4,12 +4,16 @@ import cn.hutool.core.date.SystemClock;
 
 import cn.hutool.core.util.StrUtil;
 import com.alibaba.fastjson.JSON;
+import com.wy.demo.Exception.ServiceException;
+import com.wy.demo.lightspot.UnitedReturn.Result;
+import com.wy.demo.lightspot.UnitedReturn.ResultCode;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.BindException;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
 import org.springframework.web.multipart.MultipartFile;
@@ -17,6 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolationException;
 
 @Slf4j
 @Aspect
@@ -35,11 +40,13 @@ public class WebLogAspect {
             //接口的返回结果
             result = joinPoint.proceed();
             endTime= SystemClock.now();
-        } catch (Exception e) {
+        } catch (ConstraintViolationException e) {
             log.error(e.toString(),e);
-            result=e.toString();
-            throw e;
-        }finally {
+            result= Result.failure("卡号有问题");
+        }catch (Exception e) {
+            log.error(e.toString(),e);
+            result= Result.failure(e.toString());
+        } finally {
             //处理完请求，打印请求内容+返回内容，勇try catch处理异常，不影响业务代码
             try {
                 ServletRequestAttributes attributes = (ServletRequestAttributes)RequestContextHolder.getRequestAttributes();
@@ -74,6 +81,7 @@ public class WebLogAspect {
             } catch (Exception e) {
                 log.error("record aop log error !",e);
             }
+
 return result;
 
         }

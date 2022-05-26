@@ -2,6 +2,7 @@ package com.wy.demo.controller;
 
 
 import com.alibaba.druid.stat.DruidStatManagerFacade;
+import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.SpringContext.SpringUtils;
 import com.wy.demo.SpringContext.SpringContextHolder;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
@@ -24,6 +25,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
+import java.rmi.server.ServerCloneException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -37,9 +39,8 @@ import java.util.stream.Collectors;
  */
 @RestController
 @Log4j2
-public class welcome {
+public class welcomeController {
 
-    Logger logger = LoggerFactory.getLogger(com.wy.demo.controller.welcome.class);
 
 
     @Autowired
@@ -87,10 +88,11 @@ public class welcome {
         throw  new Exception("NIMEI ");
     }
     @GetMapping("/putUsername")
-    public User getUser(String username){
+    public User getUser(String username) throws ServerCloneException {
        // User user = feignServiceWy.combineUser(username);
         User user =null;
-       return user;
+        throw  new ServiceeException("aa");
+
     };
 
 

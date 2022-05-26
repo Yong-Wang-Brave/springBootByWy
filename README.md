@@ -116,3 +116,11 @@ https://blog.csdn.net/u012102536/article/details/123521594
 目录：线程安全
 链接：https://mp.weixin.qq.com/s/ZXyQeY1Xa0GvK4yuyCdELQ
 提示：controller不要定义变量。因为是单例的 线程不安全。
+
+20220525 HandlerMethodArgumentResolver可以解析区分入参的类型（自定义注解）
+目录：other
+链接：https://blog.csdn.net/u012102536/article/details/124966970
+
+20220526  自定义注解实现校验身份证号
+目录：自定义注解
+链接：https://blog.csdn.net/u012102536/article/details/124978290

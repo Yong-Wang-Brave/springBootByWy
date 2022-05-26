@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolationException;
 import java.util.stream.Collectors;
 
 @RestControllerAdvice
@@ -63,7 +64,20 @@ public class GlobalExceptionHandler2 {
         return Result.error(message + e.toString());
 
     }
+    /**
+     * 其他异常
+     *
+     * @param httpServletRequest
+     * @param e
+     * @return
+     */
+    @ExceptionHandler(ConstraintViolationException.class)
+    public Result<Object> constraintViolationException(HttpServletRequest httpServletRequest, ConstraintViolationException e) {
+        String message = "卡号异常";
+        log.error(message, e);
+        return Result.error(message);
 
+    }
     /**
      * 其他异常
      *

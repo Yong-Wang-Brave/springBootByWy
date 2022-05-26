@@ -36,9 +36,10 @@ public class Result implements Serializable {
         return  result;
     }
     //返回失败
-    public static Result failure(ResultCode resultCode){
+    public static Result failure(String msg){
         Result result = new Result();
         result.setCode(ResultCode.SUCESS.getCode());
+        result.setMessage(msg);
         return result;
     }
     public static Result failure(){
