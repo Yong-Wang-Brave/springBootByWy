@@ -22,6 +22,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.ConstraintViolationException;
+import java.nio.charset.Charset;
 
 @Slf4j
 @Aspect
@@ -42,6 +43,7 @@ public class WebLogAspect {
             endTime= SystemClock.now();
         } catch (ConstraintViolationException e) {
             log.error(e.toString(),e);
+            System.out.println("操作系统默认的编码"+ Charset.defaultCharset());
             result= Result.failure("卡号有问题");
         }catch (Exception e) {
             log.error(e.toString(),e);

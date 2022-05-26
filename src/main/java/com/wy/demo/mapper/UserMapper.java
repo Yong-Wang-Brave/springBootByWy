@@ -17,8 +17,8 @@ public interface UserMapper {
 
          Integer updateUser(UserReq userReq);
 
-   @Select("select * from t_user where id=#{id}")
-   public User getUser(Integer id);
+   @Select("select * from t_user where username=#{username}")
+   public User getUser(String username);
 
 
 //        @Delete("delete from where id=#{id}")

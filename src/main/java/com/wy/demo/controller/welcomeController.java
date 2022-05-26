@@ -2,6 +2,7 @@ package com.wy.demo.controller;
 
 
 import com.alibaba.druid.stat.DruidStatManagerFacade;
+import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.SpringContext.SpringUtils;
 import com.wy.demo.SpringContext.SpringContextHolder;
@@ -148,7 +149,16 @@ public class welcomeController {
 return student;
     }
 
+    @PostMapping("/to_list")
+    /**
+     * 改进后的写法
+     */
+    public Result list(com.wy.demo.entity.User user) {
+        String username = user.getUsername();
+        //业务逻辑
 
+        return Result.ok(username);
+    }
 
 
 }

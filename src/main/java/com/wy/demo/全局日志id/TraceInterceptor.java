@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.UUID;
 @Component
 @Slf4j
-public class TraceInterceptor  implements HandlerInterceptor {
+public class  TraceInterceptor  implements HandlerInterceptor {
 private static ThreadLocal<String> traceId2=new TransmittableThreadLocal<>();
 
 

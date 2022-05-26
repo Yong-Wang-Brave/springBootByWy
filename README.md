@@ -124,3 +124,7 @@ https://blog.csdn.net/u012102536/article/details/123521594
 20220526  自定义注解实现校验身份证号
 目录：自定义注解
 链接：https://blog.csdn.net/u012102536/article/details/124978290
+
+20220525 HandlerMethodArgumentResolver的例子
+目录：other.小案例20220526
+场景：获取用户名，直接根据实体类就可以填充
