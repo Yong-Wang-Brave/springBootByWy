@@ -1,7 +1,7 @@
-package com.wy.demo.lambda.peek.function;
+package com.wy.demo.java8.lambda.peek.function;
 
-import com.wy.demo.lambda.peek.DTO.Student1;
-import com.wy.demo.lambda.peek.DTO.Student2;
+import com.wy.demo.java8.lambda.peek.DTO.Student1;
+import com.wy.demo.java8.lambda.peek.DTO.Student2;
 
 import java.util.Arrays;
 import java.util.List;

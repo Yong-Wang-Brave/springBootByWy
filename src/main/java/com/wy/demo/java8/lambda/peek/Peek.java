@@ -1,4 +1,4 @@
-package com.wy.demo.lambda.peek;
+package com.wy.demo.java8.lambda.peek;
 
 import java.util.stream.Collectors;
 import java.util.stream.Stream;

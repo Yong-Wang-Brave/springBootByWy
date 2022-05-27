@@ -1,4 +1,4 @@
-package com.wy.demo.lambda.peek.DTO;
+package com.wy.demo.java8.lambda.peek.DTO;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

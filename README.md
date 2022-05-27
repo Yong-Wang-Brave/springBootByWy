@@ -143,3 +143,6 @@ https://blog.csdn.net/u012102536/article/details/124987988
 2)处理if分支操作
 3)如果存在值执行消费操作，否则执行基于空的操作
 https://blog.csdn.net/u012102536/article/details/12499333
+20220527 泛型
+目录：泛型
+https://mp.weixin.qq.com/s/Gr8kLpM9bgocCuC-Ve_dZg
