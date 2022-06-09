@@ -1,4 +1,4 @@
-package com.wy.demo.图灵.jvm;
+package com.wy.demo.tuling.jvm;
 
 import com.wy.demo.entity.User;
 

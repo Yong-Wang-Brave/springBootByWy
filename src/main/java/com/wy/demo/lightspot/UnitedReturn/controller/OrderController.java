@@ -29,7 +29,7 @@ public class OrderController {
     public Result getOrder2() {
         List<SortCourse> sortCourse = sortCourseMapper.findSortCourse();
         if (1 == 2) {
-            return Result.failure(ResultCode.SUCESS);
+            return Result.failure("sucess");
         }
         return Result.sucess(sortCourse);
     }

@@ -2,8 +2,8 @@ package com.wy.demo.validGroup;
 
 
 import lombok.Data;
-import org.hibernate.validator.constraints.NotBlank;
 
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
  @Data
 public class ParamsVo {

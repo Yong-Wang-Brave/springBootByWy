@@ -1,4 +1,4 @@
-package com.wy.demo.图灵.jvm.day02;
+package com.wy.demo.tuling.jvm.day02;
 
 // JVM设置  -Xss128k(默认1M)
 //线程里面会不停的存放redo方法的栈帧，当栈帧满了，就会抛出StackOverflowError异常

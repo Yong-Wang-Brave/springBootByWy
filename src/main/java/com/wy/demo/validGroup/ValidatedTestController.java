@@ -1,9 +1,13 @@
 package com.wy.demo.validGroup;
 
 
+import com.wy.demo.lightspot.UnitedReturn.Result;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.annotation.Validated;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @RequestMapping("/validated/test")
@@ -28,8 +32,9 @@ public class ValidatedTestController {
     //校验实体类与 对应的分组
     @RequestMapping("/addAll")
     @ResponseBody
-    public void exam(@RequestBody ParamsVo  paramsVo ){
+    public Result exam(@RequestBody ParamsVo  paramsVo ){
         ValidatorUtil.validateEntity(paramsVo,Add.class);
+        return Result.sucess();
 
     };
 

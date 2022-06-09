@@ -1,8 +1,6 @@
 package com.wy.demo.entity;
 
-import com.wy.demo.mybatiesInterceptor.FillType;
-import com.wy.demo.mybatiesInterceptor.SensitiveField;
-import com.wy.demo.mybatiesInterceptor.SensitiveTable;
+import lombok.Data;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
@@ -14,12 +12,12 @@ import java.sql.Timestamp;
  * @Description: TODO
  * @date 2019/1/1815:47
  */
-
+@Data
 public class User implements Serializable{
 
     Long id;
     String username;
-
+String name;
     String password;
 
     Integer   delFlag;

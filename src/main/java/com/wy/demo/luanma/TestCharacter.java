@@ -1,9 +1,7 @@
 package com.wy.demo.luanma;
 
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.UnsupportedEncodingException;
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
@@ -12,7 +10,7 @@ public class TestCharacter
 {
 
     public static void main(String[] args) throws IOException {
-        String s1="攀博课堂";
+        String s1="我嫩爹";
         System.out.println("操作系统默认的编码"+ Charset.defaultCharset());
         byte[] bytes1 = s1.getBytes(StandardCharsets.UTF_8);
         byte[] gbks = s1.getBytes("GBK");
@@ -31,7 +29,7 @@ public class TestCharacter
         //读取文件案例  文件的字符集与读取的字符集一致才不会乱码
         test01("C:\\Users\\king\\Desktop\\任务2.txt","GB2312");
       //utf8编码  iso8859-1解码   iso8859-1编码 usf8解码 就可以还原真面目了
-       String a="你妹123";
+       String a="我恁爹";
        //utf8编码
         byte[] bytes = a.getBytes(StandardCharsets.UTF_8);
         System.out.println("前。。。。。。。。。。。。。"+Arrays.toString(bytes));
@@ -41,7 +39,7 @@ public class TestCharacter
         byte[] bytes2 = s.getBytes(StandardCharsets.ISO_8859_1);
         System.out.println("后。。。。。。。。。。。。。"+Arrays.toString(bytes2));
        //utf8解码
-        System.out.println(new String(bytes2,"UTF-8"));
+        System.out.println(new String(bytes2,"GBK"));
 //延时  只适用于iso8859-1  不适用与GBK
 
 

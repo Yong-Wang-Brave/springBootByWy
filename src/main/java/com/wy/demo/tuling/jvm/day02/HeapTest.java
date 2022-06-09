@@ -1,4 +1,4 @@
-package com.wy.demo.图灵.jvm.day02;
+package com.wy.demo.tuling.jvm.day02;
 
 import java.util.ArrayList;
 

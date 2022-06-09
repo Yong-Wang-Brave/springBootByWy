@@ -1,4 +1,4 @@
-package com.wy.demo.图灵.jvm;
+package com.wy.demo.tuling.jvm;
 
 public class MathTomcat {
  public static final int initData = 666;

@@ -2,7 +2,6 @@
 package com.wy.demo.thread;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,14 +11,16 @@ public class TestThread {
 ThreadPoolConfig   threadPoolConfig;
 
 
-@Scheduled(cron="30 37 * * * ?")
+//@Scheduled(cron="* * * * * ?")
         void test(){
         this.threadTest();
     }
     int  i = 0;
     private  void threadTest() {
 
-        for (   i = 0; i <1000 ; i++) {
+        for (   i = 0; i <100 ; i++) {
+            threadPoolConfig.threadPoolTaskExecutor().getThreadNamePrefix();
+            System.out.println("wangyong"+ threadPoolConfig.threadPoolTaskExecutor().getActiveCount());
             threadPoolConfig.threadPoolTaskExecutor().execute(new www(i));
         }
 

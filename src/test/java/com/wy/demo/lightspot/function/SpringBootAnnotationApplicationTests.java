@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.lightspot.function;
 
 import com.wy.demo.java8.VUtils;
@@ -50,3 +51,4 @@ public class SpringBootAnnotationApplicationTests {
     }
 
 }
+*/

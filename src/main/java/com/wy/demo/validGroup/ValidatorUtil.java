@@ -15,6 +15,12 @@ public class ValidatorUtil {
     }
 
 
+    /**
+     * 校验对象
+     * @param object 待校验的对象
+     * @param groups 待校验的组
+     * @throws ServiceException
+     */
     public static void validateEntity(Object object ,Class<?>... groups  ) throws ServiceException{
              //校验的 结果
         Set<ConstraintViolation<Object>> validate = VALIDATOR.validate(object, groups);

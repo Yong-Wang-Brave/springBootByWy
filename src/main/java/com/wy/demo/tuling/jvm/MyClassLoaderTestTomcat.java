@@ -1,10 +1,10 @@
-package com.wy.demo.图灵.jvm;
+package com.wy.demo.tuling.jvm;
 
 
 import java.io.FileInputStream;
 import java.lang.reflect.Method;
 
-public class MyClassLoaderTest1 {
+public class MyClassLoaderTestTomcat {
  static class MyClassLoader extends ClassLoader {
  private String classPath;
 
@@ -84,12 +84,18 @@ throws ClassNotFoundException {
  //初始化自定义类加载器，会先初始化父类ClassLoader，其中会把自定义类加载器的父加载器设置为应用程序类加载器AppClassLoader
  MyClassLoader classLoader = new MyClassLoader("D:/test");
  //D盘创建 test/com/tuling/jvm 几级目录，将User类的复制类User1.class丢入该目录
- Class clazz = classLoader.loadClass("com.wy.demo.图灵.jvm.Math1");
+ Class clazz = classLoader.loadClass("com.wy.demo.tuling.jvm.MathTomcat");
  Object obj = clazz.newInstance();
  Method method = clazz.getDeclaredMethod("sout", null);
  method.invoke(obj, null);
  System.out.println(clazz.getClassLoader().getClass().getName());
-
+ //模拟tomcat打破双亲委派的机制,加载同一个对象三十结果不同
+  MyClassLoader classLoader11 = new MyClassLoader("D:/test11");
+  Class clazz11 = classLoader11.loadClass("com.wy.demo.tuling.jvm.MathTomcat");
+  Object obj11 = clazz11.newInstance();
+  Method method11 = clazz11.getDeclaredMethod("sout", null);
+  method11.invoke(obj11, null);
+  System.out.println(clazz11.getClassLoader().getClass().getName());
  }
 
 
