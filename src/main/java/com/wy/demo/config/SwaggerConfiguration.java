@@ -1,5 +1,6 @@
 package com.wy.demo.config;
 
+import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -22,6 +23,7 @@ import java.util.stream.Collectors;
 //访问地址：http://localhost:8081/swagger-ui.html
 @Configuration
 @EnableSwagger2
+@EnableSwaggerBootstrapUI  //访问地址：http://localhost:8081/doc.html
 @ConditionalOnProperty(name = "swagger.enable", havingValue = "true")
 @ComponentScan(basePackages = "com.wy.demo",excludeFilters = @ComponentScan.Filter(ApiIgnore.class))
 public class SwaggerConfiguration {
