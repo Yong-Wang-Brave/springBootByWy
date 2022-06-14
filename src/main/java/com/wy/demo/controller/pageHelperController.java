@@ -1,6 +1,7 @@
 package com.wy.demo.controller;
 
 
+import com.github.pagehelper.PageInfo;
 import com.wy.demo.controller.Service.SortCourseService;
 import com.wy.demo.controller.dto.PageDto;
 import com.wy.demo.controller.dto.PageResult;
@@ -28,6 +29,13 @@ public class pageHelperController {
      @ApiOperation("获取课程列表-分页")
     public Result2<PageResult<SortCourse>> getAllCourse(@RequestBody PageDto pageDto){
         PageResult<SortCourse> list = sortCourseService.findSortCourseByDTO(pageDto);
+        return Result2.sucess(list);
+    }
+
+    @PostMapping(value="/queryPageInfo")
+    @ApiOperation("获取课程列表-分页")
+    public Result2<PageInfo<SortCourse>> getAllCoursePageInfo(@RequestBody PageDto pageDto){
+        PageInfo<SortCourse> list = sortCourseService.findSortCourseByDTOInfo(pageDto);
         return Result2.sucess(list);
     }
 
