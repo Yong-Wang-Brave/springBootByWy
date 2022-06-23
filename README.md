@@ -149,3 +149,7 @@ https://mp.weixin.qq.com/s/Gr8kLpM9bgocCuC-Ve_dZg
 20220610 pageHelper  pageInfo(20220614)
 文件：pageHelperController
 
+20220623 多数据源配置
+目录：druid
+备注：SourceConfig 是默认数据源  因为里面有@primary
+HealthRecordDataSourceConfig 是第二个数据源 可以指定扫描的目录与mapper。

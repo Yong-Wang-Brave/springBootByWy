@@ -1,6 +1,5 @@
-package com.wy.demo.filter.headToSession;
+package com.wy.demo.Exception.headToSession;
 
-import org.springframework.stereotype.Service;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
