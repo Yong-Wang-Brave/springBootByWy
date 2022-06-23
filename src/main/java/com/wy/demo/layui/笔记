@@ -1,0 +1,42 @@
+1html中
+上面是页面信息 下面是逻辑
+2 标签
+2.1table.render相当于加载
+2.2 elem绑定哪个table的id
+2.3 按钮本身是obj
+2.4 function 可以对页面字段进行回调
+2.5 table
+1 table 标签
+2 script里面设置按钮 与逻辑
+2.6 lay-filter
+2.7
+{field:'email', title:'邮箱', width:150, edit: 'text', templet: function(res){
+        return '<em>'+ res.email +'</em>'
+      }}
+2.8 totalRow是否要统计这一列的总数
+表格里面的lay-filter 控制的是编辑删除之类的。
+2.9
+ ,{field:'fileName', title:'商品图片',templet: '#img'}
+	<script type="text/html" id="img">
+	  <img src="images/{{d.fileName}}"/>
+	</script>
+
+3 跨域问题（其实就是跨电脑）
+见跨域.jpg
+3.1 在官网(layui服务器)  因为页面table.html和json都在layui服务器  所以可以直接访问到
+    在自己的电脑上，通过浏览器访问html,html访问layui的数据就属于跨域了。
+3.2 问题解决：页面访问json通过服务 （hbuilder一个项目，在本地创建服务）
+
+
+
+4 弹出
+layer.alert(JSON.stringify(data));
+layer.msg('选中了：'+ data.length + ' 个');
+5 @RestController 和@Controller的区别
+
+前者返回的是json
+后者返回的是视图。
+
+6 thymeleaf
+
+会自动为地址添加后缀。

@@ -65,3 +65,6 @@
 
     </context>
 </generatorConfiguration>
+
+
+<!--特别提示：有的时候连接不上 是因为需要8版本的jar包 而不是5版本的 换成8版本的就可以了-->
