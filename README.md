@@ -153,3 +153,5 @@ https://mp.weixin.qq.com/s/Gr8kLpM9bgocCuC-Ve_dZg
 目录：druid
 备注：SourceConfig 是默认数据源  因为里面有@primary
 HealthRecordDataSourceConfig 是第二个数据源 可以指定扫描的目录与mapper。
+20220626 测试类新写法 
+文件：RedisTest.java

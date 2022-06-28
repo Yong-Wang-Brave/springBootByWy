@@ -7,7 +7,6 @@ import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
-import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.annotation.Resource;
 import java.util.Collections;
@@ -38,21 +37,34 @@ public class RedisUtils {
     private static final String UN_LOCK_LUA ="if redis.call('get',KEYS[1])== ARGV[1] then return redis.call('del',KEYS[1])" +
          " else return  0 end";
  public static final Long SUCCESS =1L;
-
+/*lua延时脚本*/
 private static final String POSTPONE_LOCK_LUA ="if redis.call('get',KEYS[1]) ==ARGV[1] then return redis.call('expire',KEYS[1]," +
         "ARGV[2]) end";
 
-public boolean lock(String key,String value,long expireTime){
+    /**
+     * 加锁，添加保护线程防止业务未执行完成锁过期自动释放
+     * @param key 锁key
+     * @param value 锁的value
+     * @param expireTime  过期时间
+     * @return true 成功 false 失败
+     */
+    public boolean lock(String key,String value,long expireTime){
     Boolean locked = redisTemplate.opsForValue().setIfAbsent(key, value, expireTime, TimeUnit.SECONDS);
     log.info("分布式锁加锁结果---K:{},V:{},r:{}",key,value,locked);
     return locked !=null &&locked;
 }
 
-public  boolean unlock(String key,String value){
+    /**
+     * 解锁 保证原子性
+     * @param key redis的key
+     * @param value redis存储的value
+     * @return
+     */
+    public  boolean unlock(String key,String value){
     DefaultRedisScript<Long> scrit = new DefaultRedisScript<>(UN_LOCK_LUA, Long.class);
     Long result = redisTemplate.execute(scrit, Collections.singletonList(key), value);
     log.info("分布式锁解锁结果---K:{}，v:{},r:{}",key,value,result);
-return Objects.equals(1L,result);
+return Objects.equals(SUCCESS,result);
 }
 
     /**
@@ -65,7 +77,7 @@ return Objects.equals(1L,result);
         DefaultRedisScript<Long> scrit = new DefaultRedisScript<>(POSTPONE_LOCK_LUA, Long.class);
         Long result = redisTemplate.execute(scrit, Collections.singletonList(key), value,Math.toIntExact(expireTime));
         log.info("分布式锁延时结果---K:{}，v:{},r:{}",key,value,result);
-        return Objects.equals(1L,result);
+        return Objects.equals(SUCCESS,result);
     }
 
 
