@@ -20,6 +20,20 @@
 	<script type="text/html" id="img">
 	  <img src="images/{{d.fileName}}"/>
 	</script>
+2.10
+ use:使用element模块 写导航
+
+ layui.use('element',function(){
+var element=layui.element;
+});
+
+2.10.1  form
+依赖加载模块：form （请注意：如果不加载form模块，select、checkbox、radio等将无法显示，并且无法使用form相关功能）
+
+
+2.11 br 换行
+
+2.12 width宽度不写的话 自动分配。
 
 3 跨域问题（其实就是跨电脑）
 见跨域.jpg
