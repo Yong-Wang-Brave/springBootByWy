@@ -155,3 +155,17 @@ https://mp.weixin.qq.com/s/Gr8kLpM9bgocCuC-Ve_dZg
 HealthRecordDataSourceConfig 是第二个数据源 可以指定扫描的目录与mapper。
 20220626 测试类新写法 
 文件：RedisTest.java
+20220701  spring与mybaits集合处理crud
+代理类、bean工厂、bean注册，将我们一个没有实现类的接口安排的明明白白
+，让他执行啥就执行啥，那么你是否可以想到，
+这个没有实现类的接口，可以通过我们的折腾，去调用到我们的mybaits呢！
+
+通过这些核心关键类的实现；
+SqlSessionFactoryBean、MapperScannerConfigurer、SqlSessionFactoryBean，
+我们将spring与mybaits集合起来使用，解决了没有实现类的接口怎么处理数据库CRUD操作
+
+
+
+
+目录：spring-proxy
+链接：http://t.csdn.cn/i8kE6
