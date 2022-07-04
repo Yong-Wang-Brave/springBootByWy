@@ -164,8 +164,10 @@ HealthRecordDataSourceConfig 是第二个数据源 可以指定扫描的目录�
 SqlSessionFactoryBean、MapperScannerConfigurer、SqlSessionFactoryBean，
 我们将spring与mybaits集合起来使用，解决了没有实现类的接口怎么处理数据库CRUD操作
 
-
-
-
+20220704
+A
 目录：spring-proxy
 链接：http://t.csdn.cn/i8kE6
+B
+20220704  测试类
+文件：DemoApplicationTest.java
