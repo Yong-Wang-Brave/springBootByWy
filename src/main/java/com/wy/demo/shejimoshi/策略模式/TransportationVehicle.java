@@ -1,4 +1,4 @@
-/**
+package com.wy.demo.shejimoshi.策略模式; /**
  * MIT License
  * <p>
  * Copyright (c) 2017 James
@@ -21,20 +21,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.wy.demo.设计模式.策略模式;
+
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 乘飞机
+ * 驾车
  */
-public class TransportationAirplane implements TransportationStrategy {
+public class TransportationVehicle implements TransportationStrategy {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(TransportationAirplane.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(TransportationVehicle.class);
 
   @Override
   public void go() {
-    LOGGER.info("乘飞机从北京去广州");
+    LOGGER.info("驾车从北京去天津");
   }
 }

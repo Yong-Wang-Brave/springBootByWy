@@ -1,5 +1,4 @@
-package com.wy.demo.spring.service;
-
+package com.wy.demo.shejimoshi.策略模式22;
 
 import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.spring.DTO.InParam;
@@ -8,10 +7,13 @@ import org.springframework.stereotype.Service;
 
 @Service
 @Slf4j
-public class BikeImpl implements  TypeService{
+public class CarServiceImpl implements TypeService {
+
     @Override
     public Result getTypeList(InParam type) {
         log.info("获取类型列表"+type);
-        return Result.ok("自行车") ;
+        Car car = new Car();
+        car.setName(type.getType());
+        return Result.ok(car);
     }
 }

@@ -21,21 +21,24 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.wy.demo.设计模式.策略模式;
+package com.wy.demo.shejimoshi.策略模式;
 
 /**
- * Strategy
+ * 商人
  */
-public class Application {
+public class BusinessMan {
 
-  public static void main(String[] args) {
-    BusinessMan man = new BusinessMan(new TransportationAirplane());
-    man.transport();
+  private TransportationStrategy strategy;
 
-    man.changetStrategy(new TransportationTrain());
-    man.transport();
+  public BusinessMan(TransportationStrategy strategy) {
+    this.strategy = strategy;
+  }
 
-    man.changetStrategy(new TransportationVehicle());
-    man.transport();
+  public void changetStrategy(TransportationStrategy strategy) {
+    this.strategy = strategy;
+  }
+
+  public void transport() {
+    this.strategy.go();
   }
 }

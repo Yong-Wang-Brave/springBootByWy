@@ -21,20 +21,20 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.wy.demo.设计模式.策略模式;
+package com.wy.demo.shejimoshi.策略模式;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * 乘火车
+ * 乘飞机
  */
-public class TransportationTrain implements TransportationStrategy {
+public class TransportationAirplane implements TransportationStrategy {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(TransportationTrain.class);
+  private static final Logger LOGGER = LoggerFactory.getLogger(TransportationAirplane.class);
 
   @Override
   public void go() {
-    LOGGER.info("乘高铁从北京去上海");
+    LOGGER.info("乘飞机从北京去广州");
   }
 }

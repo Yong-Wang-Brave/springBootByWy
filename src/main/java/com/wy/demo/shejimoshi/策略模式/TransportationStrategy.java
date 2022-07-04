@@ -21,7 +21,7 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
  * SOFTWARE.
  */
-package com.wy.demo.设计模式.策略模式;
+package com.wy.demo.shejimoshi.策略模式;
 
 /**
  * 交通方式策略
