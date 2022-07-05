@@ -176,3 +176,7 @@ B
 20220704 spring获取bean的几种方式
 文件：SpringContextHelper2
 链接：https://blog.csdn.net/m0_67401606/article/details/124047896
+
+20220705 参数校验
+文件：方式一：ValidatorUtil.java
+方式二：TestCelueController.java
