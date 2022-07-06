@@ -24,4 +24,8 @@ public class SpringbootPayTest {
     public void test(){
         payContext.pay(PayTypeEnum.BALANCE.getCode());
     }
+
+
+
+
 }

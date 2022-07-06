@@ -180,3 +180,7 @@ B
 20220705 参数校验
 文件：方式一：ValidatorUtil.java
 方式二：TestCelueController.java
+
+20220706 lamba optional的用法
+文件： com.wy.demo.java8.lambda.optional
+连接：https://mp.weixin.qq.com/s/5RbpFLpyFKzdQewg-aoEzg
