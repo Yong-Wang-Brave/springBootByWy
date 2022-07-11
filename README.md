@@ -184,3 +184,7 @@ B
 20220706 lamba optional的用法
 文件： com.wy.demo.java8.lambda.optional
 连接：https://mp.weixin.qq.com/s/5RbpFLpyFKzdQewg-aoEzg
+
+20220711 策略模式 实战版本
+文件：策略模式20220708
+链接：https://mp.weixin.qq.com/s/MjLCnZR07BA5B2a_7kWzbQ

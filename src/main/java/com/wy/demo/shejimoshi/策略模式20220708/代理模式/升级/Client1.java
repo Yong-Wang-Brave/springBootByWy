@@ -1,7 +1,7 @@
-package com.wy.demo.shejimoshi.代理模式.升级;
+package com.wy.demo.shejimoshi.策略模式20220708.代理模式.升级;
 
-import com.wy.demo.shejimoshi.代理模式.Internet;
-import com.wy.demo.shejimoshi.代理模式.Modem;
+import com.wy.demo.shejimoshi.策略模式20220708.代理模式.Internet;
+import com.wy.demo.shejimoshi.策略模式20220708.代理模式.Modem;
 import org.springframework.cglib.proxy.Proxy;
 
 public class Client1 {

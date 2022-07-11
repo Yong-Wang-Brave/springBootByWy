@@ -1,4 +1,4 @@
-package com.wy.demo.shejimoshi.代理模式;
+package com.wy.demo.shejimoshi.策略模式20220708.代理模式;
 
 public class Client {
      public static void main(String[] args) {
