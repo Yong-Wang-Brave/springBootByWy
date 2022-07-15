@@ -6,7 +6,7 @@
 <!--
     弄清楚每个字母的意思
 -->
-    <property name="pattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread]%-5level %logger{36} - [ReqId : %X{reqId}] %replace(%msg){'^(.4096}).*$','$1'}%n"/>
+    <property name="pattern" value="%d{yyyy-MMdd HH:mm:ss.SSS} [%thread]%-5level %logger{36} - [ReqId : %X{reqId}] %replace(%msg){'^(.4096}).*$','$1'}%n"/>
 
     <appender  name="console"  class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">

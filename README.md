@@ -190,3 +190,8 @@ B
 链接：https://mp.weixin.qq.com/s/MjLCnZR07BA5B2a_7kWzbQ
 20220713 hubhook   
 文件夹：testWebHook   
+
+20220715 整合log4j2
+文件：log4j2-dev.xml
+地址：https://www.jianshu.com/p/4172ca423920
+说明：每次会从最近的文件往后覆盖
