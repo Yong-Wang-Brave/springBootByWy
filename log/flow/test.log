@@ -1,0 +1,100 @@
+15:51:42.462 [main] INFO  com.wy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+15:51:46.426 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+15:51:46.428 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:51:46.430 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+15:51:46.635 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:51:47.224 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - 开始加载mysql druid
+15:51:47.239 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - mysql的druid加载完成
+15:51:47.301 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - 开始加载mysql druid
+15:51:47.301 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - mysql的druid加载完成
+15:51:48.252 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:51:49.183 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+15:51:49.189 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:51:49.198 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+15:51:49.198 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:51:52.206 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+15:51:52.270 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8001 192.168.168.1:8081 register finished
+15:51:53.031 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 13.646 seconds (JVM running for 17.599)
+15:51:59.694 [http-nio-8081-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:51:59.736 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [4e0912863b004746921e2e23dabdaad0]你妹1
+15:51:59.752 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1658130719752
+15:52:08.878 [http-nio-8081-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
+15:52:08.894 [http-nio-8081-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
+15:52:08.906 [http-nio-8081-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
+15:52:09.241 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1658130719752=====
+ request_url  :/getAllCourse
+ http_method  :GET
+ class_methodname  :JsonRootBean com.wy.demo.controller.welcomeController.getAll()
+ request_ip  :ip
+ descrpition  :9158ms
+ request_param  :[]
+ response_result  :{"message":[{"cat_deleted":false,"cat_id":1,"cat_level":0,"cat_name":"慕课网","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":2,"cat_level":1,"cat_name":"慕课超级大课","cat_pid":1,"children":[{"cat_deleted":false,"cat_id":3,"cat_level":2,"cat_name":"体系科_java","cat_pid":2}]}]},{"cat_deleted":false,"cat_id":11,"cat_level":0,"cat_name":"极客","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":21,"cat_level":1,"cat_name":"专栏","cat_pid":11,"children":[{"cat_deleted":false,"cat_id":31,"cat_level":2,"cat_name":"mysql必知必会","cat_pid":21},{"cat_deleted":false,"cat_id":32,"cat_level":2,"cat_name":"设计模式之美11","cat_pid":21}]}]}],"meta":{"msg":"sucess","status":200}}
+ ==== aop log end  request_id:1658130719752=================
+15:52:09.282 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [4e0912863b004746921e2e23dabdaad0]你妹2
+15:52:27.282 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [728ce56b277d4d97a3f772ef504be1e8]你妹1
+15:52:27.282 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1658130747281
+15:52:27.284 [http-nio-8081-exec-5] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
+15:52:27.284 [http-nio-8081-exec-5] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
+15:52:27.287 [http-nio-8081-exec-5] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
+15:52:27.287 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1658130747281=====
+ request_url  :/getAllCourse
+ http_method  :GET
+ class_methodname  :JsonRootBean com.wy.demo.controller.welcomeController.getAll()
+ request_ip  :ip
+ descrpition  :4ms
+ request_param  :[]
+ response_result  :{"message":[{"cat_deleted":false,"cat_id":1,"cat_level":0,"cat_name":"慕课网","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":2,"cat_level":1,"cat_name":"慕课超级大课","cat_pid":1,"children":[{"cat_deleted":false,"cat_id":3,"cat_level":2,"cat_name":"体系科_java","cat_pid":2}]}]},{"cat_deleted":false,"cat_id":11,"cat_level":0,"cat_name":"极客","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":21,"cat_level":1,"cat_name":"专栏","cat_pid":11,"children":[{"cat_deleted":false,"cat_id":31,"cat_level":2,"cat_name":"mysql必知必会","cat_pid":21},{"cat_deleted":false,"cat_id":32,"cat_level":2,"cat_name":"设计模式之美11","cat_pid":21}]}]}],"meta":{"msg":"sucess","status":200}}
+ ==== aop log end  request_id:1658130747281=================
+15:52:27.290 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [728ce56b277d4d97a3f772ef504be1e8]你妹2
+15:52:31.150 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [b91a0cc5195b4f429cb4ed309f0d1101]你妹1
+15:52:31.163 [http-nio-8081-exec-4] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1658130751162
+15:52:31.173 [http-nio-8081-exec-4] DEBUG com.wy.demo.mybatis.mappers.UserrMapper.findByUserNameAndPassword - ==>  Preparing: select * from t_user where username = ? and password = ?
+15:52:31.174 [http-nio-8081-exec-4] DEBUG com.wy.demo.mybatis.mappers.UserrMapper.findByUserNameAndPassword - ==> Parameters: wy(String), 111(String)
+15:52:31.175 [http-nio-8081-exec-4] DEBUG com.wy.demo.mybatis.mappers.UserrMapper.findByUserNameAndPassword - <==      Total: 1
+15:52:32.229 [http-nio-8081-exec-4] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1658130751162=====
+ request_url  :/user/login
+ http_method  :POST
+ class_methodname  :JwtResponse com.wy.demo.jwt.UserController.login(String,String)
+ request_ip  :ip
+ descrpition  :1064ms
+ request_param  :["wy","111"]
+ response_result  :{"code":"0","jwtData":"eyJhbGciOiJIUzI1NiIsInppcCI6IkRFRiJ9.eNqqVspLzE1VslIqr1TSUUpMBzENDQ2VagEAAAD__w.j4_vci4fH16VaIOOYDaqLJ8L4ESEr7KiKj6fnQ7fasQ","msg":"成功"}
+ ==== aop log end  request_id:1658130751162=================
+15:52:32.237 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [b91a0cc5195b4f429cb4ed309f0d1101]你妹2
+15:52:40.606 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [ee909304263e4996aad7959a26f778f2]你妹1
+15:52:40.614 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1658130760613
+15:52:40.617 [http-nio-8081-exec-3] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
+15:52:40.617 [http-nio-8081-exec-3] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
+15:52:40.621 [http-nio-8081-exec-3] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
+15:52:40.623 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1658130760613=====
+ request_url  :/getAllCourse
+ http_method  :GET
+ class_methodname  :JsonRootBean com.wy.demo.controller.welcomeController.getAll()
+ request_ip  :ip
+ descrpition  :8ms
+ request_param  :[]
+ response_result  :{"message":[{"cat_deleted":false,"cat_id":1,"cat_level":0,"cat_name":"慕课网","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":2,"cat_level":1,"cat_name":"慕课超级大课","cat_pid":1,"children":[{"cat_deleted":false,"cat_id":3,"cat_level":2,"cat_name":"体系科_java","cat_pid":2}]}]},{"cat_deleted":false,"cat_id":11,"cat_level":0,"cat_name":"极客","cat_pid":0,"children":[{"cat_deleted":false,"cat_id":21,"cat_level":1,"cat_name":"专栏","cat_pid":11,"children":[{"cat_deleted":false,"cat_id":31,"cat_level":2,"cat_name":"mysql必知必会","cat_pid":21},{"cat_deleted":false,"cat_id":32,"cat_level":2,"cat_name":"设计模式之美11","cat_pid":21}]}]}],"meta":{"msg":"sucess","status":200}}
+ ==== aop log end  request_id:1658130760613=================
+15:52:40.625 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [ee909304263e4996aad7959a26f778f2]你妹2
+15:53:41.068 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a0b100a9d33f4885aaa66e0ba87c2ef4]你妹1
+15:53:41.070 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1658130821069
+15:53:41.087 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1658130821069=====
+ request_url  :/jwt/test
+ http_method  :POST
+ class_methodname  :Map com.wy.demo.jwt.TestController20220718.test(String)
+ request_ip  :ip
+ descrpition  :16ms
+ request_param  :["eyJhbGciOiJIUzI1NiIsInppcCI6IkRFRiJ9.eNqqVspLzE1VslIqr1TSUUpMBzENDQ2VagEAAAD__w.j4_vci4fH16VaIOOYDaqLJ8L4ESEr7KiKj6fnQ7fasQ"]
+ response_result  :{"msg":"请求成功","code":"0","name":"wy","age":"111"}
+ ==== aop log end  request_id:1658130821069=================
+15:53:41.096 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a0b100a9d33f4885aaa66e0ba87c2ef4]你妹2

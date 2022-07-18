@@ -1,7 +1,7 @@
 package com.wy.demo.other.小案例20220526;
 
 import com.wy.demo.entity.User;
-import com.wy.demo.mapper.UserMapper;
+import com.wy.demo.mybatis.mappers.UserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.MethodParameter;
 import org.springframework.stereotype.Service;

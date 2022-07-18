@@ -19,4 +19,8 @@
         select * from t_sortcourse where cat_id is not null
     </select>
 
+    <select id="findByUserNameAndPassword" resultType="com.wy.demo.controller.dto.User">
+        select * from t_user where username = #{userName} and password = #{passWord}
+    </select>
+
 </mapper>

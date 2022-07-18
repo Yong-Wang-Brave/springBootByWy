@@ -1,12 +1,12 @@
-package com.wy.demo.mybatis.generator.mapper.generator;
+package com.wy.demo.mybatis.mappers;
 
 import com.wy.demo.mybatis.generator.dto.UserDTO;
 import com.wy.demo.mybatis.generator.dto.UserDTOExample;
-import java.util.List;
-
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.session.RowBounds;
+
+import java.util.List;
 @Mapper
 public interface UserDTOMapper {
     int countByExample(UserDTOExample example);

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.demo.mybatis.mappers.UserrMapper">
+
+    <resultMap id="BaseResultMapper" type="com.wy.demo.controller.dto.User">
+        <id column="username" property="userName"/>
+        <result column="password" property="passWord"/>
+    </resultMap>
+
+
+
+    <select id="findByUserNameAndPassword" resultType="com.wy.demo.controller.dto.User">
+        select * from t_user where username = #{userName} and password = #{passWord}
+    </select>
+
+</mapper>

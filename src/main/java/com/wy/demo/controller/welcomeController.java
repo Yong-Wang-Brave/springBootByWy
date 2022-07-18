@@ -4,8 +4,8 @@ package com.wy.demo.controller;
 import com.alibaba.druid.stat.DruidStatManagerFacade;
 import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.Exception.Exception2.ServiceeException;
-import com.wy.demo.SpringContext.SpringUtils;
 import com.wy.demo.SpringContext.SpringContextHolder;
+import com.wy.demo.SpringContext.SpringUtils;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Message;
@@ -13,13 +13,11 @@ import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
 import com.wy.demo.controller.dto.Student;
 import com.wy.demo.controller.dto.User;
 import com.wy.demo.entity.UserReq;
-import com.wy.demo.mapper.UserMapper;
 import com.wy.demo.mybatis.entity.SortCourse;
 import com.wy.demo.mybatis.mappers.SortCourseMapper;
+import com.wy.demo.mybatis.mappers.UserMapper;
 import com.wy.demo.springCloud.feign.FeignServiceWy;
 import lombok.extern.log4j.Log4j2;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
@@ -50,6 +48,8 @@ public class welcomeController {
     FeignServiceWy feignServiceWy;
     @Autowired
     SortCourseMapper sortCourseMapper;
+    @Autowired
+    com.wy.demo.controller.Service.SortCourseService sortCourseService;
 
     @PostMapping("/update")
     public String welcome(@RequestBody UserReq userReq,@SessionAttribute(value = "wy",required = false)String wy) {

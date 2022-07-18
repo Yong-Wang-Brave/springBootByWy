@@ -16,7 +16,8 @@ public class User {
     @Autowired
     private ApplicationContext applicationContext;
     int i;
-    String name;
+    String userName;
+    String passWord;
     public User(int i, String toString) {
     }
 }

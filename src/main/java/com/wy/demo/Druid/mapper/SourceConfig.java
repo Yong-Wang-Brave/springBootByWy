@@ -24,7 +24,8 @@ import java.util.Properties;
 
 @Slf4j
 @Configuration
-@MapperScan(basePackages = "com.wy.demo.*" ,sqlSessionFactoryRef = "SqlSessionFactory")
+//这个范围只能指定到dao层 要不然 会报错：
+@MapperScan(basePackages = "com.wy.demo.mybatis.mappers" ,sqlSessionFactoryRef = "SqlSessionFactory")
 public class SourceConfig {
 @Resource
     MysqlDruidDataSourceProperties mysqlDruidDataSourceProperties;

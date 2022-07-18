@@ -2,7 +2,7 @@ package com.wy.demo.mybatis.generator.controller;
 
 import com.wy.demo.mybatis.generator.dto.QueryUserDTO;
 import com.wy.demo.mybatis.generator.dto.UserDTO;
-import com.wy.demo.mybatis.generator.mapper.generator.UserDTOMapper;
+import com.wy.demo.mybatis.mappers.UserDTOMapper;
 import com.wy.demo.lightspot.UnitedReturn.Result2;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
