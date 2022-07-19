@@ -1,13 +1,17 @@
 package com.wy.demo.controller;
 
 import com.wy.demo.Redis.RedisUtils;
+import com.wy.demo.entity.User;
 import com.wy.demo.lightspot.UnitedReturn.Result;
 import com.wy.demo.lightspot.UnitedReturn.ResultCode;
 import com.wy.demo.mybatis.entity.SortCourse;
 import com.wy.demo.mybatis.mappers.SortCourseMapper;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -15,6 +19,7 @@ import java.util.UUID;
 
 @RestController
 @Log4j2
+@Api(tags="我的课程")
 public class RedisController {
     @Autowired
     private SortCourseMapper sortCourseMapper;
@@ -22,9 +27,9 @@ public class RedisController {
     @Autowired
     private RedisUtils redisLockUtil;
 
-
-    @GetMapping("/1111")
-    public Result getOrder() {
+    @ApiOperation("查询课程(参考模板)")
+    @PostMapping ("/findCourse")
+    public Result getOrder(@RequestBody(required = false) User user) {
         Result result = null;
         String requestId= UUID.randomUUID().toString();
         try {

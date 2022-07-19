@@ -1,15 +1,3 @@
-15:52:40.625 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [ee909304263e4996aad7959a26f778f2]你妹2
-15:53:41.068 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a0b100a9d33f4885aaa66e0ba87c2ef4]你妹1
-15:53:41.070 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
- ======= aop start requestId:1658130821069
-15:53:41.087 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
- ==== requset and response  request_id:1658130821069=====
- request_url  :/jwt/test
- http_method  :POST
- class_methodname  :Map com.wy.demo.jwt.TestController20220718.test(String)
- request_ip  :ip
- descrpition  :16ms
- request_param  :["eyJhbGciOiJIUzI1NiIsInppcCI6IkRFRiJ9.eNqqVspLzE1VslIqr1TSUUpMBzENDQ2VagEAAAD__w.j4_vci4fH16VaIOOYDaqLJ8L4ESEr7KiKj6fnQ7fasQ"]
- response_result  :{"msg":"请求成功","code":"0","name":"wy","age":"111"}
- ==== aop log end  request_id:1658130821069=================
-15:53:41.096 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a0b100a9d33f4885aaa66e0ba87c2ef4]你妹2
+16:19:18.705 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [9c43d536a6cb483ba8270e23dc2232bd]你妹2
+16:19:18.940 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cb40e20e89c8433d82669d2e52dc6358]你妹1
+16:19:18.989 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cb40e20e89c8433d82669d2e52dc6358]你妹2

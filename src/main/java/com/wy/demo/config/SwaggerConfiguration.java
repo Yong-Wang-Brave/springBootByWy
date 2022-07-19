@@ -1,12 +1,9 @@
 package com.wy.demo.config;
 
 import com.github.xiaoymin.swaggerbootstrapui.annotations.EnableSwaggerBootstrapUI;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.MediaType;
-import springfox.documentation.annotations.ApiIgnore;
 import springfox.documentation.builders.ParameterBuilder;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.schema.ModelRef;
@@ -24,8 +21,8 @@ import java.util.stream.Collectors;
 @Configuration
 @EnableSwagger2
 @EnableSwaggerBootstrapUI  //访问地址：http://localhost:8081/doc.html
-@ConditionalOnProperty(name = "swagger.enable", havingValue = "true")
-@ComponentScan(basePackages = "com.wy.demo",excludeFilters = @ComponentScan.Filter(ApiIgnore.class))
+//@ConditionalOnProperty(name = "swagger.enable", havingValue = "true")
+//@ComponentScan(basePackages = "com.wy.demo",excludeFilters = @ComponentScan.Filter(ApiIgnore.class))
 public class SwaggerConfiguration {
 
     private static final String MODEL_REF="string";

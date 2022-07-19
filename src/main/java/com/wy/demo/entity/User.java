@@ -1,5 +1,7 @@
 package com.wy.demo.entity;
 
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -13,11 +15,14 @@ import java.sql.Timestamp;
  * @date 2019/1/1815:47
  */
 @Data
+@ApiModel("测试用户")
 public class User implements Serializable{
-
+    @ApiModelProperty(value="id",notes="主键",required = true)
     Long id;
+    @ApiModelProperty(value="姓名你妹1")
     String username;
 String name;
+    @ApiModelProperty(value="密码13332")
     String password;
 
     Integer   delFlag;

@@ -205,6 +205,10 @@
             <exclusions>
                 <exclusion>
                     <artifactId>io.swagger</artifactId>
+                    <groupId>swagger-annotations</groupId>
+                </exclusion>
+                <exclusion>
+                    <artifactId>io.swagger</artifactId>
                     <groupId>swagger-models</groupId>
                 </exclusion>
             </exclusions>
@@ -212,6 +216,11 @@
         <dependency>
             <groupId>io.swagger</groupId>
             <artifactId>swagger-models</artifactId>
+            <version>1.5.21</version>
+        </dependency>
+        <dependency>
+            <groupId>io.swagger</groupId>
+            <artifactId>swagger-annotations</artifactId>
             <version>1.5.21</version>
         </dependency>
         <dependency>
