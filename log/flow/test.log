@@ -46,3 +46,13 @@
 16:19:18.705 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [9c43d536a6cb483ba8270e23dc2232bd]你妹2
 16:19:18.940 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cb40e20e89c8433d82669d2e52dc6358]你妹1
 16:19:18.989 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cb40e20e89c8433d82669d2e52dc6358]你妹2
+16:35:01.174 [scheduling-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+16:35:01.177 [scheduling-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+11:02:35.250 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+11:02:35.250 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+11:02:35.354 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+11:02:35.386 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+11:02:35.392 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+11:02:35.403 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+                                              16:35:01.255 [scheduling-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+16:35:01.264 [scheduling-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library

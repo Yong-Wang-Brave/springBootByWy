@@ -201,3 +201,6 @@ B
 链接：https://github.com/yehongzhi/learningSummary
 
 20220719 swagger可视化界面美化
+
+20220721 java8
+目录：java8.lambda.flatmap

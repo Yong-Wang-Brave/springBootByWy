@@ -2,10 +2,13 @@ package com.wy.demo.entity;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @author Think
@@ -16,7 +19,11 @@ import java.sql.Timestamp;
  */
 @Data
 @ApiModel("测试用户")
+@AllArgsConstructor
+@NoArgsConstructor
 public class User implements Serializable{
+    //内部类
+    public List<Book> books;
     @ApiModelProperty(value="id",notes="主键",required = true)
     Long id;
     @ApiModelProperty(value="姓名你妹1")
@@ -28,6 +35,18 @@ String name;
     Integer   delFlag;
     Timestamp createdAt;
     Timestamp updatedAt;
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class Book {
+        String name;
+        String category;
+    }
+    public User(int i, String 小红a,List<Book> book) {
+        this.delFlag=i;
+        this.name=小红a;
+        this.books=book;
+    }
 
     public Long getId() {
         return id;
