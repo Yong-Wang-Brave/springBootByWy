@@ -1,4 +1,4 @@
-package com.wy.demo.threadlocal;
+package com.wy.demo.thread.threadlocal;
 
 import lombok.extern.log4j.Log4j2;
 import org.springframework.web.bind.annotation.GetMapping;
