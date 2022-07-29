@@ -1,4 +1,2 @@
-11:02:35.250 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-11:02:35.250 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-11:02:35.386 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-11:02:35.403 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+13:02:13.756 [Thread-45] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+13:02:13.757 [Thread-39] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
