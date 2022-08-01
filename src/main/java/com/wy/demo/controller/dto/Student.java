@@ -18,4 +18,6 @@ public class Student {
     String age;
     @NotEmpty(message = "卡号不可为空")
     String cardNo;
+
+    String cardNo1;
 }
