@@ -204,3 +204,20 @@ B
 
 20220721 java8
 目录：java8.lambda.flatmap
+
+
+20220729
+目录：丁雪峰
+bean初始化配置
+1 继承InitializingBean
+2 @PostConstruct 注解
+实现接口ApplicationContextAware 获取spring上下文
+
+20220801
+SpringBoot 缓存之 @Cacheable 详细介绍
+地址：https://blog.csdn.net/u012102536/article/details/126097079?csdn_share_tail=%7B%22type%22%3A%22blog%22%2C%22rType%22%3A%22article%22%2C%22rId%22%3A%22126097079%22%2C%22source%22%3A%22u012102536%22%7D&ctrtid=N0K5G
+例子：极客时间第10章 ：indicator-demo   geektime.spring.springbucks.waiter.controller.CoffeeController.getAll
+
+20220801
+stopwatch统计接口耗时
+参看：极客时间第10章 indicator-demo   PerformanceInteceptor
