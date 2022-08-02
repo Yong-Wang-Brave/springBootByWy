@@ -221,3 +221,8 @@ SpringBoot 缓存之 @Cacheable 详细介绍
 20220801
 stopwatch统计接口耗时
 参看：极客时间第10章 indicator-demo   PerformanceInteceptor
+
+20220802 
+过滤器实现
+目录：filter
+场景：过滤返回值。

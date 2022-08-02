@@ -10,7 +10,7 @@ import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -28,7 +28,7 @@ public class RedisController {
     private RedisUtils redisLockUtil;
 
     @ApiOperation("查询课程(参考模板)")
-    @PostMapping ("/findCourse")
+    @GetMapping("/findCourse")
     public Result getOrder(@RequestBody(required = false) User user) {
         Result result = null;
         String requestId= UUID.randomUUID().toString();
