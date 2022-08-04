@@ -1,6 +1,7 @@
 package com.wy.demo.全局日志id;
 
 import com.alibaba.ttl.TransmittableThreadLocal;
+import com.wy.demo.utils.NetworkUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
@@ -13,7 +14,7 @@ import java.util.UUID;
 @Slf4j
 public class  TraceInterceptor  implements HandlerInterceptor {
 private static ThreadLocal<String> traceId2=new TransmittableThreadLocal<>();
-
+private ThreadLocal<String> clientHost =new ThreadLocal<>();
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
@@ -21,7 +22,8 @@ String traceId= UUID.randomUUID().toString().replaceAll("-","");
         MDC.put("traceId",traceId);
        //SnowflakeIdUtil.netxId();
         traceId2.set(traceId);
-        log.info("[{}]你妹1",traceId2.get());
+        clientHost.set(NetworkUtil.getIpAddress(request));
+        log.info("uuid:[{}],host{}",traceId2.get(),clientHost.get());
         return true;
     }
 
@@ -34,5 +36,6 @@ String traceId= UUID.randomUUID().toString().replaceAll("-","");
             log.info("[{}]你妹2",traceId2.get());
         }
         traceId2.remove();
+        clientHost.remove();
     }
 }

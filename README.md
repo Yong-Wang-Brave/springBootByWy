@@ -234,3 +234,6 @@ stopwatch统计接口耗时
 
 20220804  WebLogAspect优化
 文件：JacksonUtil
+
+20220804  拦截器新增
+文件：MqsHandler
