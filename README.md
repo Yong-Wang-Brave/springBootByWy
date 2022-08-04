@@ -231,3 +231,6 @@ stopwatch统计接口耗时
 监听器listener
 目录：监听器listener
 地址：https://blog.csdn.net/xp_lx1/article/details/121835173
+
+20220804  WebLogAspect优化
+文件：JacksonUtil
