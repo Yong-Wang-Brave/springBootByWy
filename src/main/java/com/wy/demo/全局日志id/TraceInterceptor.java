@@ -22,7 +22,8 @@ String traceId= UUID.randomUUID().toString().replaceAll("-","");
         MDC.put("traceId",traceId);
        //SnowflakeIdUtil.netxId();
         traceId2.set(traceId);
-        clientHost.set(NetworkUtil.getIpAddress(request));
+       // clientHost.set(NetworkUtil.getIpAddress(request));
+        clientHost.set(NetworkUtil.getLocalHostIpAddress().getHostAddress());
         log.info("uuid:[{}],host{}",traceId2.get(),clientHost.get());
         return true;
     }

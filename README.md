@@ -237,3 +237,6 @@ stopwatch统计接口耗时
 
 20220804  拦截器新增
 文件：MqsHandler
+
+20220804 获取最真实的ip
+文件：NetworkUtil.getLocalHostIpAddress

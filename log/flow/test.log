@@ -1,79 +1,68 @@
-17:41:06.457 [main] INFO  com.wy.demo.DemoApplication - No active profile set, falling back to default profiles: default
-17:41:10.058 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
-17:41:10.059 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-17:41:10.060 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
-17:41:10.274 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-17:41:10.940 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - 开始加载mysql druid
-17:41:10.957 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - mysql的druid加载完成
-17:41:11.025 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - 开始加载mysql druid
-17:41:11.025 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - mysql的druid加载完成
-17:41:11.818 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-17:41:12.771 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-17:41:12.833 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-17:41:12.834 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-17:41:12.844 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-17:41:12.844 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-17:41:19.058 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-17:41:19.081 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-17:41:19.135 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-17:41:19.319 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
-17:41:19.403 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
-17:41:19.409 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
-17:41:19.430 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
-17:41:19.430 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
-17:41:19.431 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
-17:41:19.431 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
-17:41:19.432 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
-17:41:19.433 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
-17:41:19.434 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
-17:41:19.435 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
-17:41:19.437 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
-17:41:19.438 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
-17:41:19.439 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
-17:41:19.440 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
-17:41:19.441 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
-17:41:19.442 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
-17:41:19.442 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
-17:41:19.443 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
-17:41:19.688 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
-17:41:19.690 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
-17:41:19.719 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
-17:41:19.737 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
-17:41:19.769 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
-17:41:19.818 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8001 192.168.168.1:8083 register finished
-17:41:22.255 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 21.723 seconds (JVM running for 26.14)
-17:42:38.378 [http-nio-8083-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-17:42:38.463 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f30c0030eb63424e8bf387c16d2175c0],host0:0:0:0:0:0:0:1
-17:42:38.488 [http-nio-8083-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
- ======= aop start requestId:1659606158487
-17:42:38.573 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
-17:42:38.595 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
-17:42:38.609 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
-17:42:38.691 [http-nio-8083-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
- ==== requset and response  request_id:1659606158487=====
+10:39:11.753 [main] INFO  com.wy.demo.DemoApplication - No active profile set, falling back to default profiles: default
+10:39:17.471 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8083"]
+10:39:17.472 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:39:17.473 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+10:39:17.759 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:39:18.997 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - 开始加载mysql druid
+10:39:19.028 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - mysql的druid加载完成
+10:39:19.098 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - 开始加载mysql druid
+10:39:19.098 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - mysql的druid加载完成
+10:39:20.334 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:39:21.780 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+10:39:21.842 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:39:21.842 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:39:21.862 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:39:21.869 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:39:28.984 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+10:39:29.020 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+10:39:29.103 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+10:39:29.314 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
+10:39:29.599 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
+10:39:29.606 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
+10:39:29.624 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
+10:39:29.625 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
+10:39:29.626 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
+10:39:29.627 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
+10:39:29.627 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
+10:39:29.628 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
+10:39:29.629 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
+10:39:29.630 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
+10:39:29.631 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
+10:39:29.631 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
+10:39:29.631 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
+10:39:29.632 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
+10:39:29.632 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
+10:39:29.633 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
+10:39:29.633 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
+10:39:29.634 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
+10:39:29.688 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
+10:39:29.692 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+10:39:29.724 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
+10:39:29.740 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
+10:39:29.774 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8083"]
+10:39:29.837 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8001 192.168.168.1:8083 register finished
+10:39:32.244 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 27.066 seconds (JVM running for 31.922)
+10:39:49.887 [http-nio-8083-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:39:50.862 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[503f88f8cbf848d9ad55f159f32f4ca0],host192.168.168.1
+10:39:50.879 [http-nio-8083-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1659667190877
+10:39:50.962 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
+10:39:50.978 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
+10:39:50.992 [http-nio-8083-exec-1] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
+10:39:51.055 [http-nio-8083-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1659667190877=====
  request_url  :/getAllCourse
  http_method  :GET
  class_methodname  :JsonRootBean com.wy.demo.controller.welcomeController.getAll()
  request_ip  :ip
- descrpition  :123ms
+ descrpition  :117ms
  request_param  :[]
  response_result  :{"message":[{"cat_id":1,"cat_name":"慕课网","cat_pid":0,"cat_level":0,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":2,"cat_name":"慕课超级大课","cat_pid":1,"cat_level":1,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":3,"cat_name":"体系科_java","cat_pid":2,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null}]}]},{"cat_id":11,"cat_name":"极客","cat_pid":0,"cat_level":0,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":21,"cat_name":"专栏","cat_pid":11,"cat_level":1,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":31,"cat_name":"mysql必知必会","cat_pid":21,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null},{"cat_id":32,"cat_name":"设计模式之美11","cat_pid":21,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null}]}]}],"meta":{"msg":"sucess","status":200}}
- ==== aop log end  request_id:1659606158487=================
-17:42:38.751 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f30c0030eb63424e8bf387c16d2175c0]你妹2
-17:43:29.858 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[b2668fee645b4b70a8bf8d2d2e3d30b7],host0:0:0:0:0:0:0:1
-17:43:29.859 [http-nio-8083-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
- ======= aop start requestId:1659606209859
-17:43:29.863 [http-nio-8083-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==>  Preparing: select * from t_sortcourse where cat_id is not null
-17:43:29.863 [http-nio-8083-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - ==> Parameters: 
-17:43:29.866 [http-nio-8083-exec-2] DEBUG com.wy.demo.mybatis.mappers.SortCourseMapper.findSortCourse - <==      Total: 7
-17:43:29.867 [http-nio-8083-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
- ==== requset and response  request_id:1659606209859=====
- request_url  :/getAllCourse
- http_method  :GET
- class_methodname  :JsonRootBean com.wy.demo.controller.welcomeController.getAll()
- request_ip  :ip
- descrpition  :8ms
- request_param  :[]
- response_result  :{"message":[{"cat_id":1,"cat_name":"慕课网","cat_pid":0,"cat_level":0,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":2,"cat_name":"慕课超级大课","cat_pid":1,"cat_level":1,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":3,"cat_name":"体系科_java","cat_pid":2,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null}]}]},{"cat_id":11,"cat_name":"极客","cat_pid":0,"cat_level":0,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":21,"cat_name":"专栏","cat_pid":11,"cat_level":1,"cat_deleted":false,"cat_icon":null,"children":[{"cat_id":31,"cat_name":"mysql必知必会","cat_pid":21,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null},{"cat_id":32,"cat_name":"设计模式之美11","cat_pid":21,"cat_level":2,"cat_deleted":false,"cat_icon":null,"children":null}]}]}],"meta":{"msg":"sucess","status":200}}
- ==== aop log end  request_id:1659606209859=================
-17:43:29.871 [http-nio-8083-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [b2668fee645b4b70a8bf8d2d2e3d30b7]你妹2
+ ==== aop log end  request_id:1659667190877=================
+10:39:51.147 [http-nio-8083-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [503f88f8cbf848d9ad55f159f32f4ca0]你妹2
+10:50:20.398 [Thread-57] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+10:50:20.398 [Thread-51] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+10:50:20.399 [Thread-57] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+10:50:20.400 [Thread-51] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+10:50:20.404 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+10:50:20.406 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
