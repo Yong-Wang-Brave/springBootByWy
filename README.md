@@ -243,3 +243,7 @@ stopwatch统计接口耗时
 
 20220805 读取自定义配置文件
 目录：config zidingyi 
+
+20200805 入参非空校验
+文件：ValidateUtil
+注意点：GlobalExceptionHandler2 中的@ExceptionHandler 不能重复定义

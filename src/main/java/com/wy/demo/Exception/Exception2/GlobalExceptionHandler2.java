@@ -3,8 +3,8 @@ package com.wy.demo.Exception.Exception2;
 
 import com.fasterxml.jackson.databind.exc.MismatchedInputException;
 import com.netflix.hystrix.exception.HystrixRuntimeException;
-import com.wy.demo.Exception.ServiceException;
 import com.wy.demo.lightspot.UnitedReturn.Result2;
+import com.wy.demo.utils.validate.ValidateUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.core.annotation.Order;
@@ -71,7 +71,7 @@ public class GlobalExceptionHandler2 {
      * @param e
      * @return
      */
-    @ExceptionHandler(ConstraintViolationException.class)
+ //   @ExceptionHandler(ConstraintViolationException.class)
     public Result<Object> constraintViolationException(HttpServletRequest httpServletRequest, ConstraintViolationException e) {
         String message = "卡号异常";
         log.error(message, e);
@@ -108,19 +108,39 @@ public class GlobalExceptionHandler2 {
 
     }
 
-    /**
-     * 参数校验异常
+/**
+     * 参数校验异常   方式一
      *
      * @param httpServletRequest
      * @param e
      * @return
-     */
-    @ExceptionHandler(MethodArgumentNotValidException.class)
+    */
+    @ExceptionHandler({ConstraintViolationException.class,MethodArgumentNotValidException.class})
     public Result<Object> handleException(HttpServletRequest httpServletRequest, MethodArgumentNotValidException e) {
-        String message = e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining("!"));
-        log.error(message, e);
-        return Result.error(message);
+    //常规写法
+        /*    String message = e.getBindingResult().getAllErrors().stream().map(DefaultMessageSourceResolvable::getDefaultMessage).collect(Collectors.joining("!"));
+        log.error(message, e);*/
+        //整合
+        return Result.error(ValidateUtil.handValidationException(e).getMeaasge());
     }
+    //方式二
+/*
+
+    @ExceptionHandler({ConstraintViolationException.class,MethodArgumentNotValidException.class,
+            ServletRequestBindingException.class, ValidationException.class,
+            UnexpectedException.class,BindException.class
+    })
+    public Wrapper handleException1(HttpServletRequest request, Exception e) {
+log.error("[{}]--handleException--host{} invokes url{} ERROR:{}", TraceInterceptor.getTraceId(),
+        request.getRemoteHost(),request.getRequestURL(),e);
+
+        return ValidateUtil.handValidationException(e);
+    }
+*/
+
+
+
+
 
     @ExceptionHandler(HttpMessageNotReadableException.class)
     @ResponseBody

@@ -16,6 +16,12 @@ public class  TraceInterceptor  implements HandlerInterceptor {
 private static ThreadLocal<String> traceId2=new TransmittableThreadLocal<>();
 private ThreadLocal<String> clientHost =new ThreadLocal<>();
 
+public static String getTraceId(){
+    return traceId2.get();
+}
+
+
+
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 String traceId= UUID.randomUUID().toString().replaceAll("-","");
