@@ -247,3 +247,10 @@ stopwatch统计接口耗时
 20200805 入参非空校验
 文件：ValidateUtil
 注意点：GlobalExceptionHandler2 中的@ExceptionHandler 不能重复定义
+
+20220810 mybatis的TypeHandler
+文件夹：mybatis byme
+文件：SourceConfig.java 加入配置 NameHandler.java
+
+注意点：#此配置应该无效。
+application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis

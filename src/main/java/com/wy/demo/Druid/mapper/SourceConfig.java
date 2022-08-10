@@ -4,6 +4,7 @@ package com.wy.demo.Druid.mapper;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.github.pagehelper.PageInterceptor;
 import com.wy.demo.Druid.dto.MysqlDruidDataSourceProperties;
+import com.wy.demo.mybatis.byme.NameHandler;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -67,6 +68,8 @@ public class SourceConfig {
         //如果该参数设置的为true，pageNum<0会查询第一页 pageNum>pages(超过总数)，会查询最后一页，默认false参数进行插查询
         properties.setProperty("reasonable","false");
         interceptor.setProperties(properties);
+        //加入mybatis拦截配置
+        sessionFactory.setTypeHandlers(new NameHandler());
         sessionFactory.setPlugins(new Interceptor[]{interceptor});
         sessionFactory.setDataSource(backDataSource);
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(

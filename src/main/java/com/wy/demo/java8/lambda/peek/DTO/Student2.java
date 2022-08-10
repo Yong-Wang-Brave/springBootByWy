@@ -12,6 +12,7 @@ import lombok.NoArgsConstructor;
 public class Student2 {
     private String name2;
     private String age2;
+    private String age1;
     private String sex2;
 }
 

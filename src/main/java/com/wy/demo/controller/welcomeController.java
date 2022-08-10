@@ -1,6 +1,7 @@
 package com.wy.demo.controller;
 
 
+import cn.hutool.extra.spring.SpringUtil;
 import com.alibaba.druid.stat.DruidStatManagerFacade;
 import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.Exception.Exception2.ServiceeException;
@@ -99,6 +100,8 @@ public class welcomeController {
 
     @GetMapping("/getAllCourse")
     public   JsonRootBean getAll(){
+        String activeProfile = SpringUtil.getActiveProfile();
+        System.out.println(activeProfile);
         List<SortCourse> courses = sortCourseMapper.findSortCourse();
         List<Message> messages =new ArrayList<>();
         //赛选出0层的放入messages

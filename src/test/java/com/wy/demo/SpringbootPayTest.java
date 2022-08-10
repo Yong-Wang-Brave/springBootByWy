@@ -1,5 +1,6 @@
 package com.wy.demo;
 
+import cn.hutool.extra.spring.SpringUtil;
 import com.wy.demo.config.zidingyi.StudentConfig;
 import com.wy.demo.shejimoshi.celuemoshi2.PayContext;
 import com.wy.demo.shejimoshi.celuemoshi2.PayTypeEnum;
@@ -35,6 +36,11 @@ public class SpringbootPayTest {
         // 输出学生配置实体信息
         System.out.println(studentConfig);
     }
-
+    @Test
+    //hutool获取配置文件的环境
+    public void hutoolConfig() {
+        String activeProfile = SpringUtil.getActiveProfile();
+        System.out.println(activeProfile);
+    }
 
 }

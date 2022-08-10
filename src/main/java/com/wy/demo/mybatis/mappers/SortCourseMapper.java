@@ -3,9 +3,7 @@ package com.wy.demo.mybatis.mappers;
 
 import com.wy.demo.controller.dto.PageDto;
 import com.wy.demo.mybatis.entity.SortCourse;
-import com.wy.demo.mybatis.typehandler.Encrypt;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -15,7 +13,7 @@ import java.util.List;
 @Mapper
 public interface SortCourseMapper {
 
-    int addCustomer(@Param("phone") Encrypt phone, @Param("address") String address);
+    //int addCustomer(@Param("phone") Encrypt phone, @Param("address") String address);
 
     List<SortCourse> findSortCourse();
     List<SortCourse> findSortCourseByDTO(PageDto pageDto);
