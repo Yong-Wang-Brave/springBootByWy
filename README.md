@@ -254,3 +254,6 @@ stopwatch统计接口耗时
 
 注意点：#此配置应该无效。
 application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
+
+20220811 spring注解的说明
+文件夹：src/main/java/com/wy/demo/spring/annotation

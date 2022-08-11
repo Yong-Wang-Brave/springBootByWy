@@ -73,7 +73,8 @@ public class SourceConfig {
         sessionFactory.setPlugins(new Interceptor[]{interceptor});
         sessionFactory.setDataSource(backDataSource);
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(
-                "classpath:/mybatis/mapper/*Mapper.xml"));
+                "classpath*" +
+                        ":/mybatis/mapper/**/*Mapper.xml"));
         SqlSessionFactory sqlSessionFactory =sessionFactory.getObject();
         sqlSessionFactory.getConfiguration().setJdbcTypeForNull(JdbcType.NULL);
         sqlSessionFactory.getConfiguration().setMapUnderscoreToCamelCase(true);
