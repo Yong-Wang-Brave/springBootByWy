@@ -257,3 +257,7 @@ application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
 
 20220811 spring注解的说明
 文件夹：src/main/java/com/wy/demo/spring/annotation
+
+20220824 Html2Text
+说明：富文本处理文件夹
+文件Html2Text.java
