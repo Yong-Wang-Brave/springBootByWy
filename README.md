@@ -261,3 +261,10 @@ application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
 20220824 Html2Text
 说明：富文本处理文件夹
 文件Html2Text.java
+
+20220824 jsonSerializer的使用
+说明：返回前端字段的特殊处理
+步骤：1 工具类： DesensitizationUtil
+     2 继承接口利用工具类 PhoneSerializer
+     3 实体类上绑定字段   SortCourse
+
