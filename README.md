@@ -268,3 +268,9 @@ application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
      2 继承接口利用工具类 PhoneSerializer
      3 实体类上绑定字段   SortCourse
 
+20220825 restTemplate的优化 远程调用
+目录：spring -Restemplate
+
+
+
+
