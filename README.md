@@ -270,7 +270,8 @@ application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
 
 20220825 restTemplate的优化 远程调用
 目录：spring -Restemplate
-
+20220915 feign的专属拦截器
+FeignConfiguration
 
 
 
