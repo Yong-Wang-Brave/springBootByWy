@@ -1,188 +1,60 @@
-09:26:23.987 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
-09:26:27.277 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-09:26:27.278 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-09:26:27.279 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
-09:26:27.476 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-09:26:28.113 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - 开始加载mysql druid
-09:26:28.129 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - mysql的druid加载完成
-09:26:28.186 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - 开始加载mysql druid
-09:26:28.187 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - mysql的druid加载完成
-09:26:28.919 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-09:26:31.200 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
-09:26:31.258 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-09:26:31.259 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-09:26:31.266 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-09:26:31.266 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-09:26:37.278 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
-09:26:37.296 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
-09:26:37.359 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
-09:26:37.543 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
-09:26:37.671 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
-09:26:37.678 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
-09:26:37.688 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
-09:26:37.693 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
-09:26:37.693 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
-09:26:37.694 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
-09:26:37.694 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
-09:26:37.695 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
-09:26:37.695 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
-09:26:37.695 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
-09:26:37.696 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
-09:26:37.697 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
-09:26:37.698 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
-09:26:37.698 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
-09:26:37.699 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
-09:26:37.699 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
-09:26:37.699 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
-09:26:37.700 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
-09:26:37.700 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
-09:26:37.746 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
-09:26:37.748 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_2
-09:26:37.778 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
-09:26:37.802 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
-09:26:37.843 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-09:26:37.912 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8001 192.168.168.1:8081 register finished
-09:26:40.165 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 22.022 seconds (JVM running for 26.177)
-09:26:50.463 [http-nio-8081-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-09:26:51.447 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[5f7c3523bde7491ba79f3b310b5cc28b],host192.168.168.1
-09:26:51.450 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [5f7c3523bde7491ba79f3b310b5cc28b]你妹2
-09:26:52.631 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[db657fad9c864927ad3a118edb54175d],host192.168.168.1
-09:26:52.632 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [db657fad9c864927ad3a118edb54175d]你妹2
-09:26:52.641 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[576ed4746eb54aaa9872e0b3697c292e],host192.168.168.1
-09:26:52.642 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [576ed4746eb54aaa9872e0b3697c292e]你妹2
-09:26:52.644 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f8c776a919e041679a2445888bfdb9f4],host192.168.168.1
-09:26:52.648 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f8c776a919e041679a2445888bfdb9f4]你妹2
-09:26:53.643 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[9461e7b8013345ba874756ba237a6b6e],host192.168.168.1
-09:26:53.645 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [9461e7b8013345ba874756ba237a6b6e]你妹2
-09:26:53.649 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[425cae31c3a14c52928962834be9d8c4],host192.168.168.1
-09:26:53.651 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [425cae31c3a14c52928962834be9d8c4]你妹2
-09:26:54.739 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[977ab28421ab4051a738f92be407c1b2],host192.168.168.1
-09:26:54.739 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[a7d3b0f5db694cdeba6f5036cc9bd4f2],host192.168.168.1
-09:26:54.741 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a7d3b0f5db694cdeba6f5036cc9bd4f2]你妹2
-09:26:54.830 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [977ab28421ab4051a738f92be407c1b2]你妹2
-09:26:55.710 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[003a11f59707427588f991d9b88c87f3],host192.168.168.1
-09:26:55.717 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [003a11f59707427588f991d9b88c87f3]你妹2
-09:26:56.670 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[29248039613a4362b7b5f3e849e185cc],host192.168.168.1
-09:26:56.675 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [29248039613a4362b7b5f3e849e185cc]你妹2
-09:26:57.805 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[eea87f44056b4cd6910e45bcbdb45ad6],host192.168.168.1
-09:26:57.806 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [eea87f44056b4cd6910e45bcbdb45ad6]你妹2
-09:26:58.247 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[0e37ed2e18fb485bbb061422510185d2],host192.168.168.1
-09:26:58.249 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [0e37ed2e18fb485bbb061422510185d2]你妹2
-09:26:58.516 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[8639ae1dad3e4b7da74fd3b2dccf8d4e],host192.168.168.1
-09:26:58.518 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [8639ae1dad3e4b7da74fd3b2dccf8d4e]你妹2
-09:26:58.825 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[737c20d2acf2485999f7b1e33d66ea59],host192.168.168.1
-09:26:58.827 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [737c20d2acf2485999f7b1e33d66ea59]你妹2
-09:26:58.960 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[81ff69243a0e4af2b6d3d131d9c68142],host192.168.168.1
-09:26:58.962 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [81ff69243a0e4af2b6d3d131d9c68142]你妹2
-09:26:59.242 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[875a5005941e407faa4eac5fea380c51],host192.168.168.1
-09:26:59.244 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [875a5005941e407faa4eac5fea380c51]你妹2
-09:27:32.252 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[6f6c07fc441a42859ce09bbc5c6fc656],host192.168.168.1
-09:27:32.267 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [6f6c07fc441a42859ce09bbc5c6fc656]你妹2
-09:27:33.729 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[a1ce332779cb4986bdec5d419a74464f],host192.168.168.1
-09:27:33.735 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a1ce332779cb4986bdec5d419a74464f]你妹2
-09:27:33.772 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[4eeb82d050e546758d2a08e761d0bb3b],host192.168.168.1
-09:27:33.774 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[cee73f367211472b95138c13124293d4],host192.168.168.1
-09:27:33.777 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cee73f367211472b95138c13124293d4]你妹2
-09:27:33.779 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[41907220d5114e8793fd395c88338547],host192.168.168.1
-09:27:33.809 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f10dc327fcec4e3299cef48a0a5f2088],host192.168.168.1
-09:27:33.829 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [4eeb82d050e546758d2a08e761d0bb3b]你妹2
-09:27:33.842 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f10dc327fcec4e3299cef48a0a5f2088]你妹2
-09:27:33.865 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [41907220d5114e8793fd395c88338547]你妹2
-09:27:35.184 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[dad136b38ca04ba285a43f4fe854054e],host192.168.168.1
-09:27:35.189 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[83aa271a237347cc9e08ff7f288a1b2c],host192.168.168.1
-09:27:35.214 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[815528e56b054934bf4438e3a051b294],host192.168.168.1
-09:27:35.231 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[e903549256e84959adad17eaee745b7c],host192.168.168.1
-09:27:35.233 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[759cf0b8422b45a49c669c70304203f8],host192.168.168.1
-09:27:35.283 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [dad136b38ca04ba285a43f4fe854054e]你妹2
-09:27:35.285 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [759cf0b8422b45a49c669c70304203f8]你妹2
-09:27:35.286 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [83aa271a237347cc9e08ff7f288a1b2c]你妹2
-09:27:35.287 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [e903549256e84959adad17eaee745b7c]你妹2
-09:27:35.287 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [815528e56b054934bf4438e3a051b294]你妹2
-09:27:36.700 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[c924d33bb1e540198998547fc4ff2e5f],host192.168.168.1
-09:27:36.702 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [c924d33bb1e540198998547fc4ff2e5f]你妹2
-09:27:36.726 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[9eefafb9956e4cecbd80adde9ce4ff0e],host192.168.168.1
-09:27:36.728 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [9eefafb9956e4cecbd80adde9ce4ff0e]你妹2
-09:27:36.739 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f5c68c1553ba4601a4291c9865d8dd14],host192.168.168.1
-09:27:36.744 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f5c68c1553ba4601a4291c9865d8dd14]你妹2
-09:27:36.787 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d4e7e3c57aa3436e8eebc01be18a70f4],host192.168.168.1
-09:27:36.788 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[de7949ce1ac64aff85abaf4016730d9a],host192.168.168.1
-09:27:36.789 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [de7949ce1ac64aff85abaf4016730d9a]你妹2
-09:27:36.789 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d4e7e3c57aa3436e8eebc01be18a70f4]你妹2
-09:27:38.136 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[cb3a7cda08d04d0ba2e9c52241782176],host192.168.168.1
-09:27:38.137 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cb3a7cda08d04d0ba2e9c52241782176]你妹2
-09:27:38.160 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[603873ca96e549579feab98e162ecf8a],host192.168.168.1
-09:27:38.164 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [603873ca96e549579feab98e162ecf8a]你妹2
-09:27:38.165 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[c44972e156f540528b0405f6bf3bfd1e],host192.168.168.1
-09:27:38.197 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [c44972e156f540528b0405f6bf3bfd1e]你妹2
-09:27:38.215 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[b9a72cd81e364dd1ae5484e646bd7e51],host192.168.168.1
-09:27:38.217 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[749b4af9695c4fb18404bd9026d9cff3],host192.168.168.1
-09:27:38.221 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [b9a72cd81e364dd1ae5484e646bd7e51]你妹2
-09:27:38.223 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [749b4af9695c4fb18404bd9026d9cff3]你妹2
-09:27:39.544 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f2a546887c1a4816a4783969176d0184],host192.168.168.1
-09:27:39.545 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d75d01f502a5427c96f33b2d54596622],host192.168.168.1
-09:27:39.549 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f2a546887c1a4816a4783969176d0184]你妹2
-09:27:39.550 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d75d01f502a5427c96f33b2d54596622]你妹2
-09:27:39.615 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[9c733b196eeb44568df20d351150b6e1],host192.168.168.1
-09:27:39.618 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[4b2343f1ad5446b5920bb7b897926fdb],host192.168.168.1
-09:27:39.626 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[e1644a55f57c43619733ef53d452eeae],host192.168.168.1
-09:27:39.644 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [4b2343f1ad5446b5920bb7b897926fdb]你妹2
-09:27:39.645 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [e1644a55f57c43619733ef53d452eeae]你妹2
-09:27:39.696 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [9c733b196eeb44568df20d351150b6e1]你妹2
-09:27:40.839 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[1704a75ef81e4d28a112117b6df577e3],host192.168.168.1
-09:27:40.845 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [1704a75ef81e4d28a112117b6df577e3]你妹2
-09:27:40.851 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[727f96654af44ea6ab08863af8a9394d],host192.168.168.1
-09:27:40.857 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [727f96654af44ea6ab08863af8a9394d]你妹2
-09:27:40.877 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[fc0191e201d54635a28aa287d87ee76b],host192.168.168.1
-09:27:40.897 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[0bc0a2697e1d44d1a4db505aa30787ad],host192.168.168.1
-09:27:40.904 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [0bc0a2697e1d44d1a4db505aa30787ad]你妹2
-09:27:40.922 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [fc0191e201d54635a28aa287d87ee76b]你妹2
-09:27:41.854 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[e822d75d27784f2a9b4f149d267c1282],host192.168.168.1
-09:27:41.857 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [e822d75d27784f2a9b4f149d267c1282]你妹2
-09:27:42.829 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d83c61cff96b4f2ab587fa2772006e52],host192.168.168.1
-09:27:42.830 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d83c61cff96b4f2ab587fa2772006e52]你妹2
-09:27:44.122 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[0802ea65b34c43c0997286e4dce687ee],host192.168.168.1
-09:27:44.123 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [0802ea65b34c43c0997286e4dce687ee]你妹2
-09:27:44.128 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f866ccb32b634b33b51305a1a275c8f3],host192.168.168.1
-09:27:44.130 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f866ccb32b634b33b51305a1a275c8f3]你妹2
-09:27:45.065 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[05fbd69fc3754b84a3bccebe7dc1855e],host192.168.168.1
-09:27:45.067 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [05fbd69fc3754b84a3bccebe7dc1855e]你妹2
-09:27:46.187 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[182f333e94804728af72d103bb15d914],host192.168.168.1
-09:27:46.188 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [182f333e94804728af72d103bb15d914]你妹2
-09:27:47.124 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[ad047376770743b8a9ab0c7f11de2f46],host192.168.168.1
-09:27:47.125 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [ad047376770743b8a9ab0c7f11de2f46]你妹2
-09:27:48.063 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[c71b625133a747139c123418b9c5bfe7],host192.168.168.1
-09:27:48.064 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [c71b625133a747139c123418b9c5bfe7]你妹2
-09:27:49.477 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[cd6f961b86964c93939deda68c604ed7],host192.168.168.1
-09:27:49.479 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [cd6f961b86964c93939deda68c604ed7]你妹2
-09:27:50.496 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[661e0be3187049788fafe3726f591169],host192.168.168.1
-09:27:50.498 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [661e0be3187049788fafe3726f591169]你妹2
-09:27:51.579 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d6267acc56044e58a75aee0d5909eac3],host192.168.168.1
-09:27:51.581 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d6267acc56044e58a75aee0d5909eac3]你妹2
-09:27:51.652 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f1f212bf0f374c238b02d9751690c2ff],host192.168.168.1
-09:27:51.653 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f1f212bf0f374c238b02d9751690c2ff]你妹2
-09:27:53.439 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[959073b20a8e4741b8464eea1f13d38d],host192.168.168.1
-09:27:53.440 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [959073b20a8e4741b8464eea1f13d38d]你妹2
-09:28:01.509 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[5ed542972842446fa89a2dc26732dc2a],host192.168.168.1
-09:28:01.515 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [5ed542972842446fa89a2dc26732dc2a]你妹2
-09:28:14.628 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[03aa73172f4c428d8b06e3bce47a220a],host192.168.168.1
-09:28:14.635 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[5ec818c9cd594e9a9481e607204fb462],host192.168.168.1
-09:28:14.662 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
- ======= aop start requestId:1663205294660
-09:28:14.662 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [5ec818c9cd594e9a9481e607204fb462]你妹2
-09:28:52.477 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
- ==== requset and response  request_id:1663205294660=====
- request_url  :/getAllCourseByRestTemplate
- http_method  :GET
- class_methodname  :String com.wy.demo.spring.Restemplate.TestRestTemplateController.getAll()
- request_ip  :ip
- descrpition  :37739ms
- request_param  :[]
- response_result  :"{\"message\":[{\"cat_id\":1,\"cat_name\":\"慕课网\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[{\"cat_id\":2,\"cat_name\":\"慕课超级大课\",\"cat_pid\":1,\"cat_level\":1,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[{\"cat_id\":3,\"cat_name\":\"体系课_java全栈工程师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":4,\"cat_name\":\"体系课_java架构专家\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":5,\"cat_name\":\"体系课_移动端架构师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":6,\"cat_name\":\"体系课_java工程师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":7,\"cat_name\":\"体系课_新版GO开发工程师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":8,\"cat_name\":\"体系课_算法与数据结构体系课\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":9,\"cat_name\":\"体系课_前端工程师32周\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":10,\"cat_name\":\"体系课_大数据开发工程师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":11,\"cat_name\":\"大前端2021\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":12,\"cat_name\":\"体系课_Android工程师\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":12,\"cat_name\":\"架构师十项全能（34周）\",\"cat_pid\":2,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null}]}]},{\"cat_id\":11,\"cat_name\":\"极客\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[{\"cat_id\":21,\"cat_name\":\"专栏\",\"cat_pid\":11,\"cat_level\":1,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[{\"cat_id\":31,\"cat_name\":\"mysql必知必会\",\"cat_pid\":21,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null},{\"cat_id\":32,\"cat_name\":\"设计模式之美1\",\"cat_pid\":21,\"cat_level\":2,\"cat_deleted\":false,\"cat_icon\":null,\"children\":null}]}]},{\"cat_id\":100,\"cat_name\":\"爪哇\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":200,\"cat_name\":\"奈学\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":300,\"cat_name\":\"中华石杉\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":400,\"cat_name\":\"小滴课堂\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":500,\"cat_name\":\"马哥教育\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":600,\"cat_name\":\"七月在线\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":700,\"cat_name\":\"深度之眼\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":800,\"cat_name\":\"享学课堂\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":900,\"cat_name\":\"后盾教育\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]},{\"cat_id\":1000,\"cat_name\":\"千峰教育\",\"cat_pid\":0,\"cat_level\":0,\"cat_deleted\":false,\"cat_icon\":null,\"children\":[]}],\"meta\":{\"msg\":\"sucess\",\"status\":200}}"
- ==== aop log end  request_id:1663205294660=================
-09:28:52.480 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [03aa73172f4c428d8b06e3bce47a220a]你妹2
-09:28:53.642 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[1b622501e7ac4a0a81aa987cbd18c08c],host192.168.168.1
-09:28:53.645 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [1b622501e7ac4a0a81aa987cbd18c08c]你妹2
-09:28:53.646 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[6dc2ca657f2b4981a4eddd84ef821154],host192.168.168.1
-09:28:53.647 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [6dc2ca657f2b4981a4eddd84ef821154]你妹2
-09:28:54.588 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[b78a722f1fa8417fb8575acf6b2808e0],host192.168.168.1
-09:28:54.589 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [b78a722f1fa8417fb8575acf6b2808e0]你妹2
+14:52:22.414 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
+14:52:28.363 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+14:52:28.364 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:52:28.365 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+14:52:28.605 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:52:29.961 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - 开始加载mysql druid
+14:52:30.005 [main] INFO  com.wy.demo.Druid.HealthRecordDataSourceConfig - mysql的druid加载完成
+14:52:30.065 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - 开始加载mysql druid
+14:52:30.065 [main] INFO  com.wy.demo.Druid.mapper.SourceConfig - mysql的druid加载完成
+14:52:31.435 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:52:34.546 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:52:34.631 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:52:34.632 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:52:34.658 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:52:34.665 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:52:41.340 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+14:52:41.377 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:52:41.461 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+14:52:41.695 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
+14:52:41.793 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
+14:52:41.800 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
+14:52:41.815 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+14:52:41.817 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
+14:52:41.818 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
+14:52:41.819 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
+14:52:41.819 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
+14:52:41.820 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
+14:52:41.820 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
+14:52:41.821 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
+14:52:41.821 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
+14:52:41.822 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
+14:52:41.822 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
+14:52:41.823 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
+14:52:41.823 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
+14:52:41.824 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
+14:52:41.824 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
+14:52:41.824 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
+14:52:41.825 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
+14:52:41.872 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
+14:52:41.873 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_2
+14:52:41.901 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
+14:52:41.921 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
+14:52:41.960 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+14:52:42.031 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8001 192.168.168.1:8081 register finished
+14:52:44.507 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 28.623 seconds (JVM running for 34.497)
+14:53:30.292 [http-nio-8081-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:53:31.410 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d25e75359d6340eb843d8bdb6c10b9fb],host192.168.168.1
+14:53:31.513 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d25e75359d6340eb843d8bdb6c10b9fb]你妹2
+14:53:32.549 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[fc051c6cf22746109cf435ca145610f9],host192.168.168.1
+14:53:32.555 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [fc051c6cf22746109cf435ca145610f9]你妹2
+14:53:33.508 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[c719f7c095954ce583ffaea8a46221aa],host192.168.168.1
+14:53:33.512 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [c719f7c095954ce583ffaea8a46221aa]你妹2
+14:53:34.728 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[ed74144769d14151a5da412ac9217e08],host192.168.168.1
+14:53:34.728 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [ed74144769d14151a5da412ac9217e08]你妹2
+14:53:35.712 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[a88f73bea5944e8cabe0f50c4e719955],host192.168.168.1
+14:53:35.714 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a88f73bea5944e8cabe0f50c4e719955]你妹2
+14:53:37.189 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[abd8424cd6e84af1bd9dd173651f3ba1],host192.168.168.1
+14:53:37.198 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [abd8424cd6e84af1bd9dd173651f3ba1]你妹2
+14:53:38.171 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[befefd70d4524b4c92f9d92a06f6288e],host192.168.168.1
+14:53:38.174 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [befefd70d4524b4c92f9d92a06f6288e]你妹2

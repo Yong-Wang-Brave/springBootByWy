@@ -273,5 +273,13 @@ application.properties  #mybatis.type-handlers-package=com.wy.demo.mybatis
 20220915 feign的专属拦截器
 FeignConfiguration
 
+20220918 枚举 
+文件：LevelEnum
+获取某一个类型对应的枚举
+
+2022 设计模式  输出该接口的所有实现类
+文件：
+TestGetBeansOfTYpe
+
 
 

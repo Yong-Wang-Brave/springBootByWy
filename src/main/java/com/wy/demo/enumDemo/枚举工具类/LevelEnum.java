@@ -4,6 +4,9 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import java.util.Arrays;
+import java.util.Objects;
+
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
@@ -23,4 +26,15 @@ THIRD("THIRD","三级");
         }
         return null;
     }
+
+    /**
+     *根据某一个类型获取某一个类型对应的枚举
+     * @param type
+     * @return
+     */
+    public static LevelEnum getByType(String type){
+        return  Arrays.stream(LevelEnum.values()).filter(x-> Objects.equals(x.getValue(),type)).findFirst().orElse(null);
+    }
+
+
 }
