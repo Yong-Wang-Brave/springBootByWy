@@ -281,5 +281,10 @@ FeignConfiguration
 文件：
 TestGetBeansOfTYpe
 
+20220922  根据token获取用户中心信息。放到threadLocal 或者注解直接获取。
 
+文件： WebConfigSecurity.java
 
+目录： tokenGetUserInfo
+
+说明： 拦截器实现 将信息放入threadLocal
