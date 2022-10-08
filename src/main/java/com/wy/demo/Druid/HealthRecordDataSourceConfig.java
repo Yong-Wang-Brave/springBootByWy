@@ -22,6 +22,7 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 @Slf4j
+
 @Configuration
 @MapperScan(basePackages = "com.wy.demo.mybatis.druidMapper" ,sqlSessionFactoryRef = "healthRecordSqlSessionFactory")
 public class HealthRecordDataSourceConfig {
@@ -77,6 +78,7 @@ public class HealthRecordDataSourceConfig {
         interceptor.setProperties(properties);
         sessionFactory.setPlugins(new Interceptor[]{interceptor});
         sessionFactory.setDataSource(backDataSource);
+
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(
                 "classpath:/mybatis/druidMapper/*Mapper.xml"));
         SqlSessionFactory sqlSessionFactory =sessionFactory.getObject();
@@ -87,4 +89,24 @@ public class HealthRecordDataSourceConfig {
 
 
     }
+
+
+  /*  @Bean(name="RoutingDataSource")
+    @Order(11)
+    public RoutingDataSource getSlave(@Qualifier("healthRecordDataSource") DataSource backDataSource) throws SQLException{
+        HashMap<Object, Object> objectObjectHashMap = new HashMap<>();
+        objectObjectHashMap.put("master",backDataSource);
+        objectObjectHashMap.put("slave",backDataSource);
+        RoutingDataSource routingDataSource = new RoutingDataSource();
+        routingDataSource.setTargetDataSources(objectObjectHashMap);
+        Class clazz = ClassLoader.loadClass("org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource");
+
+        Method method = clazz.getDeclaredMethod("determineCurrentLookupKey", null);
+
+        method.setAccessible(true);
+
+        method.invoke(cat, null);
+
+        return routingDataSource;
+    }*/
 }

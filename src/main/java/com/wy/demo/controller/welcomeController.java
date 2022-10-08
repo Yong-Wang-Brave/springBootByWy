@@ -18,6 +18,7 @@ import com.wy.demo.mybatis.entity.SortCourse;
 import com.wy.demo.mybatis.mappers.SortCourseMapper;
 import com.wy.demo.mybatis.mappers.UserMapper;
 import com.wy.demo.springCloud.feign.FeignServiceWy;
+import com.wy.demo.zhidingshujuyuan.DynamicDataSourceSwitch;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -97,7 +98,7 @@ public class welcomeController {
 
     };
 
-
+    @DynamicDataSourceSwitch("aa")
     @GetMapping("/getAllCourse")
     public   JsonRootBean getAll(){
         String activeProfile = SpringUtil.getActiveProfile();

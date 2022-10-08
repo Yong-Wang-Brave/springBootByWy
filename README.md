@@ -288,3 +288,7 @@ TestGetBeansOfTYpe
 目录： tokenGetUserInfo
 
 说明： 拦截器实现 将信息放入threadLocal
+
+20221008 自定义注解加载指定数据源
+
+目录： zhidingshujuyuan（没实现）
