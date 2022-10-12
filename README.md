@@ -292,3 +292,7 @@ TestGetBeansOfTYpe
 20221008 自定义注解加载指定数据源
 
 目录： zhidingshujuyuan（没实现）
+
+20221012 java8 重构设计模式
+目录：设计模式 **20221012
+连接：https://mp.weixin.qq.com/s/T3WhNm73Wcvfo2LwChz0_Q
