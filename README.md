@@ -296,3 +296,7 @@ TestGetBeansOfTYpe
 20221012 java8 重构设计模式
 目录：设计模式 **20221012
 连接：https://mp.weixin.qq.com/s/T3WhNm73Wcvfo2LwChz0_Q
+
+20221012注解@value
+
+20221021  读写分离分离
