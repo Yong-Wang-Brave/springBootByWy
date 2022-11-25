@@ -300,3 +300,9 @@ TestGetBeansOfTYpe
 20221012注解@value
 
 20221021  读写分离分离
+
+20221124 重写hashcode
+文件夹：javajichu 
+Test
+20221125 bigdecimal的使用
+文件夹  bigdecimal
