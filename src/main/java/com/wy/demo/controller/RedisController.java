@@ -9,6 +9,7 @@ import com.wy.demo.mybatis.mappers.SortCourseMapper;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -51,4 +52,28 @@ public class RedisController {
         return result;
     }
 
+
+
+    @GetMapping("/findCourseById")
+    public Result getOrder1(@Param("id") String id) {
+        Result result = null;
+        String requestId= UUID.randomUUID().toString();
+        try {
+            boolean lock = redisLockUtil.lock("customerId", requestId, 10);
+            List<SortCourse> sortCourse;
+            if (lock) {
+                sortCourse = sortCourseMapper.findSortCourseById(Long.parseLong(id));
+                result = new Result(ResultCode.SUCESS, sortCourse);
+                return result;
+            } else {
+                return  new Result(ResultCode.ERROR,null);
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            redisLockUtil.unlock("customerId", requestId);
+        }
+        return result;
+    }
 }

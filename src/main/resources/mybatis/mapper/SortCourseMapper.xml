@@ -14,7 +14,9 @@
     <select id="findSortCourse" resultMap="BaseResultMapper">
         select * from t_sortcourse where cat_id is not null
     </select>
-
+    <select id="findSortCourseById" parameterType="java.lang.Long" resultMap="BaseResultMapper">
+        select * from t_sortcourse where cat_id =#{id}
+    </select>
     <select id="findSortCourseByDTO" parameterType="com.wy.demo.controller.dto.PageDto" resultMap="BaseResultMapper">
         select * from t_sortcourse where cat_id is not null
     </select>

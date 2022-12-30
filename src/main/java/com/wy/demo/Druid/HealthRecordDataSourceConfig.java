@@ -4,6 +4,7 @@ package com.wy.demo.Druid;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.github.pagehelper.PageInterceptor;
 import com.wy.demo.Druid.dto.MysqlDruidDataSourceProperties;
+import com.wy.demo.mybatiesInterceptor4.SqlCostInterceptor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -24,7 +25,7 @@ import java.util.Properties;
 @Slf4j
 
 @Configuration
-@MapperScan(basePackages = "com.wy.demo.mybatis.druidMapper" ,sqlSessionFactoryRef = "healthRecordSqlSessionFactory")
+@MapperScan(basePackages = "com.wy.demo.mybatis.mappers" ,sqlSessionFactoryRef = "healthRecordSqlSessionFactory")
 public class HealthRecordDataSourceConfig {
 @Resource
     MysqlDruidDataSourceProperties mysqlDruidDataSourceProperties;
@@ -76,11 +77,11 @@ public class HealthRecordDataSourceConfig {
         //如果该参数设置的为true，pageNum<0会查询第一页 pageNum>pages(超过总数)，会查询最后一页，默认false参数进行插查询
         properties.setProperty("reasonable","false");
         interceptor.setProperties(properties);
-        sessionFactory.setPlugins(new Interceptor[]{interceptor});
+        sessionFactory.setPlugins(new Interceptor[]{interceptor,new SqlCostInterceptor()});
         sessionFactory.setDataSource(backDataSource);
 
         sessionFactory.setMapperLocations(new PathMatchingResourcePatternResolver().getResources(
-                "classpath:/mybatis/druidMapper/*Mapper.xml"));
+                "classpath:/mybatis/mapper/*Mapper.xml"));
         SqlSessionFactory sqlSessionFactory =sessionFactory.getObject();
         sqlSessionFactory.getConfiguration().setJdbcTypeForNull(JdbcType.NULL);
         sqlSessionFactory.getConfiguration().setMapUnderscoreToCamelCase(true);

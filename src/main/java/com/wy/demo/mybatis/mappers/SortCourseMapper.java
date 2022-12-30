@@ -16,5 +16,7 @@ public interface SortCourseMapper {
     //int addCustomer(@Param("phone") Encrypt phone, @Param("address") String address);
 
     List<SortCourse> findSortCourse();
+
+    List<SortCourse> findSortCourseById(Long id);
     List<SortCourse> findSortCourseByDTO(PageDto pageDto);
 }

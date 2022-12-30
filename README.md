@@ -306,3 +306,6 @@ TestGetBeansOfTYpe
 Test
 20221125 bigdecimal的使用
 文件夹  bigdecimal
+
+20221219   mybaits拦截器输出全量sql
+文件：SqlCostInterceptor
