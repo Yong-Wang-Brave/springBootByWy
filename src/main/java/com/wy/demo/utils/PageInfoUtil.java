@@ -4,6 +4,8 @@ import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.collection.ListUtil;
 import cn.hutool.core.util.NumberUtil;
 import com.github.pagehelper.PageInfo;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.math.RoundingMode;
 import java.util.List;
@@ -12,6 +14,8 @@ import java.util.List;
  * 分页参数合理化工具
  * @param <T>
  */
+@Data
+@NoArgsConstructor
 public class PageInfoUtil<T> {
 
     public PageInfo<T> page(List<T> list,int pageNum,int pageSize){
@@ -33,4 +37,7 @@ public class PageInfoUtil<T> {
         return  pageInfo;
 
     }
+
+
+
 }
