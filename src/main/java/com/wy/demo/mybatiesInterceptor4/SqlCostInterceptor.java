@@ -32,11 +32,15 @@ import java.util.regex.Matcher;
         @Signature(type = StatementHandler.class, method = "batch", args = {Statement.class})}
 )
 @Slf4j
+/**
+ * 在执行完service的sql，后 会执行该拦截器
+ */
 public class SqlCostInterceptor implements Interceptor {
     @Override
     public Object intercept(Invocation invocation) throws Throwable {
 
         boolean showCompleteSql = false;
+        //获取配置文件的配置
         String showSql = ApplicationContextUtil.getApplicationContext().getEnvironment().getProperty("mybatis.showCompleteSql");
         if (StringUtil.isNotEmpty(showSql)) {
             showCompleteSql = Boolean.parseBoolean(showSql);
@@ -45,6 +49,7 @@ public class SqlCostInterceptor implements Interceptor {
             return invocation.proceed();
         }
         long startTime = System.currentTimeMillis();
+        //执行sql的结果
         Object proceed = invocation.proceed();
         long endTime = System.currentTimeMillis();
         long sqlCost = endTime - startTime;
@@ -55,6 +60,7 @@ public class SqlCostInterceptor implements Interceptor {
         MappedStatement mappedStatement = (MappedStatement) metaStatementHandler.getValue("delegate.mappedStatement");
 
         //BouldSql就是封装mybatis最终产生的sql类
+        //select * from t_sortcourse where cat_id =?
         BoundSql boundSql = statementHandler.getBoundSql();
         Configuration configuration = mappedStatement.getConfiguration();
         //获取到最终的sql语句
@@ -76,6 +82,7 @@ public class SqlCostInterceptor implements Interceptor {
         Object parameterObject = boundSql.getParameterObject();
         List<ParameterMapping> parameterMappings = boundSql.getParameterMappings();
         //sql语句中多个空格都用一个空格代替
+        //select * from t_sortcourse where cat_id =?
         String sql = getRealSql().replaceAll("[\\s]+", " ");
         if (parameterObject != null) {
             //获取类型处理器注册器，类型处理器的功能是进行java类型和数据库类型的转换
