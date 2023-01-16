@@ -328,3 +328,5 @@ vit_life_assess_result
 
 20230116  redis实践
 RedisController
+枚举类
+ENUM
