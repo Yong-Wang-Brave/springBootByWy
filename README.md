@@ -325,3 +325,6 @@ vrd.subject_code=vqd.subject_code
 
 #   result_masseg  可以存整套问卷的答案
 vit_life_assess_result
+
+20230116  redis实践
+RedisController

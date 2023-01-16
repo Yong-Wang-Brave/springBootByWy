@@ -1,18 +1,12 @@
 package com.wy.demo.Redis;
 
 import cn.hutool.core.util.IdUtil;
-import cn.hutool.core.util.StrUtil;
-import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.Objects;
 import java.util.concurrent.TimeUnit;
 
 //@Component
@@ -56,7 +50,7 @@ public class RedisLockTest {
         String key = String.format("%s:lock:push:message:taskDate:%s:startTime:%s:endTime:%s", "wyylock", taskDate, startTime, endTime);
         String redisLockValue = IdUtil.simpleUUID();
         try {
-            if (redisUtil.lock(key, redisLockValue, 30 * 60 * 60L)) {
+            if (redisUtil.lock(key, redisLockValue, 30 * 60 * 60L,TimeUnit.SECONDS)) {
                 System.out.println("加锁成功");
             } else {
                 System.out.println("加锁失败，任务处理中");
