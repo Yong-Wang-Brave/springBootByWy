@@ -312,3 +312,16 @@ Test
 
 20221230 分页工具类
 
+20220113 问卷表整理
+#问卷   题目  选项
+SELECT * FROM vit_life_assess_qs_detail  vqd
+LEFT JOIN vit_life_assess_subject vs  ON  vqd.subject_code=vs.subject_code
+LEFT JOIN vit_life_assess_option  vo  ON vo.subject_code = vqd.subject_code
+
+#答案
+SELECT * FROM vit_life_assess_result_detail vrd LEFT JOIN vit_life_assess_qs_detail vqd ON
+
+vrd.subject_code=vqd.subject_code
+
+#   result_masseg  可以存整套问卷的答案
+vit_life_assess_result

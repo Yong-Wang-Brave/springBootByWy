@@ -1,0 +1,9 @@
+共8张表
+vit_life_assess_title  测评主题信息表
+vit_life_assess_subject  测评题目表
+vit_life_assess_result_detail  问卷答案明细
+vit_life_assess_result_config  测评结果匹配表
+vit_life_assess_result  测评结果表
+vit_life_assess_questionnarie  测评问卷表
+vit_life_assess_qs_detail  测评问卷明细表
+vit_life_assess_option 测评选项表
