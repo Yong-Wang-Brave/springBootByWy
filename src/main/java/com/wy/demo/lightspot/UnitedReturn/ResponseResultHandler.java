@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.List;
 
 @Slf4j
-@ControllerAdvice
+//@ControllerAdvice
 public class ResponseResultHandler  implements ResponseBodyAdvice<Object> {
     //标记名称
     public static final String  RESPONSE_RESULT_ANN="RESPONSE_RESULT_ANN";

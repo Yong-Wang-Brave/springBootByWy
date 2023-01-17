@@ -334,3 +334,6 @@ ENUM
 过滤器：往session里面放数据
 WebConfigSecurity
 SecurityFilter2
+20230117  前端页面返回指定的错误。
+GlobalExceptionHandler20231017
+WebLogAspect

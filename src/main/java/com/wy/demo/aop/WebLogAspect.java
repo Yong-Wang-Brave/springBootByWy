@@ -2,7 +2,6 @@ package com.wy.demo.aop;
 
 import cn.hutool.core.date.SystemClock;
 import cn.hutool.core.util.StrUtil;
-import com.wy.demo.lightspot.UnitedReturn.Result;
 import com.wy.demo.utils.JacksonUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.aspectj.lang.ProceedingJoinPoint;
@@ -17,8 +16,6 @@ import org.springframework.web.multipart.MultipartFile;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
-import javax.validation.ConstraintViolationException;
-import java.nio.charset.Charset;
 
 @Slf4j
 @Aspect
@@ -37,13 +34,19 @@ public class WebLogAspect {
             //接口的返回结果
             result = joinPoint.proceed();
             endTime= SystemClock.now();
-        } catch (ConstraintViolationException e) {
+        }
+/*        catch (ConstraintViolationException e) {
             log.error(e.toString(),e);
             System.out.println("操作系统默认的编码"+ Charset.defaultCharset());
             result= Result.failure("卡号有问题");
-        }catch (Exception e) {
+        }catch (HealthManageException e) {
             log.error(e.toString(),e);
-            result= Result.failure(e.toString());
+            result= HealthManageResult.error(e.getMsg());
+        }*/
+        catch (Exception e) {
+            log.error(e.toString(),e);
+            result= e.toString();
+            throw e;
         } finally {
             //处理完请求，打印请求内容+返回内容，勇try catch处理异常，不影响业务代码
             try {
@@ -60,7 +63,7 @@ public class WebLogAspect {
             }
                 String resultStr;
                 if (result instanceof ServletResponse) {
-                    resultStr = String.valueOf(request.getClass());
+                    resultStr = String.valueOf(result.getClass());
                 }else{
                     resultStr = JacksonUtil.tojson(result);
                 }
@@ -80,9 +83,9 @@ public class WebLogAspect {
                 log.error("record aop log error !",e);
             }
 
-return result;
 
         }
+        return result;
     }
 
 
