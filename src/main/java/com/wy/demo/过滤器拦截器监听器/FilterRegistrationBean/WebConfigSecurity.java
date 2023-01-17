@@ -30,6 +30,10 @@ public class WebConfigSecurity implements WebMvcConfigurer {
         return  new TraceLogInterceptor();
     }
 
+    @Bean
+    public UserContextInterceptor initUserContextInterceptor(){
+        return  new UserContextInterceptor();
+    }
 
     @Resource
     private MessageSource messageSource;
@@ -39,8 +43,10 @@ public class WebConfigSecurity implements WebMvcConfigurer {
         public void addInterceptors(InterceptorRegistry registry) {
             // 注册AuthInterceptor拦截器
             registry.addInterceptor(new AuthInterceptor());
-            registry.addInterceptor(userContextInterceptor).addPathPatterns("/runHealth/healthManage/**");
-            registry.addInterceptor(initTraceLogInterceptor()).addPathPatterns("**/*.*").addPathPatterns("/runHealth/healthManage/**");
+            registry.addInterceptor(userContextInterceptor).addPathPatterns("**/*.*");/*.addPathPatterns("/runHealth/healthManage/**");*/
+            registry.addInterceptor(initTraceLogInterceptor()).addPathPatterns("**/*.*");/*.addPathPatterns("/runHealth/healthManage/**");*/
+            registry.addInterceptor(initUserContextInterceptor()).addPathPatterns("**/*.*").addPathPatterns("/a/**");
+
 
         }
 

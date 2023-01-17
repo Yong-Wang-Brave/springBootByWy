@@ -16,7 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 public class UserContextInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
-        String userId=(String)request.getAttribute("userId");
+        String userId=(String)request.getHeader("userId");
         String nickname=(String)request.getAttribute("nickname");
         UserContext.UserInfo userInfo = new UserContext.UserInfo().setUserId(userId).setNickname(nickname);
         UserContext.setUserInfo(userInfo);

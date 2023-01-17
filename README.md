@@ -337,3 +337,6 @@ SecurityFilter2
 20230117  前端页面返回指定的错误。
 GlobalExceptionHandler20231017
 WebLogAspect
+
+20230117 通过拦截器放到了从request获取信息放到了threadLocal里面。
+UserContextInterceptor

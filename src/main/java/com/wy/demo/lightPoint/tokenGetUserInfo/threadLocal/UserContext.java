@@ -1,11 +1,16 @@
 package com.wy.demo.lightPoint.tokenGetUserInfo.threadLocal;
 
 public class UserContext {
-    private UserContext(){}
+    private UserContext() {
+    }
 
-    private static final   ThreadLocal<UserInfo>  LOCAL =new ThreadLocal<>();
-    public static void setUserInfo(UserInfo userInfo){LOCAL.set(userInfo);}
-    public static  UserInfo  getUserInfo(){
+    private static final ThreadLocal<UserInfo> LOCAL = new ThreadLocal<>();
+
+    public static void setUserInfo(UserInfo userInfo) {
+        LOCAL.set(userInfo);
+    }
+
+    public static UserInfo getUserInfo() {
         return LOCAL.get();
     }
 
@@ -13,28 +18,44 @@ public class UserContext {
         LOCAL.remove();
     }
 
-    public static class UserInfo{
-        public String getUserId() {
+    public static class UserInfo {
+
+        private String userId;
+
+
+        private String nickname;
+
+    /*    public String getUserId() {
             return userId;
         }
 
-        public UserInfo setUserId(String userId) {
+        public void setUserId(String userId) {
             this.userId = userId;
-
-            return this;
         }
-
-        private String userId;
 
         public String getNickname() {
             return nickname;
         }
 
-        public UserInfo setNickname(String nickname) {
+        public void setNickname(String nickname) {
             this.nickname = nickname;
-            return  this;
+        }*/
+ public String getUserId() {
+            return userId;
         }
 
-        private String nickname;
+        public UserInfo setUserId(String userId) {
+            this.userId = userId;
+            return this;
+        }
+
+        public String getNickname() {
+            return nickname;
+        }
+        public UserInfo setNickname(String nickname) {
+            this.nickname = nickname;
+            return this;
+        }
+
     }
 }
