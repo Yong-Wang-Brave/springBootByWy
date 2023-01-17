@@ -3,6 +3,7 @@ package com.wy.demo.controller;
 
 import cn.hutool.extra.spring.SpringUtil;
 import com.alibaba.druid.stat.DruidStatManagerFacade;
+import com.wy.demo.Exception.Exception2.HealthManageException;
 import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.Exception.Exception2.ServiceeException;
 import com.wy.demo.SpringContext.SpringContextHolder;
@@ -14,6 +15,7 @@ import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
 import com.wy.demo.controller.dto.Student;
 import com.wy.demo.controller.dto.User;
 import com.wy.demo.entity.UserReq;
+import com.wy.demo.lightPoint.tokenGetUserInfo.HealthManageResult;
 import com.wy.demo.mybatis.entity.SortCourse;
 import com.wy.demo.mybatis.mappers.SortCourseMapper;
 import com.wy.demo.mybatis.mappers.UserMapper;
@@ -95,6 +97,13 @@ public class welcomeController {
        // User user = feignServiceWy.combineUser(username);
         User user =null;
         throw  new ServiceeException("aa");
+
+    };
+    @GetMapping("/getHealthManage")
+    public HealthManageResult getHealthManage()  {
+        // User user = feignServiceWy.combineUser(username);
+        User user =null;
+        throw  new HealthManageException("aa");
 
     };
 
