@@ -340,3 +340,8 @@ WebLogAspect
 
 20230117 通过拦截器放到了从request获取信息放到了threadLocal里面。
 UserContextInterceptor
+
+
+20230128 feign使用總結
+
+welcomeController的/get/someStudent    被调用者  springboot-8082
