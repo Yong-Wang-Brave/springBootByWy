@@ -10,10 +10,8 @@ import org.apache.ibatis.plugin.Interceptor;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.type.JdbcType;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
@@ -24,9 +22,9 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 @Slf4j
-@Configuration
+//@Configuration
 //这个范围只能指定到dao层 要不然 会报错：
-@MapperScan(basePackages = "com.wy.demo.mybatis.mappers" ,sqlSessionFactoryRef = "SqlSessionFactory")
+//@MapperScan(basePackages = "com.wy.demo.mybatis.mappers" ,sqlSessionFactoryRef = "SqlSessionFactory")
 public class SourceConfig {
 @Resource
     MysqlDruidDataSourceProperties mysqlDruidDataSourceProperties;

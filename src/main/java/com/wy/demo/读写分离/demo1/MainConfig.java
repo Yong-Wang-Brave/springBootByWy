@@ -3,12 +3,9 @@ package com.wy.demo.读写分离.demo1;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import com.wy.demo.读写分离.DsType;
-import com.wy.demo.读写分离.EnableReadWrite;
 import com.wy.demo.读写分离.ReadWriteDataSource;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
@@ -17,9 +14,9 @@ import javax.sql.DataSource;
 import java.util.HashMap;
 import java.util.Map;
 
-@EnableReadWrite
-@Configuration
-@ComponentScan
+//@EnableReadWrite
+//@Configuration
+//@ComponentScan
 public class MainConfig {
     //主库数据源
     @Bean
