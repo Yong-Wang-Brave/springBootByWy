@@ -1,27 +1,54 @@
 package com.wy.demo.thread;
 
+import com.wy.demo.lightPoint.tokenGetUserInfo.threadLocal.UserContext;
+import org.slf4j.MDC;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.task.TaskDecorator;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
 
-import java.util.concurrent.ThreadPoolExecutor;
-//好像始终是一个线程处理
 @Configuration
 public class ThreadPoolConfig {
 
-    @Bean(name="threadPoolTaskExecutor")
-    //只有加上bean注解才会被注入  这个名字其实无所谓
-    public ThreadPoolTaskExecutor threadPoolTaskExecutor() {
-        ThreadPoolTaskExecutor pool = new ThreadPoolTaskExecutor();
-        //队列满，线程被拒绝执行策略;用调用者所在的线程来执行任务
-        pool.setRejectedExecutionHandler(new ThreadPoolExecutor.AbortPolicy());
-   /*     pool.setCorePoolSize(3);
-        //关键步骤 最大线程数不满就不会执行决绝策略
-        pool.setQueueCapacity(5);
-        pool.setMaxPoolSize(10);
-        pool.setKeepAliveSeconds(1000);//线程空闲时间*/
-        pool.initialize();
-        return pool;
+    @Bean(value = "asyncServiceExecutor", destroyMethod = "shutdown")
+    public ThreadPoolTaskExecutor asyncServiceExecutor(){
+        ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
+        //核心线程数
+        threadPoolTaskExecutor.setCorePoolSize(5);
+        //核心线程如处于空闲状态的话，超过一定时间（keepAliveTime）,就会销毁掉
+        threadPoolTaskExecutor.setAllowCoreThreadTimeOut(true);
+        //最大线程数
+        threadPoolTaskExecutor.setMaxPoolSize(10);
+        //配置队列大小
+        threadPoolTaskExecutor.setQueueCapacity(100);
+        //加入装饰器
+        threadPoolTaskExecutor.setTaskDecorator(new ContextCopyingDecorator());
+        return  threadPoolTaskExecutor;
+    }
 
+
+    static class ContextCopyingDecorator implements TaskDecorator {
+        @Override
+        public Runnable decorate(Runnable runnable) {
+            //主线程
+            UserContext.UserInfo userInfo = UserContext.getUserInfo();
+            RequestAttributes attributes = RequestContextHolder.getRequestAttributes();
+            String traceId = MDC.get("traceId");
+            return ()->{
+                try {
+                    //将变量重新放入子线程
+                    UserContext.setUserInfo(userInfo);
+                    RequestContextHolder.setRequestAttributes(attributes);
+                    MDC.put("traceId",traceId);
+                    runnable.run();
+                } finally {
+                    UserContext.remove();
+                    RequestContextHolder.resetRequestAttributes();
+                    MDC.clear();
+                }
+            };
+        }
     }
 }

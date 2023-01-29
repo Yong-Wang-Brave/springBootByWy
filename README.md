@@ -350,3 +350,8 @@ welcomeController的/get/someStudent    被调用者  springboot-8082
 路径：batchInsert.java
 20230129 mybatis数据库配置（包含数据源 mapper的接口和xml文件的地址）
 路径：com.wy.demo.mybatis.config
+
+
+20230129 多线程
+路径：ThreadPoolConfig.java
+welcomeController的  /testThreadPoolExecutor

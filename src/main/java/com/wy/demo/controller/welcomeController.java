@@ -23,7 +23,9 @@ import com.wy.demo.springCloud.feign.FeignServiceWy;
 import com.wy.demo.zhidingshujuyuan.DynamicDataSourceSwitch;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
@@ -31,6 +33,7 @@ import javax.validation.Valid;
 import java.rmi.server.ServerCloneException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.concurrent.CompletableFuture;
 import java.util.stream.Collectors;
 
 /**
@@ -44,6 +47,9 @@ import java.util.stream.Collectors;
 @Log4j2
 public class welcomeController {
 
+   @Autowired
+   @Qualifier("asyncServiceExecutor")
+   private ThreadPoolTaskExecutor threadPoolTaskExecutor;
 
 
     @Autowired
@@ -180,5 +186,33 @@ return student;
         return Result.ok(username);
     }
 
+
+@RequestMapping("/testThreadPoolExecutor")
+    public HealthManageResult<List<Student>> test(){
+    CompletableFuture<List<Student>> aCompletableFuture = CompletableFuture.supplyAsync(() -> test1(), threadPoolTaskExecutor);
+    CompletableFuture<List<Student>> bCompletableFuture = CompletableFuture.supplyAsync(() -> test2(), threadPoolTaskExecutor);
+    CompletableFuture<Void> future = CompletableFuture.allOf(aCompletableFuture, bCompletableFuture);
+    future.join();
+
+    List<Student> students = new ArrayList<>();
+    try {
+        students.addAll(aCompletableFuture.get());
+        students.addAll(bCompletableFuture.get());
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+    return  HealthManageResult.ok(students);
+}
+
+    private List<Student>  test1() {
+        List<Student> stu1 =new ArrayList<>();
+        stu1.add(new Student("1","1","1","1"));
+        return  stu1;
+    }
+    private List<Student>  test2() {
+        List<Student> stu2 =new ArrayList<>();
+        stu2.add(new Student("2","2","2","2"));
+        return  stu2;
+    }
 
 }

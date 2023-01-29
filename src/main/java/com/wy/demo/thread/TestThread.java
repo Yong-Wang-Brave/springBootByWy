@@ -2,13 +2,12 @@
 package com.wy.demo.thread;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class TestThread {
 
 @Autowired
-ThreadPoolConfig   threadPoolConfig;
+ThreadPoolConfig1 threadPoolConfig;
 
 
 //@Scheduled(cron="* * * * * ?")
