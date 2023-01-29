@@ -345,3 +345,5 @@ UserContextInterceptor
 20230128 feign使用總結
 
 welcomeController的/get/someStudent    被调用者  springboot-8082
+
+20230129   批量查插入
