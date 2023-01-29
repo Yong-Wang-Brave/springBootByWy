@@ -1,6 +1,7 @@
 package com.wy.demo.过滤器拦截器监听器.FilterRegistrationBean;
 
 import cn.hutool.extra.spring.SpringUtil;
+import com.wy.demo.Exception.headToSession.FilterAddToSession;
 import com.wy.demo.lightPoint.tokenGetUserInfo.SecurityFilter2;
 import com.wy.demo.lightPoint.tokenGetUserInfo.threadLocal.UserContextInterceptor;
 import com.wy.demo.全局日志id.TraceLogInterceptor;
@@ -51,17 +52,15 @@ public class WebConfigSecurity implements WebMvcConfigurer {
         }
 
 
-
     @Bean
     public FilterRegistrationBean<SecurityFilter> registTest2(){
         SecurityFilter securityFilter =new SecurityFilter();
        SpringUtil.getApplicationContext().getAutowireCapableBeanFactory().autowireBean(securityFilter);
         FilterRegistrationBean<SecurityFilter> bean = new FilterRegistrationBean<>();
         bean.setFilter(securityFilter);//注册自定义过滤器
-        bean.addUrlPatterns("/testSecurity/*");//过滤所有的路径
+       bean.addUrlPatterns("/testSecurity/*");//过滤所有的路径
         bean.setOrder(1);//优先级，越低越优先
-        return bean;
-    }
+        return bean;}
 
     @Bean
     public FilterRegistrationBean<SecurityFilter2> registTest3(){
@@ -72,6 +71,18 @@ public class WebConfigSecurity implements WebMvcConfigurer {
         bean.addUrlPatterns("/runHealth/healthManage/*");//过滤所有的路径
         return bean;
     }
+
+
+    @Bean
+    public FilterRegistrationBean<FilterAddToSession> SecurityFilterRegister(){
+        FilterAddToSession securityFilter =new FilterAddToSession();
+        SpringUtil.getApplicationContext().getAutowireCapableBeanFactory().autowireBean(securityFilter);
+        FilterRegistrationBean<FilterAddToSession> bean = new FilterRegistrationBean<>();
+        bean.setFilter(securityFilter);//注册自定义过滤器
+        bean.addUrlPatterns("/add/*");//过滤所有的路径
+        return bean;
+    }
+
 
 
     @Override

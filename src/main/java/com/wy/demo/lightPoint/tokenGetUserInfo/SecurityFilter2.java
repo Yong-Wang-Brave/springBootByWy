@@ -63,6 +63,8 @@ public class SecurityFilter2 extends OncePerRequestFilter {
         HealthManageResult<Object> result = new HealthManageResult<>();
         if (e instanceof HealthManageException) {
             result.setRet(((HealthManageException) e).getCode());
+            result.setMsg(((HealthManageException) e).getMsg());
+
         } else {
             result.setRet("5000");
             result.setMsg(e.toString());

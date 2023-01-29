@@ -215,4 +215,12 @@ return student;
         return  stu2;
     }
 
+
+    @GetMapping("/add/1")
+    public HealthManageResult add()  {
+        // User user = feignServiceWy.combineUser(username);
+        User user =null;
+     return HealthManageResult.ok();
+
+    };
 }

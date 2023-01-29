@@ -360,3 +360,14 @@ welcomeController的  /testThreadPoolExecutor
 
 自定义校验
 文件夹：validGroup
+
+
+XSS脚本攻击
+文件：todo
+
+远程调用
+RestemplatePoolConfig.java
+
+拦截器
+文件 WebConfigSecurity.java的 SecurityFilterRegister
+FilterAddToSession.java

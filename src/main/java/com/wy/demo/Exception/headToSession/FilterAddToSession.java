@@ -1,5 +1,6 @@
 package com.wy.demo.Exception.headToSession;
 
+import com.wy.demo.Tools.StringUtil;
 import org.springframework.web.filter.OncePerRequestFilter;
 
 import javax.servlet.FilterChain;
@@ -15,11 +16,14 @@ import java.io.IOException;
  * 2 config 内容应该没用
  * 3 通过@SessionAttribute 获取session中的值
  */
-public class filterAddToSession extends OncePerRequestFilter {
+public class FilterAddToSession extends OncePerRequestFilter {
     @Override
     protected void doFilterInternal(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, FilterChain filterChain) throws ServletException, IOException {
         //从request中获取请求头
         String wy = httpServletRequest.getHeader("wy");
+        if (StringUtil.isNullOrEmpty(wy)) {
+            throw new ServletException("请求头在路径/add缺少wy参数");
+        }
         //根据wy进行相关处理然后存储到session
         httpServletRequest.getSession().setAttribute("wy",wy+"888");
         filterChain.doFilter(httpServletRequest,httpServletResponse);
