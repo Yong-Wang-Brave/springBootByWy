@@ -29,6 +29,7 @@ public class ValidatorUtil {
             for (ConstraintViolation<Object> objectConstraintViolation : validate) {
                 msg.append(objectConstraintViolation.getMessage()).append("!");
             }
+            //根据返回结果参数的要求  可以定翼返回不同的异常
             throw  new ServiceException(msg.toString());
         }
 

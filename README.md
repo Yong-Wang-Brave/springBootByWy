@@ -346,12 +346,17 @@ UserContextInterceptor
 
 welcomeController的/get/someStudent    被调用者  springboot-8082
 
-20230129   批量查插入
+20230129   
+
+批量查插入
 路径：batchInsert.java
-20230129 mybatis数据库配置（包含数据源 mapper的接口和xml文件的地址）
+
+ mybatis数据库配置（包含数据源 mapper的接口和xml文件的地址）
 路径：com.wy.demo.mybatis.config
 
-
-20230129 多线程
+ 多线程
 路径：ThreadPoolConfig.java
 welcomeController的  /testThreadPoolExecutor
+
+自定义校验
+文件夹：validGroup

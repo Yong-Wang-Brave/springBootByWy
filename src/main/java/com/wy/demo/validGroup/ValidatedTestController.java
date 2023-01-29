@@ -15,6 +15,7 @@ public class ValidatedTestController {
  
     @PostMapping("/add")
     @ResponseBody
+    @Deprecated
     public String add(
             @Validated(Add.class) @RequestBody ParamsVo paramsVo){
         System.out.println(String.format("add obj = {%s}",paramsVo.toString()));
@@ -23,6 +24,7 @@ public class ValidatedTestController {
  
     @RequestMapping("/edit")
     @ResponseBody
+    @Deprecated
     public String editAll(
             @Validated({Edit.class,ParamsVo.ModifyAge.class})ParamsVo paramsVo){
         System.out.println(String.format("edit obj = {%s}",paramsVo.toString()));
@@ -30,7 +32,7 @@ public class ValidatedTestController {
  
     }
     //校验实体类与 对应的分组
-    @RequestMapping("/addAll")
+    @PostMapping("/addAll")
     @ResponseBody
     public Result exam(@RequestBody ParamsVo  paramsVo ){
         ValidatorUtil.validateEntity(paramsVo,Add.class);
