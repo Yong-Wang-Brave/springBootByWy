@@ -4,7 +4,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-//@Configuration
+@Configuration
 public class MyWebMVCConfig implements WebMvcConfigurer {
     // 重写WebMvcCOnfigurer的addInterceptors方法
     @Override

@@ -376,6 +376,16 @@ FilterAddToSession.java
 文件夹 zidingyizhujie
 welcomeController.java 
 
+20230130 
 多数据源
 文件夹：com.wy.demo.mybatis.config
-路径： /getAllCourse  /getAllCourse2"
+路径： /getAllCourse  /getAllCourse2
+
+
+自定义注解 
+
+文件夹：自定义注解  
+demo1 切面
+demo2 拦截器实现
+demo3 反射实现 入库手机号加密  读取的时候解密
+参考 测试类：CryptUtilTest
