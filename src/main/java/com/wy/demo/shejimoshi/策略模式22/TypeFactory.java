@@ -18,6 +18,13 @@ import java.util.Map;
 public class TypeFactory implements InitializingBean, ApplicationContextAware {
 
     private ApplicationContext applicationContext;
+    //从已有的spring上下文取得已实例化的bean,通过AppliacationContextAware接口实现
+    //当一个类实现了这个接口（ApplicationCntextAware）之后，这个类就可以获取到spring上下文中所有的bean，换句话说，就是这个类
+    //可以直接获取spring配置文件中，所有引用到bean的名称，以及bean的实例
+    @Override
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        this.applicationContext = applicationContext;
+    }
 
     private Map<String, TypeService> typeMap = new HashMap<>();
 
@@ -35,7 +42,7 @@ public class TypeFactory implements InitializingBean, ApplicationContextAware {
 
     private void queryOrderDetailByOrderType() {
         typeMap.put(ToolEnum.TOOL_BIKE.getCode(), getBeanType1(BikeImpl.class));
-        typeMap.put(ToolEnum.TOOL_BIKE.getCode(), getBeanType1(CarServiceImpl.class));
+        typeMap.put(ToolEnum.TOOL_CAR.getCode(), getBeanType1(CarServiceImpl.class));
     }
 
     /**
@@ -48,13 +55,6 @@ public class TypeFactory implements InitializingBean, ApplicationContextAware {
         return applicationContext.getBean(type);
     }
 
-//从已有的spring上下文取得已实例化的bean,通过AppliacationContextAware接口实现
-    //当一个类实现了这个接口（ApplicationCntextAware）之后，这个类就可以获取到spring上下文中所有的bean，换句话说，就是这个类
-    //可以直接获取spring配置文件中，所有引用到bean的名称，以及bean的实例
-    @Override
-    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        this.applicationContext = applicationContext;
-    }
 
     public TypeService getType(String type) {
 

@@ -1,8 +1,10 @@
-package com.wy.demo.丁雪峰.InitialzingBean;
+package com.wy.demo.启动时自动执行代码.InitialzingBean;
 
 
 import com.wy.demo.controller.dto.Student;
 import org.springframework.beans.factory.InitializingBean;
+import org.springframework.stereotype.Component;
+
 /*InitialzingBean用法
         当一个类实现这个接口之后，Spring启动后，初始化Bean时，
         若该Bean实现InitialzingBean接口，会自动调用afterPropertiesSet()方法，
@@ -15,6 +17,7 @@ import org.springframework.beans.factory.InitializingBean;
         ————————————————
         版权声明：本文为CSDN博主「凌兮～」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
         原文链接：https://blog.csdn.net/qq_40093255/article/details/117317943*/
+@Component
 public class SpringBeanInit implements InitializingBean {
  
     private Integer id;

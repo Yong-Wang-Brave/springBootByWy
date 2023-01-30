@@ -389,3 +389,6 @@ demo1 切面
 demo2 拦截器实现
 demo3 反射实现 入库手机号加密  读取的时候解密
 参考 测试类：CryptUtilTest
+
+工厂设计模式
+TestCelueController
