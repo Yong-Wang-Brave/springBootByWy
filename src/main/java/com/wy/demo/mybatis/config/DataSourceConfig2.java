@@ -6,25 +6,23 @@ import com.wy.demo.Druid.dto.MysqlDruidDataSourceProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 
 import javax.annotation.Resource;
 import javax.sql.DataSource;
 
 @Configuration
 @Slf4j
-public class DataSourceConfig {
+public class DataSourceConfig2 {
 
     @Resource
     MysqlDruidDataSourceProperties mysqlDruidDataSourceProperties;
     //mysql数据源
-    @Bean(name="msDataSource")
-    @Primary
+    @Bean(name="msDataSource2")
     public DataSource msDataSource(){
         log.info("开始加载mysql druid");
         DruidDataSource druidDataSource = new DruidDataSource();
         druidDataSource.setDriverClassName(mysqlDruidDataSourceProperties.getDriverClassname());
-        druidDataSource.setUrl(mysqlDruidDataSourceProperties.getPrimaryUrl());
+        druidDataSource.setUrl(mysqlDruidDataSourceProperties.getUrl());
         druidDataSource.setUsername(mysqlDruidDataSourceProperties.getUserName());
         druidDataSource.setPassword(mysqlDruidDataSourceProperties.getPwd());
         druidDataSource.setInitialSize(mysqlDruidDataSourceProperties.getInitialSize());

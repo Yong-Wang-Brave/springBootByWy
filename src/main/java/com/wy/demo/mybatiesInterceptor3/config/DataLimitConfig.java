@@ -10,7 +10,6 @@ import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
-import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.ResultSet;
@@ -25,7 +24,7 @@ import java.util.regex.Pattern;
  * @Author: caixunshi
  * @Date: 2020/6/10 19:50
  */
-@Component
+//@Component
 public class DataLimitConfig implements ApplicationListener<ContextRefreshedEvent> {
     // 数据权限元数据
     private static Map<String, DataLimitMeta> meta = new HashMap<String, DataLimitMeta>();

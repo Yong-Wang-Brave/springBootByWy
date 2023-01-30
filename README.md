@@ -371,3 +371,11 @@ RestemplatePoolConfig.java
 拦截器
 文件 WebConfigSecurity.java的 SecurityFilterRegister
 FilterAddToSession.java
+
+自定义注解
+文件夹 zidingyizhujie
+welcomeController.java 
+
+多数据源
+文件夹：com.wy.demo.mybatis.config
+路径： /getAllCourse  /getAllCourse2"

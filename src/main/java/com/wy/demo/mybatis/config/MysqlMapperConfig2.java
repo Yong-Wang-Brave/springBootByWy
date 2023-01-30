@@ -11,7 +11,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Primary;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 
@@ -19,15 +18,15 @@ import javax.sql.DataSource;
 import java.util.Properties;
 
 @Configuration
-@MapperScan(basePackages = {"com.wy.demo.*.mappers"}, sqlSessionFactoryRef = "msSqlSessionFactory")
-public class MysqlMapperConfig {
+@MapperScan(basePackages = {"com.wy.demo.mybatis.mappers2"}, sqlSessionFactoryRef = "msSqlSessionFactory2")
+public class MysqlMapperConfig2 {
     @Autowired
-    @Qualifier("msDataSource")
-    private DataSource msDataSource;
+    @Qualifier("msDataSource2")
+    private DataSource msDataSource2;
 
 
-    @Bean("msSqlSessionFactory")
-    @Primary
+    @Bean("msSqlSessionFactory2")
+
     public SqlSessionFactory sqlSessionFactory() throws Exception {
         SqlSessionFactoryBean factoryBean = new SqlSessionFactoryBean();
         //分页插件
@@ -46,8 +45,8 @@ public class MysqlMapperConfig {
        properties.setProperty("reasonable","fasle");
         interceptor.setProperties(properties);
 
-        factoryBean.setDataSource(msDataSource);
-        factoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mybatis/**/*Mapper.xml"));
+        factoryBean.setDataSource(msDataSource2);
+        factoryBean.setMapperLocations(new PathMatchingResourcePatternResolver().getResources("classpath*:mybatis/**/*Mapper2.xml"));
         //拦截器打印sql,极耗性能，慎开
         factoryBean.setPlugins((new Interceptor[]{new SqlCostInterceptor(),interceptor}));
         SqlSessionFactory sqlSessionFactory = factoryBean.getObject();
@@ -60,17 +59,17 @@ public class MysqlMapperConfig {
         return sqlSessionFactory;
     }
 
-@Bean(name="msTransactionManager")
-@Primary
+@Bean(name="msTransactionManager2")
+
 /**
  *  创建该数据源的事务管理器
  */
-public DataSourceTransactionManager msTransactionManager(@Qualifier("msDataSource") DataSource dataSource) {
+public DataSourceTransactionManager msTransactionManager2(@Qualifier("msDataSource2") DataSource dataSource) {
         return new DataSourceTransactionManager(dataSource);
     }
 
-  /*  @Bean
-    public SqlSessionTemplate usercenterSqlSessionTemplate(@Qualifier("msSqlSessionFactory") SqlSessionFactory sqlSessionFactory){
+ /*   @Bean
+    public SqlSessionTemplate usercenterSqlSessionTemplate(@Qualifier("msSqlSessionFactory2") SqlSessionFactory sqlSessionFactory){
         return new SqlSessionTemplate(sqlSessionFactory);
     }
     @Bean

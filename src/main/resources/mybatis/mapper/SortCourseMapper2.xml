@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.demo.mybatis.mappers2.SortCourseMapper2">
+
+    <resultMap id="BaseResultMapper" type="com.wy.demo.mybatis.entity.SortCourse">
+        <id column="cat_id" property="catId"/>
+        <result column="cat_name" property="catName"/>
+        <result column="cat_pid" property="catPid"/>
+        <result column="cat_level" property="catLevel"/>
+        <result column="cat_deleted" property="catDeleted"/>
+    </resultMap>
+
+
+    <select id="findSortCourse" resultMap="BaseResultMapper">
+        select * from t_sortcourse where cat_id is not null
+    </select>
+    <select id="findSortCourseById" parameterType="java.lang.Long" resultMap="BaseResultMapper">
+        select * from t_sortcourse where cat_id =#{id}
+    </select>
+    <select id="findSortCourseByDTO" parameterType="com.wy.demo.controller.dto.PageDto" resultMap="BaseResultMapper">
+        select * from t_sortcourse where cat_id is not null
+    </select>
+
+    <select id="findByUserNameAndPassword" resultType="com.wy.demo.controller.dto.User">
+        select * from t_user where username = #{userName} and password = #{passWord}
+    </select>
+
+</mapper>

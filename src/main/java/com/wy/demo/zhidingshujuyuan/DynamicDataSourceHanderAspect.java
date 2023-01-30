@@ -31,7 +31,7 @@ public class DynamicDataSourceHanderAspect {
                 return;
             }
         }
-
+          //如果注解获取到了 则获取注解上的数据源的值的信息
         String dataSource = annotationClass.value();
         DataSourceHolder.setDataSourceType(dataSource);
 
