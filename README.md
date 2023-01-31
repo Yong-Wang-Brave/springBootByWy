@@ -392,3 +392,12 @@ demo3 反射实现 入库手机号加密  读取的时候解密
 
 工厂设计模式
 TestCelueController
+
+20230131 
+
+分页配置
+文件：pageHelperController.java
+
+强哥经典
+唯一id设置
+AdminRequestIdHandler

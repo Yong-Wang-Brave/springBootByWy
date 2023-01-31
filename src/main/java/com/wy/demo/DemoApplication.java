@@ -1,5 +1,6 @@
 package com.wy.demo;
 
+import com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
@@ -24,7 +25,7 @@ linux
 *
 *
 * */
-@SpringBootApplication
+@SpringBootApplication(exclude = PageHelperAutoConfiguration.class)
 @EnableScheduling
 @EnableDiscoveryClient
 @EnableFeignClients//开启Fegin
