@@ -406,3 +406,5 @@ AdminRequestIdHandler
 
 RedisUtils
 
+2023年3月8号
+lambda 8 list转map
