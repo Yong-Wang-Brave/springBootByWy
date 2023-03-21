@@ -408,3 +408,7 @@ RedisUtils
 
 2023年3月8号
 lambda 8 list转map
+
+2023Nian 3月21号
+自定义注解
+com.wy.demo.自定义注解.demo4  

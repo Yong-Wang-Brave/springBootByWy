@@ -6,6 +6,11 @@ import java.util.Optional;
 import java.util.function.Supplier;
 
 //https://mp.weixin.qq.com/s/5RbpFLpyFKzdQewg-aoEzg
+
+/**
+ * orElseGet:  最后执行
+ * orElse:  先执行。
+ */
 public class TestMain {
     public static void main(String[] args) {
         Person person = new Person();
