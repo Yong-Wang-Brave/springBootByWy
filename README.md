@@ -416,3 +416,8 @@ com.wy.demo.自定义注解.demo4
 动态代理的实现
 com.wy.demo.动态代理
 场景：多个方法有重复的方法 ：记录耗时，可以使用动态代理。
+
+2023年3月23号
+
+mysql批量更新
+UserBathController 

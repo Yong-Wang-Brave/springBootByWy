@@ -1,12 +1,5 @@
 package com.wy.demo.tuling.jvm;
 
-import com.wy.demo.entity.User;
-
-import java.util.ArrayList;
-import java.util.List;
-
-import static rx.schedulers.Schedulers.test;
-
 public class Math1 {
  public static final int initData = 666;
  //默认使用同一种加载器也就是全盘负责委托机制
@@ -15,7 +8,7 @@ static{
  test1();
  }
 
- private static void test1() {
+ public static void test1() {
   System.out.println("test1");
  }
 

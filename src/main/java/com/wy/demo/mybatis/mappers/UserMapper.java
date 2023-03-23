@@ -1,9 +1,12 @@
 package com.wy.demo.mybatis.mappers;
 
 import com.wy.demo.entity.User;
+import com.wy.demo.entity.UserBatch;
 import com.wy.demo.entity.UserReq;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
+
+import java.util.List;
 
 /**
  * @author Think
@@ -20,6 +23,9 @@ public interface UserMapper {
 
    @Select("select * from t_user where username=#{username}")
    public User getUser(String username);
+
+
+        void batchInsert(List<UserBatch> userList);
 
 
 

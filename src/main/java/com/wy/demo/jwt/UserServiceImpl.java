@@ -1,14 +1,15 @@
 package com.wy.demo.jwt;
 
 import com.wy.demo.controller.dto.User;
+import com.wy.demo.entity.UserBatch;
 import com.wy.demo.mybatis.mappers.UserrMapper;
-import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.HashMap;
+import java.util.List;
 import java.util.UUID;
 
-@Service
+//@Service
 public class UserServiceImpl implements UserService {
     @Resource
     private JwtUtil jwtUtil;
@@ -27,5 +28,10 @@ public class UserServiceImpl implements UserService {
         map.put("name", user.getUserName());
         map.put("age", user.getPassWord());
         return jwtUtil.createJWT(uuid, "login subject", 0L, map);
+    }
+
+    @Override
+    public void batchInsert(List<UserBatch> userList) {
+
     }
 }
