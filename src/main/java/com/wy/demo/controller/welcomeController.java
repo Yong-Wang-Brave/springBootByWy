@@ -111,8 +111,8 @@ public class welcomeController {
 
     };
     @PostMapping ("/get/someStudent")
-    public HealthManageResult postHealthManage(@RequestBody Student student)  {
-       return   feignServiceWy.getSome(student);
+    public HealthManageResult postHealthManage()  {
+       return   feignServiceWy.getSome();
 
       //return HealthManageResult.ok(UserContext.getUserInfo().getUserId());
 

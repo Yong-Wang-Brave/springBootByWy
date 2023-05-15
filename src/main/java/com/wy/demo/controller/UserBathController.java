@@ -118,5 +118,17 @@ public class UserBathController {
 
     }
 
+/*
+    public void batchInsert(List<UserBatch> records) {
+        SqlSession sqlSession = sqlSessionFactory.openSession(ExecutorType.BATCH, false);
+        try {
+            BatchInsert<UserBatch> batchInsert = insert(records)
+                    .into(table);
+            batchInsert.execute(sqlSession);
+        } finally {
+            sqlSession.close();
+        }
+    }*/
+
 
 }

@@ -9,6 +9,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 import java.nio.charset.StandardCharsets;
 import java.util.Enumeration;
+import java.util.Objects;
 
 //将请求头参数一并转发到服务方  feighn的专属拦截器
 @Configuration
@@ -40,8 +41,12 @@ public class FeignConfiguration implements RequestInterceptor {
                 String value=request.getHeader(name);
                 requestTemplate.header(name,value);
             }
+
         }
-        requestTemplate.body(new String(body, StandardCharsets.UTF_8));
+        if (Objects.nonNull(body)) {
+            requestTemplate.body(new String(body, StandardCharsets.UTF_8));
+        }
+
 
     }
 

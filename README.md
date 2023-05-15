@@ -421,3 +421,11 @@ com.wy.demo.动态代理
 
 mysql批量更新
 UserBathController 
+
+2023年5月15号
+场景：
+
+消费方：
+1) feignconfig  继承feign拦截器将请求头传给服务方。
+服务方：
+   2)feign调用，将请求头的信息通过UserFilter 放入MDC.FilterConfig注入userFilter.

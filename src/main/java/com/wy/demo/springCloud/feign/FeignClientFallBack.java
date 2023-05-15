@@ -24,7 +24,7 @@ public class FeignClientFallBack implements FallbackFactory<FeignServiceWy> {
             }
 
             @Override
-            public HealthManageResult<Student> getSome(Student student) {
+            public HealthManageResult<Student> getSome() {
                 throw new HealthManageException(FEIGN_ERROR_CODE,"invoke /getSome failed");
             }
         };
