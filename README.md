@@ -429,3 +429,6 @@ UserBathController
 1) feignconfig  继承feign拦截器将请求头传给服务方。
 服务方：
    2)feign调用，将请求头的信息通过UserFilter 放入MDC.FilterConfig注入userFilter.
+
+2023/5/19号
+map+函数式接口  替换if else 
