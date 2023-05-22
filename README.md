@@ -432,3 +432,8 @@ UserBathController
 
 2023/5/19号
 map+函数式接口  替换if else 
+引用地址：https://mp.weixin.qq.com/s/L_RrjutUma7XqMfx1dCe8g
+
+2023/5/22 
+自定义redis分布式锁
+DistributedLockTest
