@@ -431,7 +431,8 @@ UserBathController
    2)feign调用，将请求头的信息通过UserFilter 放入MDC.FilterConfig注入userFilter.
 
 2023/5/19号
-map+函数式接口  替换if else 
+map+函数式接口  替换if else
+GrantTypeController
 引用地址：https://mp.weixin.qq.com/s/L_RrjutUma7XqMfx1dCe8g
 
 2023/5/22 
