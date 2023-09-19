@@ -3,11 +3,12 @@ package com.wy.demo.filter;
 import com.wy.demo.config.XSS.XssFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 
 import javax.servlet.DispatcherType;
 
-//@Configuration
+@Configuration
 public class FilterConfig {
     /**
      * 配置过滤器，这里过滤器主要是对返回值做后继处理

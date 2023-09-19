@@ -438,3 +438,8 @@ GrantTypeController
 2023/5/22 
 自定义redis分布式锁
 DistributedLockTest
+
+2023/09/18
+filter与MDC的使用
+接口的请求头放到经过filter放到MDC,并从MDC获取请求头信息。
+重点文件 FilterConfig.java  UserFilter.java

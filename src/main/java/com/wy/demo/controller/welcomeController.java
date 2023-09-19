@@ -24,6 +24,7 @@ import com.wy.demo.springCloud.feign.FeignServiceWy;
 import com.wy.demo.zhidingshujuyuan.DynamicDataSourceSwitch;
 import com.wy.demo.zhidingshujuyuan.MerchantTransactional;
 import lombok.extern.log4j.Log4j2;
+import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
@@ -245,6 +246,15 @@ return student;
         // User user = feignServiceWy.combineUser(username);
         User user =null;
      return HealthManageResult.ok();
+
+    };
+
+    @GetMapping("/get/mdc")
+    public HealthManageResult getMdc()  {
+        // User user = feignServiceWy.combineUser(username);
+        String userInfo = MDC.get("userInfo");
+        User user =null;
+        return HealthManageResult.ok(userInfo);
 
     };
 }

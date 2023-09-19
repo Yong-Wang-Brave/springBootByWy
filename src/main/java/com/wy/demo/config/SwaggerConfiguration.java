@@ -23,6 +23,7 @@ import java.util.stream.Collectors;
 @EnableSwaggerBootstrapUI  //访问地址：http://localhost:8081/doc.html
 //@ConditionalOnProperty(name = "swagger.enable", havingValue = "true")
 //@ComponentScan(basePackages = "com.wy.demo",excludeFilters = @ComponentScan.Filter(ApiIgnore.class))
+
 public class SwaggerConfiguration {
 
     private static final String MODEL_REF="string";

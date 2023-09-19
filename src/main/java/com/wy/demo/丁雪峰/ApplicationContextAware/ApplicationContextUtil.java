@@ -21,14 +21,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class ApplicationContextUtil implements ApplicationContextAware {
 
-    private static ApplicationContext context;
+    private static ApplicationContext applicationContext;
+    public static ApplicationContext getApplicationContext(){
+        return applicationContext;
+    }
+
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        context = applicationContext;
+        ApplicationContextUtil.applicationContext = applicationContext;
     }
-    public static ApplicationContext getApplicationContext(){
-        return context;
-    }
+
     /**
      * 通过name获取 Bean
      * @param name beanName
@@ -40,8 +42,8 @@ public class ApplicationContextUtil implements ApplicationContextAware {
 
 
 
-    public static <T> T getBean(Class<T> requiredType) throws BeansException{
-        return getApplicationContext().getBean(requiredType);
+    public static <T> T getBean(Class<T> requiredType) {
+        return (T) applicationContext.getBean(requiredType);
     }
 }
 
