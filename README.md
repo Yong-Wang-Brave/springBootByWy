@@ -445,3 +445,4 @@ filter与MDC的使用
 重点文件 FilterConfig.java  UserFilter.java
 操作地址:
 com.wy.demo.controller.welcomeController.getMdc
+FeignConfig.java是feign调用的时候把当前系统的请求头信息塞入请求头，userFilter.java再获取请求头。就可以获取当前登录人了。
