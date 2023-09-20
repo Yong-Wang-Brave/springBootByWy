@@ -443,3 +443,5 @@ DistributedLockTest
 filter与MDC的使用
 接口的请求头放到经过filter放到MDC,并从MDC获取请求头信息。
 重点文件 FilterConfig.java  UserFilter.java
+操作地址:
+com.wy.demo.controller.welcomeController.getMdc
