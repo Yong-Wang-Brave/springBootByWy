@@ -14,11 +14,12 @@ import java.io.IOException;
 
 @Slf4j
 public class UserFilter implements Filter {
+
     private UserService userService;
 
     @Override
     public void init(FilterConfig filterConfig) {
-        //this.userService = ApplicationContextUtil.getBean(UserService.class);
+       // this.userService = ApplicationContextUtil.getBean(UserService.class);
     }
 
     @Override
