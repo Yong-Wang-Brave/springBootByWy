@@ -446,3 +446,8 @@ filter与MDC的使用
 操作地址:
 com.wy.demo.controller.welcomeController.getMdc
 FeignConfig.java是feign调用的时候把当前系统的请求头信息塞入请求头，userFilter.java再获取请求头。就可以获取当前登录人了。
+
+
+2023年9月27日
+分布式锁的实现。
+实现目录：DistributedLock
