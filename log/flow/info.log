@@ -1395,3 +1395,580 @@
  ==== aop log end  request_id:1695796623916=================
 14:37:22.715 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706920873338449920] End request: /myEndpoint,host:0:0:0:0:0:0:0:1,take:18798ms
 14:37:22.717 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [72dcc06580cf4a53a24e3771272472a6]你妹2
+14:53:54.698 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:53:54.698 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:53:54.698 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:53:54.699 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:53:54.716 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+14:53:54.718 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+14:54:11.234 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
+14:54:49.299 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
+14:54:53.118 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+14:54:53.120 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:54:53.122 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+14:54:53.288 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:54:55.712 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - 开始加载mysql druid
+14:54:55.730 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - mysql的druid加载完成
+14:54:55.844 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - 开始加载mysql druid
+14:54:55.844 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - mysql的druid加载完成
+14:54:56.362 [main] INFO  org.redisson.Version - Redisson 3.17.7
+14:54:58.489 [redisson-netty-2-8] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+14:54:58.592 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+14:55:02.002 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:55:02.081 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:55:02.082 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:55:02.089 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:55:02.089 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:55:05.339 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+14:55:05.356 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:55:05.411 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+14:55:05.586 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
+14:55:05.588 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_1
+14:55:05.620 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: myEndpointUsingGET_1
+14:55:05.682 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
+14:55:05.691 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
+14:55:05.695 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingGET_1
+14:55:05.696 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingHEAD_1
+14:55:05.697 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_2
+14:55:05.698 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPUT_1
+14:55:05.699 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPATCH_1
+14:55:05.700 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingDELETE_1
+14:55:05.700 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingOPTIONS_1
+14:55:05.701 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingTRACE_1
+14:55:05.707 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
+14:55:05.707 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
+14:55:05.708 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
+14:55:05.708 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
+14:55:05.709 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
+14:55:05.709 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
+14:55:05.709 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
+14:55:05.710 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
+14:55:05.711 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
+14:55:05.711 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
+14:55:05.712 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
+14:55:05.712 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
+14:55:05.713 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
+14:55:05.713 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
+14:55:05.714 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
+14:55:05.714 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
+14:55:05.723 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testReadUsingGET_1
+14:55:05.724 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testWriteUsingGET_1
+14:55:05.726 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_2
+14:55:05.806 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
+14:55:05.819 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+14:55:05.861 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
+14:55:05.877 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
+14:55:05.883 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_2
+14:55:05.927 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+14:55:05.966 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8081 192.168.168.1:8081 register finished
+14:55:07.861 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 23.453 seconds (JVM running for 26.432)
+14:55:09.172 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:55:09.534 [RMI TCP Connection(2)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:55:09.733 [RMI TCP Connection(2)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+14:56:37.369 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[c455802598264da7baf64c1388dea05c],host192.168.168.1
+14:56:37.372 [http-nio-8081-exec-1] INFO  com.wy.demo.过滤器拦截器监听器.MyHttpSessionListener - 【在线人数】人数增加为:1
+14:56:39.852 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925805567328256] Accept request: /doc.html, host: 0:0:0:0:0:0:0:1, userId: null
+14:56:39.858 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925805567328256] End request: /doc.html,host:0:0:0:0:0:0:0:1,take:2483ms
+14:56:39.858 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [c455802598264da7baf64c1388dea05c]你妹2
+14:56:40.659 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[66bbabe53fdd45cd968a6aac81e540d9],host192.168.168.1
+14:56:40.659 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925808952131584] Accept request: /swagger-resources, host: 0:0:0:0:0:0:0:1, userId: null
+14:56:40.695 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925808952131584] End request: /swagger-resources,host:0:0:0:0:0:0:0:1,take:36ms
+14:56:40.696 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [66bbabe53fdd45cd968a6aac81e540d9]你妹2
+14:57:14.994 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[2fd425d80caf4da48e263e830241ec24],host192.168.168.1
+14:57:14.994 [http-nio-8081-exec-4] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925952963559424] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:15.039 [http-nio-8081-exec-4] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797835038
+14:57:15.059 [http-nio-8081-exec-4] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797835038=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :5ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797835038=================
+14:57:15.065 [http-nio-8081-exec-4] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925952963559424] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:71ms
+14:57:15.065 [http-nio-8081-exec-4] INFO  com.wy.demo.全局日志id.TraceInterceptor - [2fd425d80caf4da48e263e830241ec24]你妹2
+14:57:17.613 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[0220037a5c29461484232e0ad3149f31],host192.168.168.1
+14:57:17.613 [http-nio-8081-exec-5] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925963948441600] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:17.615 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797837615
+14:57:17.616 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797837615=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :0ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797837615=================
+14:57:17.621 [http-nio-8081-exec-5] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925963948441600] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:8ms
+14:57:17.621 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [0220037a5c29461484232e0ad3149f31]你妹2
+14:57:18.803 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[f5158b24c3ed4feba4038377269abb95],host192.168.168.1
+14:57:18.803 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925968939663360] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:18.805 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797838805
+14:57:18.805 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797838805=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :0ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797838805=================
+14:57:18.808 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925968939663360] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:5ms
+14:57:18.808 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [f5158b24c3ed4feba4038377269abb95]你妹2
+14:57:19.841 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[22a6629f36b948cd94137e1de021305e],host192.168.168.1
+14:57:19.842 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925973293350912] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:19.843 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797839843
+14:57:19.843 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797839843=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :0ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797839843=================
+14:57:19.845 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925973293350912] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:4ms
+14:57:19.846 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [22a6629f36b948cd94137e1de021305e]你妹2
+14:57:20.669 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d9746d12ec6a43ef85ed9d14c4be876f],host192.168.168.1
+14:57:20.669 [http-nio-8081-exec-3] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925976766234624] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:20.671 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797840671
+14:57:20.671 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797840671=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :0ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797840671=================
+14:57:20.673 [http-nio-8081-exec-3] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706925976766234624] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:4ms
+14:57:20.673 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [d9746d12ec6a43ef85ed9d14c4be876f]你妹2
+14:57:37.639 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[27be53bdb9a54f20889728c942aa900f],host192.168.168.1
+14:57:37.640 [http-nio-8081-exec-5] INFO  com.wy.demo.过滤器拦截器监听器.MyHttpSessionListener - 【在线人数】人数增加为:2
+14:57:37.640 [http-nio-8081-exec-5] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926047947767808] Accept request: /myEndpoint, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:37.641 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797857640
+14:57:37.651 [http-nio-8081-exec-5] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797857640=====
+ request_url  :/myEndpoint
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock.MyLockController.myEndpoint()
+ request_ip  :ip
+ descrpition  :11ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797857640=================
+14:57:37.652 [http-nio-8081-exec-5] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926047947767808] End request: /myEndpoint,host:0:0:0:0:0:0:0:1,take:12ms
+14:57:37.653 [http-nio-8081-exec-5] INFO  com.wy.demo.全局日志id.TraceInterceptor - [27be53bdb9a54f20889728c942aa900f]你妹2
+14:57:39.601 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[fbb1c4115139425c8057e6dc71352131],host192.168.168.1
+14:57:39.601 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926056172797952] Accept request: /myEndpoint, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:39.601 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797859600
+14:57:39.605 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797859600=====
+ request_url  :/myEndpoint
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock.MyLockController.myEndpoint()
+ request_ip  :ip
+ descrpition  :4ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797859600=================
+14:57:39.606 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926056172797952] End request: /myEndpoint,host:0:0:0:0:0:0:0:1,take:5ms
+14:57:39.606 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [fbb1c4115139425c8057e6dc71352131]你妹2
+14:57:53.049 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[85f6d53a68dc4519a8e29e74c3015429],host192.168.168.1
+14:57:53.049 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926112577798144] Accept request: /myEndpoint, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:53.050 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797873049
+14:57:53.054 [http-nio-8081-exec-2] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797873049=====
+ request_url  :/myEndpoint
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock.MyLockController.myEndpoint()
+ request_ip  :ip
+ descrpition  :4ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797873049=================
+14:57:53.056 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926112577798144] End request: /myEndpoint,host:0:0:0:0:0:0:0:1,take:7ms
+14:57:53.056 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - [85f6d53a68dc4519a8e29e74c3015429]你妹2
+14:57:54.793 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[a9ba9196543d48be9ea4966cacd73235],host192.168.168.1
+14:57:54.794 [http-nio-8081-exec-3] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926119896858624] Accept request: /myEndpoint, host: 0:0:0:0:0:0:0:1, userId: null
+14:57:54.794 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695797874794
+14:57:54.801 [http-nio-8081-exec-3] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695797874794=====
+ request_url  :/myEndpoint
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock.MyLockController.myEndpoint()
+ request_ip  :ip
+ descrpition  :7ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695797874794=================
+14:57:54.803 [http-nio-8081-exec-3] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926119896858624] End request: /myEndpoint,host:0:0:0:0:0:0:0:1,take:9ms
+14:57:54.803 [http-nio-8081-exec-3] INFO  com.wy.demo.全局日志id.TraceInterceptor - [a9ba9196543d48be9ea4966cacd73235]你妹2
+14:58:28.437 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:58:28.437 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:58:28.438 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:58:28.439 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:58:28.455 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+14:58:28.457 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+14:58:44.466 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
+14:58:48.302 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+14:58:48.304 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+14:58:48.305 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+14:58:48.491 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+14:58:50.897 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - 开始加载mysql druid
+14:58:50.931 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - mysql的druid加载完成
+14:58:51.059 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - 开始加载mysql druid
+14:58:51.060 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - mysql的druid加载完成
+14:58:51.729 [main] INFO  org.redisson.Version - Redisson 3.17.7
+14:58:54.171 [redisson-netty-2-8] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+14:58:54.249 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+14:58:57.685 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+14:58:57.764 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:58:57.765 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:58:57.772 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:58:57.772 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+14:59:01.005 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+14:59:01.022 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+14:59:01.076 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+14:59:01.266 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
+14:59:01.267 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_1
+14:59:01.293 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: myEndpointUsingGET_1
+14:59:01.349 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
+14:59:01.358 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
+14:59:01.362 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingGET_1
+14:59:01.363 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingHEAD_1
+14:59:01.364 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_2
+14:59:01.365 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPUT_1
+14:59:01.366 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPATCH_1
+14:59:01.367 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingDELETE_1
+14:59:01.367 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingOPTIONS_1
+14:59:01.368 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingTRACE_1
+14:59:01.374 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
+14:59:01.375 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
+14:59:01.375 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
+14:59:01.375 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
+14:59:01.376 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
+14:59:01.376 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
+14:59:01.377 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
+14:59:01.377 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
+14:59:01.378 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
+14:59:01.378 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
+14:59:01.379 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
+14:59:01.379 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
+14:59:01.380 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
+14:59:01.380 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
+14:59:01.380 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
+14:59:01.381 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
+14:59:01.390 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testReadUsingGET_1
+14:59:01.391 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testWriteUsingGET_1
+14:59:01.392 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_2
+14:59:01.435 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
+14:59:01.444 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+14:59:01.477 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
+14:59:01.492 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
+14:59:01.499 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_2
+14:59:01.539 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+14:59:01.581 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8081 192.168.168.1:8081 register finished
+14:59:03.456 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 24.161 seconds (JVM running for 27.121)
+14:59:05.303 [RMI TCP Connection(7)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:59:05.651 [RMI TCP Connection(6)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+14:59:05.826 [RMI TCP Connection(6)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+14:59:44.932 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[32164cf4ca3f4e7095adc51f0f2c3454],host192.168.168.1
+14:59:44.935 [http-nio-8081-exec-1] INFO  com.wy.demo.过滤器拦截器监听器.MyHttpSessionListener - 【在线人数】人数增加为:1
+14:59:47.238 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926591521165312] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+15:00:10.618 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695798010615
+15:00:10.727 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695798010615=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :59ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695798010615=================
+15:00:16.017 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706926591521165312] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:31080ms
+15:00:16.018 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [32164cf4ca3f4e7095adc51f0f2c3454]你妹2
+15:00:29.948 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+15:00:29.948 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+15:00:29.949 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+15:00:29.950 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+15:00:29.966 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+15:00:29.968 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+15:00:44.327 [main] INFO  com.wy.demo.DemoApplication - The following profiles are active: ww
+15:00:48.153 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+15:00:48.154 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+15:00:48.155 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+15:00:48.338 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+15:00:50.792 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - 开始加载mysql druid
+15:00:50.810 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig - mysql的druid加载完成
+15:00:50.901 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - 开始加载mysql druid
+15:00:50.902 [main] INFO  com.wy.demo.mybatis.config.DataSourceConfig2 - mysql的druid加载完成
+15:00:51.442 [main] INFO  org.redisson.Version - Redisson 3.17.7
+15:00:53.603 [redisson-netty-2-8] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+15:00:53.674 [redisson-netty-2-19] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+15:00:57.134 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+15:00:57.212 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+15:00:57.213 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:00:57.220 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+15:00:57.220 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+15:01:00.434 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+15:01:00.452 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+15:01:00.507 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+15:01:00.686 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_1
+15:01:00.687 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_1
+15:01:00.714 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: myEndpointUsingGET_1
+15:01:00.769 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getOrderUsingGET_1
+15:01:00.778 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testCelueUsingPOST_1
+15:01:00.783 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingGET_1
+15:01:00.784 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingHEAD_1
+15:01:00.785 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPOST_2
+15:01:00.785 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPUT_1
+15:01:00.786 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingPATCH_1
+15:01:00.788 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingDELETE_1
+15:01:00.789 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingOPTIONS_1
+15:01:00.790 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testUsingTRACE_1
+15:01:00.797 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_1
+15:01:00.798 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_1
+15:01:00.799 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_1
+15:01:00.799 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_1
+15:01:00.800 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_1
+15:01:00.801 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_1
+15:01:00.801 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_1
+15:01:00.801 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_1
+15:01:00.802 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingGET_2
+15:01:00.802 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingHEAD_2
+15:01:00.803 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPOST_2
+15:01:00.803 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPUT_2
+15:01:00.804 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingPATCH_2
+15:01:00.804 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingDELETE_2
+15:01:00.804 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingOPTIONS_2
+15:01:00.805 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: addNumUsingTRACE_2
+15:01:00.813 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testReadUsingGET_1
+15:01:00.814 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: testWriteUsingGET_1
+15:01:00.816 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: wrongUsingGET_2
+15:01:00.857 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: druidStatUsingGET_1
+15:01:00.866 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: getAllUsingGET_1
+15:01:00.894 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: onlineUsingGET_1
+15:01:00.907 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_1
+15:01:00.913 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator - Generating unique operation named: welcomeUsingPOST_2
+15:01:00.953 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+15:01:00.993 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8081 192.168.168.1:8081 register finished
+15:01:02.883 [main] INFO  com.wy.demo.DemoApplication - Started DemoApplication in 23.429 seconds (JVM running for 26.496)
+15:01:04.251 [RMI TCP Connection(3)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+15:01:04.603 [RMI TCP Connection(2)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+15:01:04.806 [RMI TCP Connection(2)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+15:01:28.935 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[6835eb63c78340e7899d767433df8ae1],host192.168.168.1
+15:01:28.939 [http-nio-8081-exec-1] INFO  com.wy.demo.过滤器拦截器监听器.MyHttpSessionListener - 【在线人数】人数增加为:1
+15:01:31.386 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706927028349521920] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+15:01:38.039 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ======= aop start requestId:1695798098038
+15:01:38.060 [http-nio-8081-exec-1] INFO  com.wy.demo.aop.WebLogAspect - 
+ ==== requset and response  request_id:1695798098038=====
+ request_url  :/myEndpoint2
+ http_method  :GET
+ class_methodname  :String com.wy.demo.DistributedLock2.MyController3.myEndpoint()
+ request_ip  :ip
+ descrpition  :6ms
+ request_param  :[]
+ response_result  :"Success"
+ ==== aop log end  request_id:1695798098038=================
+15:01:38.790 [http-nio-8081-exec-1] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706927028349521920] End request: /myEndpoint2,host:0:0:0:0:0:0:0:1,take:9849ms
+15:01:38.791 [http-nio-8081-exec-1] INFO  com.wy.demo.全局日志id.TraceInterceptor - [6835eb63c78340e7899d767433df8ae1]你妹2
+15:01:44.512 [http-nio-8081-exec-2] INFO  com.wy.demo.全局日志id.TraceInterceptor - uuid:[d165099d0c22491585bc165937a423e6],host192.168.168.1
+15:01:44.512 [http-nio-8081-exec-2] INFO  com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706927083403956224] Accept request: /myEndpoint2, host: 0:0:0:0:0:0:0:1, userId: null
+15:01:59.327 [http-nio-8081-exec-2] ERROR com.wy.demo.qiangge.support.AdminRequestIdHandler - [1706927083403956224] Request error /myEndpoint2,host: 0:0:0:0:0:0:0:1, take: 14815ms,message:
+java.lang.RuntimeException: Failed to acquire lock
+	at com.wy.demo.DistributedLock2.DistributedLockAspect.applyLock(DistributedLockAspect.java:31) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.wy.demo.DistributedLock2.MyController3$$EnhancerBySpringCGLIB$$bb53a8b1.myEndpoint(<generated>) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) [swagger-bootstrap-ui-1.9.3.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) [swagger-bootstrap-ui-1.9.3.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) [druid-1.1.23.jar:1.1.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.wy.demo.filter.UserFilter.doFilter(UserFilter.java:34) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.wy.demo.filter.LogFilter.doFilter(LogFilter.java:31) [classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) [spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
+15:01:59.348 [http-nio-8081-exec-2] ERROR com.wy.demo.全局日志id.TraceInterceptor - [d165099d0c22491585bc165937a423e6]
+15:01:59.352 [http-nio-8081-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: Failed to acquire lock] with root cause
+java.lang.RuntimeException: Failed to acquire lock
+	at com.wy.demo.DistributedLock2.DistributedLockAspect.applyLock(DistributedLockAspect.java:31) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:644) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:633) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:70) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:175) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:95) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:186) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:747) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:689) ~[spring-aop-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at com.wy.demo.DistributedLock2.MyController3$$EnhancerBySpringCGLIB$$bb53a8b1.myEndpoint(<generated>) ~[classes/:?]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_221]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_221]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_221]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_221]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:106) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:888) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:793) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.SecurityBasicAuthFilter.doFilter(SecurityBasicAuthFilter.java:84) ~[swagger-bootstrap-ui-1.9.3.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.github.xiaoymin.swaggerbootstrapui.filter.ProductionSecurityFilter.doFilter(ProductionSecurityFilter.java:53) ~[swagger-bootstrap-ui-1.9.3.jar:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.alibaba.druid.support.http.WebStatFilter.doFilter(WebStatFilter.java:124) ~[druid-1.1.23.jar:1.1.23]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.wy.demo.filter.UserFilter.doFilter(UserFilter.java:34) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at com.wy.demo.filter.LogFilter.doFilter(LogFilter.java:31) ~[classes/:?]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:108) ~[spring-boot-actuator-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:367) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:860) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1598) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_221]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_221]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.30.jar:9.0.30]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_221]
+15:02:08.120 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+15:02:08.120 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+15:02:08.121 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+15:02:08.121 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+15:02:08.139 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+15:02:08.141 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
