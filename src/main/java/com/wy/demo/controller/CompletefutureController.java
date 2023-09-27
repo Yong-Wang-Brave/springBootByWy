@@ -40,12 +40,12 @@ public class CompletefutureController {
 
     private List<Student>  test1() {
         List<Student> stu1 =new ArrayList<>();
-        stu1.add(new Student("1","1","1","1"));
+        stu1.add(new Student("1","1","1","1",null));
         return  stu1;
     }
     private List<Student>  test2() {
         List<Student> stu2 =new ArrayList<>();
-        stu2.add(new Student("2","2","2","2"));
+        stu2.add(new Student("2","2","2","2",null));
         return  stu2;
     }
 

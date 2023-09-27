@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
+import java.util.List;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +21,6 @@ public class Student {
     String cardNo;
 
     String cardNo1;
+
+    private List<Student2>   student2List;
 }

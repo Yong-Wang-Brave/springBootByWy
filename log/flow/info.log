@@ -5092,3 +5092,14 @@ java.lang.NullPointerException: null
 11:29:52.838 [RMI TCP Connection(2)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
 11:29:53.357 [RMI TCP Connection(1)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
 11:29:53.562 [RMI TCP Connection(1)-192.168.152.1] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} inited
+17:17:36.988 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+17:17:36.988 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+17:17:36.989 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+17:17:36.990 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+17:17:37.016 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+17:17:37.018 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+17:17:46.126 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closing ...
+17:17:46.229 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-2} closed
+17:17:46.230 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+17:17:46.234 [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+17:17:46.865 [SpringContextShutdownHook] INFO  com.wy.demo.filter.UserFilter - MDC销毁了null
