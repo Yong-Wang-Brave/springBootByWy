@@ -12,6 +12,7 @@ import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Message;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
+import com.wy.demo.controller.Service.SortCourseService;
 import com.wy.demo.controller.dto.Student;
 import com.wy.demo.controller.dto.User;
 import com.wy.demo.entity.UserReq;
@@ -46,7 +47,8 @@ import java.util.stream.Collectors;
 @RestController
 @Log4j2
 public class welcomeController {
-
+@Autowired
+SortCourseService sortCourseService;
 
 
     @Autowired
@@ -57,8 +59,7 @@ public class welcomeController {
     SortCourseMapper sortCourseMapper;
     @Autowired
     SortCourseMapper2 sortCourseMapper2;
-    @Autowired
-    com.wy.demo.controller.Service.SortCourseService sortCourseService;
+
 
     @PostMapping("/update")
     public String welcome(@RequestBody UserReq userReq,@SessionAttribute(value = "wy",required = false)String wy) {
@@ -257,4 +258,17 @@ return student;
         return HealthManageResult.ok(userInfo);
 
     };
+
+    @GetMapping("/test/transactionInvalid")
+    public HealthManageResult transactionInvalid()  {
+        SortCourse sortCourse = new SortCourse();
+        sortCourse.setCatId(11111111);
+        sortCourse.setCatName("111");
+        sortCourseService.queryTest(sortCourse);
+        return HealthManageResult.ok();
+
+    };
+
+
+
 }

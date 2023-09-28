@@ -19,4 +19,5 @@ public interface SortCourseMapper {
 
     List<SortCourse> findSortCourseById(Long id);
     List<SortCourse> findSortCourseByDTO(PageDto pageDto);
+    void insertTest(SortCourse course);
 }

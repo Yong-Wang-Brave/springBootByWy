@@ -30,7 +30,8 @@ linux
 @EnableScheduling
 @EnableDiscoveryClient
 @EnableFeignClients//开启Fegin
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(exposeProxy = true)
+//防止事务不生效的场景
 public class DemoApplication {
 
     public static void main(String[] args) {

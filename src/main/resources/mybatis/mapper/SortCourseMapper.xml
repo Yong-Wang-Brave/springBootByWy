@@ -25,4 +25,9 @@
         select * from t_user where username = #{userName} and password = #{passWord}
     </select>
 
+        <insert id="insertTest" parameterType="com.wy.demo.mybatis.entity.SortCourse">
+            INSERT INTO t_sortcourse (cat_name)
+            VALUES (#{catName})
+        </insert>
+
 </mapper>

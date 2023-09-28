@@ -457,3 +457,14 @@ FeignConfig.java是feign调用的时候把当前系统的请求头信息塞入�
 2023年9月28号
 文件夹：boomFilter
 布隆过滤器
+
+springboot内部方法调用，事务不起作用的原因与解决方案
+welcomeController 的方法 transactionInvalid
+
+
+
+
+
+
+
+
