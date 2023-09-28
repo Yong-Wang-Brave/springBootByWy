@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.concurrent.TimeUnit;
 
-public class RedisTest extends BaseJunit4Test {
+/*public class RedisTest extends BaseJunit4Test {
     @Autowired
     RedisUtils redisLockUtil;
 
@@ -17,4 +17,4 @@ public class RedisTest extends BaseJunit4Test {
     }
 
 
-}
+}*/

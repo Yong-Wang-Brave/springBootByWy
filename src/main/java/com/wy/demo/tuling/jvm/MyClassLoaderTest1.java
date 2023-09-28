@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.tuling.jvm;
 
 
@@ -35,13 +36,15 @@ byte[] data = loadByte(name);
  }
  }
 
-  /**
+  */
+/**
     * 重写类加载方法，实现自己的加载逻辑，不委派给双亲加载
     * @param name
     * @param resolve
     * @return
     * @throws ClassNotFoundException
-    */
+    *//*
+
   @Override
   protected Class<?> loadClass(String name, boolean resolve)
 throws ClassNotFoundException {
@@ -94,3 +97,4 @@ throws ClassNotFoundException {
 
 
  }
+*/
