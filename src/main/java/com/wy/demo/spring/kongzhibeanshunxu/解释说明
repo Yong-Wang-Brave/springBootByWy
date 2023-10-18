@@ -1,0 +1,6 @@
+1 一般来说   每一个@Component是按class源码的顺序注册的。
+carService在SystemInfoService之前所以获取不到。
+解决方案：@DependsOn(value = "systemInfoService") 如果有多个的解决方案见下
+2 spring的底层原理
+每一个@component 都会被扫描，针对定义的类的信息，生成一个beandefination对象，然后把他放到一个list里面，然后spring基于你这个list的里面的顺序，去创建一个一个的bean对象
+思路：在@component扫描之前，就把这个beandefination放到list里面

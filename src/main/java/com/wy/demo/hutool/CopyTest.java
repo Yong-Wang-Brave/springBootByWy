@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.hutool;
 
 import cn.hutool.core.bean.copier.BeanToBeanCopier;
@@ -14,3 +15,4 @@ public class CopyTest {
         System.out.println(student2);
     }
 }
+*/

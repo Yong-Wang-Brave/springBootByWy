@@ -122,6 +122,7 @@ SortCourseService sortCourseService;
 
     @DynamicDataSourceSwitch("aa")
     @MerchantTransactional
+    @CrossOrigin
     @GetMapping("/getAllCourse")
     public   JsonRootBean getAll(){
         String activeProfile = SpringUtil.getActiveProfile();

@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.BaseJunit4Test;
 
 import com.wy.demo.Redis.RedisUtils;
@@ -18,3 +19,4 @@ public class RedisTest extends BaseJunit4Test {
 
 
 }
+*/

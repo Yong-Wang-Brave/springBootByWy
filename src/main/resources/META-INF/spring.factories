@@ -1,1 +1,2 @@
-com.wy.demo.qiangge.support.InterceptorConfig=\
+com.wy.demo.qiangge.support.InterceptorConfig=\;
+org.springframework.context.ApplicationContextInitializer=com.wy.demo.spring.kongzhibeanshunxu.MyApplicationContextIntilation

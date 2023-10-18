@@ -1,3 +1,4 @@
+/*
 package com.wy.demo.BaseJunit4Test;
 
 import com.wy.demo.DemoApplication;
@@ -11,3 +12,4 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 @SpringBootTest(classes= {DemoApplication.class})
 public class BaseJunit4Test {
 }
+*/

@@ -461,6 +461,10 @@ FeignConfig.java是feign调用的时候把当前系统的请求头信息塞入�
 springboot内部方法调用，事务不起作用的原因与解决方案
 welcomeController 的方法 transactionInvalid
 
+2023年10月18号
+如何控制bean的加载顺序
+
+
 
 
 
