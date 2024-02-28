@@ -114,7 +114,7 @@ SortCourseService sortCourseService;
     };
     @PostMapping ("/get/someStudent")
     public HealthManageResult postHealthManage()  {
-       return   feignServiceWy.getSome();
+      return   feignServiceWy.getSome();
 
       //return HealthManageResult.ok(UserContext.getUserInfo().getUserId());
 
