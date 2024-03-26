@@ -1,13 +1,15 @@
 package com.wy.demo;
 
 import com.github.pagehelper.autoconfigure.PageHelperAutoConfiguration;
-import org.mybatis.spring.annotation.MapperScan;
+import com.wy.demo.error100AddApi.apiversion.APIVersionHandlerMapping;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcRegistrations;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping;
 //import org.springframework.scheduling.annotation.EnableScheduling;
 
 
@@ -34,10 +36,13 @@ linux
 @EnableFeignClients//开启Fegin
 @EnableAspectJAutoProxy(exposeProxy = true)
 //防止事务不生效的场景
-public class DemoApplication {
+public class DemoApplication  implements WebMvcRegistrations {
 
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
-
+    @Override
+    public RequestMappingHandlerMapping getRequestMappingHandlerMapping() {
+        return new APIVersionHandlerMapping();
+    }
 }

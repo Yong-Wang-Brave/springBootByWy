@@ -1,6 +1,6 @@
-11:31:07.405 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-11:31:07.430 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-11:31:24.514 [main] ERROR com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, springBoot-8081 register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='springBoot-8081', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.168.1', networkInterface='', port=8081, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
+14:02:11.776 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:02:11.807 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:02:30.239 [main] ERROR com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, springBoot-8081 register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='springBoot-8081', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.168.1', networkInterface='', port=8081, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
 com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: java.net.ConnectException: Connection refused: connect
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.2.jar:?]
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:?]
@@ -28,7 +28,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
 	at com.wy.demo.DemoApplication.main(DemoApplication.java:40) [classes/:?]
-11:31:25.295 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.106 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -37,7 +37,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.297 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.109 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -47,7 +47,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.299 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.111 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -57,7 +57,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.301 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.113 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -67,7 +67,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.303 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.115 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
  java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
  java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
@@ -81,22 +81,22 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.304 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.117 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
-11:31:25.305 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.119 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
-11:31:25.306 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-51] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.121 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-52] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
  sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:144)
-11:31:25.308 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.123 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -110,7 +110,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.309 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.125 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -125,7 +125,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.311 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.127 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -140,7 +140,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.312 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.128 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -155,7 +155,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.313 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.130 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -170,13 +170,13 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.314 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-timer-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.132 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-timer-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:569)
  io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:465)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.316 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.135 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -191,7 +191,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.317 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.137 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -206,7 +206,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.319 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.138 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -221,7 +221,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.320 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.140 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -236,7 +236,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.322 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.141 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -251,7 +251,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.323 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.142 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -266,7 +266,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.324 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.143 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -281,7 +281,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.325 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.144 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -296,7 +296,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.327 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.145 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -311,7 +311,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.328 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.145 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -326,7 +326,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.330 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.146 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -341,7 +341,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.331 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-17] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.148 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-17] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -356,7 +356,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.332 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-18] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.149 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-18] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -371,7 +371,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.333 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-19] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.150 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-19] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -386,7 +386,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.334 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-20] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.151 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-20] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -401,7 +401,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.335 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-21] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.152 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-21] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -416,7 +416,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.336 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-22] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.153 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-22] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -431,7 +431,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.337 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-23] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.154 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-23] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -446,7 +446,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.338 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-24] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.154 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-24] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -461,7 +461,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.339 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-25] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.155 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-25] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -476,7 +476,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.340 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-26] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.156 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-26] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -491,7 +491,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.341 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-27] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.159 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-27] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -505,7 +505,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.343 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-28] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.160 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-28] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -520,7 +520,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.344 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-29] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.161 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-29] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -535,7 +535,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.345 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-30] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.162 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-30] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -550,7 +550,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.346 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.163 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -565,7 +565,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.347 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.164 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -580,17 +580,17 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:31:25.349 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:02:31.165 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
  java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
  com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
-11:31:35.580 [Thread-40] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-11:31:35.580 [Thread-46] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-11:31:35.581 [Thread-46] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-11:31:35.582 [Thread-40] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
-11:33:45.142 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-11:33:45.188 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-11:34:04.633 [main] ERROR com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, springBoot-8081 register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='springBoot-8081', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.168.1', networkInterface='', port=8081, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
+14:02:41.557 [Thread-48] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:02:41.557 [Thread-41] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:02:41.557 [Thread-48] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:02:41.557 [Thread-41] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:04:21.707 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:04:21.707 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:04:37.632 [main] ERROR com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, springBoot-8081 register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='springBoot-8081', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.168.1', networkInterface='', port=8081, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
 com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: java.net.ConnectException: Connection refused: connect
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.2.jar:?]
 	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:?]
@@ -617,8 +617,8 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
-	at com.wy.demo.DemoApplication.main(DemoApplication.java:39) [classes/:?]
-11:34:05.454 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+	at com.wy.demo.DemoApplication.main(DemoApplication.java:40) [classes/:?]
+14:04:38.381 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -627,7 +627,17 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.455 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.381 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:04:38.381 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
@@ -637,7 +647,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.455 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.381 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
@@ -647,17 +657,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.456 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.misc.Unsafe.park(Native Method)
- java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
- java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
- java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
- java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
- java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
- java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
- java.lang.Thread.run(Thread.java:748)
-11:34:05.457 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.381 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
  java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
  java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
@@ -671,22 +671,22 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
  java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.458 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.493 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
-11:34:05.459 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.494 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.misc.Unsafe.park(Native Method)
  java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
  java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
  java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
  com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
  com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
-11:34:05.460 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-40] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.495 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-36] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
  sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:144)
-11:34:05.461 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.496 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -700,7 +700,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.462 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.497 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -715,7 +715,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.462 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.498 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -730,7 +730,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.463 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -745,7 +745,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.464 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -760,13 +760,13 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.465 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-timer-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-timer-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Thread.sleep(Native Method)
  io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:569)
  io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:465)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.466 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -781,7 +781,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.466 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -796,7 +796,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.467 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -811,7 +811,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.468 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -826,7 +826,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.468 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -841,7 +841,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.469 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -856,7 +856,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.470 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -871,7 +871,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.470 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -886,7 +886,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.471 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -901,7 +901,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.472 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -916,7 +916,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.473 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -931,7 +931,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.473 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-17] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-17] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -946,7 +946,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.474 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-18] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-18] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -961,7 +961,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.475 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-19] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-19] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -976,7 +976,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.476 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-20] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-20] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -991,7 +991,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.477 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-21] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-21] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1006,7 +1006,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.478 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-22] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-22] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1021,7 +1021,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.478 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-23] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.499 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-23] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1036,7 +1036,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.479 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-24] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-24] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1051,7 +1051,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.480 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-25] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-25] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1066,22 +1066,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.481 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-26] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
- sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
- sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
- sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
- sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
- sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
- sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
- io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
- io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
- io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
- io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
- io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
- io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
- java.lang.Thread.run(Thread.java:748)
-11:34:05.482 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-27] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-26] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1095,7 +1080,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.482 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-28] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-27] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1110,7 +1095,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.483 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-29] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-28] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1125,7 +1110,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.484 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-30] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-29] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1140,7 +1125,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.485 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-30] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1155,7 +1140,7 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.486 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
  sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
@@ -1170,25 +1155,652 @@ com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/i
  io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
  io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
  java.lang.Thread.run(Thread.java:748)
-11:34:05.487 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:04:38.514 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.lang.Object.wait(Native Method)
  java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
  com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
-11:34:15.717 [Thread-30] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-11:34:15.718 [Thread-36] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-11:34:15.719 [Thread-36] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-11:34:15.720 [Thread-30] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
-11:34:57.703 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-11:34:57.713 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-13:53:29.724 [Thread-29] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-13:53:29.724 [Thread-35] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-13:53:29.726 [Thread-35] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-13:53:29.727 [Thread-29] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
-13:54:09.317 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-13:54:09.324 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-14:18:28.994 [Thread-40] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-14:18:28.994 [Thread-33] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-14:18:28.996 [Thread-40] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-14:18:28.996 [Thread-33] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
-14:34:07.744 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-14:34:07.752 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:04:48.769 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:04:48.769 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:04:48.769 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:04:48.769 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:09:04.190 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:09:04.190 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:09:21.560 [main] ERROR com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, springBoot-8081 register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='127.0.0.1:8848', endpoint='', namespace='', watchDelay=30000, logName='', service='springBoot-8081', weight=1.0, clusterName='DEFAULT', group='DEFAULT_GROUP', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='192.168.168.1', networkInterface='', port=8081, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null, failFast=true}},
+com.alibaba.nacos.api.exception.NacosException: failed to req API:/nacos/v1/ns/instance after all servers([127.0.0.1:8848]) tried: java.net.ConnectException: Connection refused: connect
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:556) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:498) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqApi(NamingProxy.java:493) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:246) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.naming.NacosNamingService.registerInstance(NacosNamingService.java:212) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:74) [spring-cloud-starter-alibaba-nacos-discovery-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:239) [spring-cloud-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:78) [spring-cloud-starter-alibaba-nacos-discovery-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:138) [spring-cloud-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101) [spring-cloud-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88) [spring-cloud-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47) [spring-cloud-commons-2.2.6.RELEASE.jar:2.2.6.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:403) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:360) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:165) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:553) [spring-context-5.2.3.RELEASE.jar:5.2.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.4.RELEASE.jar:2.2.4.RELEASE]
+	at com.wy.demo.DemoApplication.main(DemoApplication.java:40) [classes/:?]
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [spring.cloud.inetutils] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:442)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.client.naming.updater] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1088)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.failover] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1093)
+ java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:809)
+ java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1074)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1134)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [com.alibaba.nacos.naming.push.receiver] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.net.DualStackPlainDatagramSocketImpl.socketReceiveOrPeekData(Native Method)
+ java.net.DualStackPlainDatagramSocketImpl.receive0(DualStackPlainDatagramSocketImpl.java:124)
+ java.net.AbstractPlainDatagramSocketImpl.receive(AbstractPlainDatagramSocketImpl.java:143)
+ java.net.DatagramSocket.receive(DatagramSocket.java:812)
+ com.alibaba.nacos.client.naming.core.PushReceiver.run(PushReceiver.java:94)
+ java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+ java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+ java.util.concurrent.FutureTask.run(FutureTask.java)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+ java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+ java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+ java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.common.notify.SlowEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.nacos.common.utils.ThreadUtils.sleep(ThreadUtils.java:52)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:108)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [nacos.publisher-com.alibaba.nacos.client.naming.event.InstancesChangeEvent] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ java.util.concurrent.ArrayBlockingQueue.take(ArrayBlockingQueue.java:403)
+ com.alibaba.nacos.common.notify.DefaultPublisher.openEventHandler(DefaultPublisher.java:116)
+ com.alibaba.nacos.common.notify.DefaultPublisher.run(DefaultPublisher.java:94)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-37] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.net.dns.ResolverConfigurationImpl.notifyAddrChange0(Native Method)
+ sun.net.dns.ResolverConfigurationImpl$AddressChangeListener.run(ResolverConfigurationImpl.java:144)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:807)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.251 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-timer-4-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ io.netty.util.HashedWheelTimer$Worker.waitForNextTick(HashedWheelTimer.java:569)
+ io.netty.util.HashedWheelTimer$Worker.run(HashedWheelTimer.java:465)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-10] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-11] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-12] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-13] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-14] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-15] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-16] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-17] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-18] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-19] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.267 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-20] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-21] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-22] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-23] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-24] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-25] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-26] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:62)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:807)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-27] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-28] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-29] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-30] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-31] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [redisson-netty-2-32] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll0(Native Method)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.poll(WindowsSelectorImpl.java:296)
+ sun.nio.ch.WindowsSelectorImpl$SubSelector.access$400(WindowsSelectorImpl.java:278)
+ sun.nio.ch.WindowsSelectorImpl.doSelect(WindowsSelectorImpl.java:159)
+ sun.nio.ch.SelectorImpl.lockAndDoSelect(SelectorImpl.java:86)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:97)
+ sun.nio.ch.SelectorImpl.select(SelectorImpl.java:101)
+ io.netty.channel.nio.SelectedSelectionKeySetSelector.select(SelectedSelectionKeySetSelector.java:68)
+ io.netty.channel.nio.NioEventLoop.select(NioEventLoop.java:803)
+ io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:457)
+ io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+ io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)
+14:09:22.283 [main] WARN  org.apache.catalina.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Abandoned connection cleanup thread] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Object.wait(Native Method)
+ java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:144)
+ com.mysql.jdbc.AbandonedConnectionCleanupThread.run(AbandonedConnectionCleanupThread.java:41)
+14:09:28.178 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:09:28.178 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:09:28.178 [Thread-33] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:09:28.178 [Thread-27] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:10:34.014 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:10:34.014 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:13:43.089 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:13:43.089 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:13:43.104 [Thread-32] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:13:43.104 [Thread-26] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:14:11.057 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:14:11.057 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:17:52.501 [Thread-29] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:17:52.501 [Thread-35] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:17:52.501 [Thread-35] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:17:52.501 [Thread-29] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:18:16.957 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:18:16.972 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:21:39.432 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:21:39.432 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:21:39.432 [Thread-34] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:21:39.432 [Thread-28] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:22:01.047 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:22:01.047 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:24:29.909 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:24:29.909 [Thread-24] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:24:29.909 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:24:29.909 [Thread-24] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:24:48.987 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:24:48.987 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:26:51.678 [Thread-24] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:26:51.678 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:26:51.678 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:26:51.678 [Thread-24] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+14:27:14.218 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:27:14.234 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+14:30:41.699 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+14:30:41.699 [Thread-23] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+14:30:41.700 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+14:30:41.701 [Thread-23] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end

@@ -468,6 +468,9 @@ welcomeController 的方法 transactionInvalid
 20240227 
 代码优化杜绝重复代码
 实体类上配置注解，解决重复代码的问题
+20240326
+代码启动前，组装与拼接请求路径
+package com.wy.demo.error100AddApi.apiversion
 
 
 
