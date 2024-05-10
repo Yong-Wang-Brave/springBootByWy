@@ -472,6 +472,14 @@ welcomeController 的方法 transactionInvalid
 代码启动前，组装与拼接请求路径
 package com.wy.demo.error100AddApi.apiversion
 
+20240510 
+rabbitmq 应用
+安装地址：https://blog.csdn.net/weixin_45176509/article/details/123534442
+测试文件 CommonMistakesApplication
+参考资料 C:\Users\king\Desktop\119-Java 业务开发常见错误 100 例-更多精彩课程请加AG110102\03丨设计篇 (6讲)-更多精彩课程请加AG110102   25
+mq的启动：
+D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
+双击 rabbitmq-server.bat
 
 
 

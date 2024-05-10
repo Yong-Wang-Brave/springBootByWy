@@ -1,24 +1,694 @@
-14:27:06.264 [main] INFO  com.wy.demo.error100AddApi.apiversion.CommonMistakesApplication - The following profiles are active: ww
-14:27:08.191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
-14:27:08.191 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
-14:27:08.191 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
-14:27:08.378 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
-14:27:10.606 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
-14:27:11.155 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
-14:27:11.624 [main] INFO  org.redisson.Version - Redisson 3.17.7
-14:27:13.858 [redisson-netty-2-6] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
-14:27:13.952 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
-14:27:14.218 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-14:27:14.218 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-14:27:14.234 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
-14:27:14.234 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
-14:29:17.815 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
-14:29:18.033 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8081 192.168.168.1:8081 register finished
-14:29:20.009 [main] INFO  com.wy.demo.error100AddApi.apiversion.CommonMistakesApplication - Started CommonMistakesApplication in 138.578 seconds (JVM running for 141.521)
-14:29:21.416 [RMI TCP Connection(9)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
-14:30:41.699 [Thread-23] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
-14:30:41.699 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
-14:30:41.700 [Thread-30] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
-14:30:41.701 [Thread-23] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
-14:30:41.716 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
-14:30:41.719 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
+10:56:59.172 [main] INFO  com.wy.demo.asyncprocess.compensation.CommonMistakesApplication - The following profiles are active: ww
+10:57:01.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8081"]
+10:57:01.178 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+10:57:01.178 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.30]
+10:57:01.334 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+10:57:03.191 [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+10:57:03.708 [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+10:57:04.132 [main] INFO  org.redisson.Version - Redisson 3.17.7
+10:57:05.230 [redisson-netty-2-6] INFO  org.redisson.connection.pool.MasterPubSubConnectionPool - 1 connections initialized for localhost/127.0.0.1:6379
+10:57:05.294 [redisson-netty-2-20] INFO  org.redisson.connection.pool.MasterConnectionPool - 24 connections initialized for localhost/127.0.0.1:6379
+10:57:05.596 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:57:05.596 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:57:05.601 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+10:57:05.601 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+10:57:08.621 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8081"]
+10:57:08.651 [main] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - nacos registry, DEFAULT_GROUP springBoot-8081 192.168.168.1:8081 register finished
+10:57:10.036 [main] INFO  com.wy.demo.asyncprocess.compensation.CommonMistakesApplication - Started CommonMistakesApplication in 14.789 seconds (JVM running for 16.805)
+10:57:10.532 [RMI TCP Connection(4)-192.168.152.1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+10:57:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:23.635 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:57:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:33.624 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:58:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+10:59:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:00:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:01:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:02:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:33.160 [http-nio-8081-exec-3] INFO  com.wy.demo.asyncprocess.compensation.UserController - sent mq user 1
+11:03:33.160 [http-nio-8081-exec-3] INFO  com.wy.demo.asyncprocess.compensation.UserController - sent mq user 4
+11:03:33.161 [http-nio-8081-exec-3] INFO  com.wy.demo.asyncprocess.compensation.UserController - sent mq user 6
+11:03:33.161 [http-nio-8081-exec-3] INFO  com.wy.demo.asyncprocess.compensation.UserController - sent mq user 8
+11:03:33.162 [http-nio-8081-exec-3] INFO  com.wy.demo.asyncprocess.compensation.UserController - sent mq user 9
+11:03:33.216 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - receive mq user 1
+11:03:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 0 补偿
+11:03:33.624 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值1
+11:03:33.625 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值2
+11:03:33.625 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值3
+11:03:33.625 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值4
+11:03:33.626 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值5
+11:03:35.216 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 1
+11:03:35.219 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - receive mq user 4
+11:03:35.220 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - receive mq user 6
+11:03:35.625 [compensation-threadpool-2] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 3
+11:03:35.625 [compensation-threadpool-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 2
+11:03:35.626 [compensation-threadpool-4] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 5
+11:03:35.626 [compensation-threadpool-3] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 4
+11:03:37.228 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 6
+11:03:37.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - receive mq user 8
+11:03:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 5 补偿
+11:03:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值5
+11:03:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值6
+11:03:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值7
+11:03:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值8
+11:03:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值9
+11:03:39.231 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 8
+11:03:39.232 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#0-1] INFO  com.wy.demo.asyncprocess.compensation.MemberService - receive mq user 9
+11:03:40.622 [compensation-threadpool-7] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 7
+11:03:40.624 [compensation-threadpool-9] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 9
+11:03:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 9 补偿
+11:03:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值9
+11:03:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:03:45.623 [compensation-threadpool-2] INFO  com.wy.demo.asyncprocess.compensation.MemberService - memberService: welcome new user 10
+11:03:48.638 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:03:48.639 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:03:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:03:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:03:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:03:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:04:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:04:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:03.624 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:05:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:05:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:23.633 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:23.634 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:06:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:06:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:07:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:07:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:08:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:08:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:09:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:09:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:10:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:10:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:08.636 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:08.637 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:11:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:11:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:12:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:12:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:23.635 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:23.635 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:13:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:13:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:08.625 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:14:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:14:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:15:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:15:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:16:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:16:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:38.634 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:38.635 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:53.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:17:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:17:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:13.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:18:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:18:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:33.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:19:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:19:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:48.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:20:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:20:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:43.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:21:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:21:58.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:18.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:23.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:38.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:22:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:22:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:03.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:08.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:33.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:38.640 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:38.640 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:23:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:23:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:03.624 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:03.624 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:18.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:23.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:28.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:24:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:24:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:08.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:13.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:28.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:38.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:43.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:48.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:53.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:25:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:25:58.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:03.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:08.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:13.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:18.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:23.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:28.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:33.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:38.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:43.621 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:48.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:53.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:26:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:26:58.622 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:27:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - 开始从用户ID 10 补偿
+11:27:03.623 [scheduling-1] INFO  com.wy.demo.asyncprocess.compensation.CompensationJob - offset的值10
+11:27:06.061 [Thread-26] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Start destroying Publisher
+11:27:06.060 [Thread-20] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Start destroying common HttpClient
+11:27:06.061 [Thread-26] WARN  com.alibaba.nacos.common.notify.NotifyCenter - [NotifyCenter] Destruction of the end
+11:27:06.062 [Thread-20] WARN  com.alibaba.nacos.common.http.HttpClientBeanHolder - [HttpClientBeanHolder] Destruction of the end
+11:27:06.193 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registering from Nacos Server now...
+11:27:06.197 [SpringContextShutdownHook] INFO  com.alibaba.cloud.nacos.registry.NacosServiceRegistry - De-registration finished.
