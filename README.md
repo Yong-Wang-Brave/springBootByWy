@@ -480,7 +480,9 @@ rabbitmq 应用
 mq的启动：
 D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
 双击 rabbitmq-server.bat
-
+20240627 
+添加自定义注解 自定义starter  实现对每个方法的入参拦截
+参考地址：https://juejin.cn/book/6940996508632219689/section/6940996365811974158
 
 
 
