@@ -1,0 +1,7 @@
+server:
+  port: 8082
+
+# 白名单用户
+zk:
+  whitelist:
+    user: aaa,111,xiaobai
