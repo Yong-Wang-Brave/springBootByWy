@@ -279,7 +279,7 @@ FeignConfiguration
 
 2022 设计模式  输出该接口的所有实现类
 文件：
-TestGetBeansOfTYpe
+TestGetBeansOfTYpe 
 
 20220922  根据token获取用户中心信息。放到threadLocal 或者注解直接获取。
 
