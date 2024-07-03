@@ -103,6 +103,6 @@ serviceB.m3();
     public void userService() {
         IUserService userService = CostTimeInvocationHandler.createProxy(new
                 UserService(), IUserService.class);
-        userService.insert("路人甲 Java");
+        userService.insert("路人甲Java");
     }
 }
