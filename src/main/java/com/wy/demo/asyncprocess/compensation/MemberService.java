@@ -9,12 +9,12 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.concurrent.TimeUnit;
 
-@Component
+//@Component
 @Slf4j
 public class MemberService {
     private Map<Long, Boolean> welcomeStatus = new ConcurrentHashMap<>();
 
-    @RabbitListener(queues = RabbitConfiguration.QUEUE)
+    //@RabbitListener(queues = RabbitConfiguration.QUEUE)
     public void listen(User user) {
         log.info("receive mq user {}", user.getId());
         welcome(user);

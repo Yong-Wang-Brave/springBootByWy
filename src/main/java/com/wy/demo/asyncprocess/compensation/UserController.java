@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.IntStream;
 
-@RestController
+//@RestController
 @Slf4j
 @RequestMapping("user")
 public class UserController {

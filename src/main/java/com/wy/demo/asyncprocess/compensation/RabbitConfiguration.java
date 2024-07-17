@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 生产者将消息发送到交换器，交换器根据绑定规则将消息路由到相应的队列。消费者可以订阅队列并从中接收消息进行处理。
  */
-@Configuration
+//@Configuration
 public class RabbitConfiguration {
 
     public static final String QUEUE = "newuserQueueCompensation";

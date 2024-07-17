@@ -11,7 +11,7 @@ import java.util.concurrent.atomic.AtomicLong;
 
 @RequestMapping("deadletter")
 @Slf4j
-@RestController
+//@RestController
 public class DeadLetterController {
 
     AtomicLong atomicLong = new AtomicLong();

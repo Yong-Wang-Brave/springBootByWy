@@ -15,7 +15,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.interceptor.RetryOperationsInterceptor;
 
-@Configuration
+//@Configuration
 @Slf4j
 public class RabbitConfiguration {
 

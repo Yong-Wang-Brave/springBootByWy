@@ -12,7 +12,7 @@ import org.springframework.messaging.converter.MappingJackson2MessageConverter;
 import org.springframework.messaging.handler.annotation.support.DefaultMessageHandlerMethodFactory;
 import org.springframework.messaging.handler.annotation.support.MessageHandlerMethodFactory;
 
-@Configuration
+//@Configuration
 @Slf4j
 public class RabbitConfiguration implements RabbitListenerConfigurer {
     @Override
