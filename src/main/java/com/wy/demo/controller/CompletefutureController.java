@@ -29,6 +29,7 @@ public class CompletefutureController {
         future.join();
 
         List<Student> students = new ArrayList<>();
+
         try {
             students.addAll(aCompletableFuture.get());
             students.addAll(bCompletableFuture.get());
