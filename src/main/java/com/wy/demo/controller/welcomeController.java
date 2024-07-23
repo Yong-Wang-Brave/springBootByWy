@@ -3,6 +3,7 @@ package com.wy.demo.controller;
 
 import cn.hutool.extra.spring.SpringUtil;
 import com.alibaba.druid.stat.DruidStatManagerFacade;
+import com.alibaba.fastjson.JSONObject;
 import com.wy.demo.Exception.Exception2.HealthManageException;
 import com.wy.demo.Exception.Exception2.Result;
 import com.wy.demo.Exception.Exception2.ServiceeException;
@@ -22,6 +23,8 @@ import com.wy.demo.mybatis.mappers.SortCourseMapper;
 import com.wy.demo.mybatis.mappers.UserMapper;
 import com.wy.demo.mybatis.mappers2.SortCourseMapper2;
 import com.wy.demo.springCloud.feign.FeignServiceWy;
+import com.wy.demo.xielaoshi.xianchengchigongjulei.ThreadPoolExecuteTypeEnum;
+import com.wy.demo.xielaoshi.xianchengchigongjulei.ThreadPoolService;
 import com.wy.demo.zhidingshujuyuan.DynamicDataSourceSwitch;
 import com.wy.demo.zhidingshujuyuan.MerchantTransactional;
 import lombok.extern.log4j.Log4j2;
@@ -33,9 +36,11 @@ import org.springframework.web.bind.annotation.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 import java.rmi.server.ServerCloneException;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
+
+
 
 /**
  * @author Think
@@ -86,12 +91,52 @@ SortCourseService sortCourseService;
         return DruidStatManagerFacade.getInstance().getDataSourceStatDataList();
     }
     @GetMapping("/get")
-    public String get() {
+    public JSONObject get() throws InterruptedException {
         log.info("get");
-        return "get";
+        Map<String,Object> result =new ConcurrentHashMap<>();
+        List<String> errorList = Collections.synchronizedList(new ArrayList<>());
+        ThreadPoolService.execute(ThreadPoolExecuteTypeEnum.ASY,getTask1(result,errorList));
+        Thread.sleep(3000);
+        return buildResult1(result);
     }
 
-    @GetMapping("/online2")
+    private JSONObject buildResult1(Map<String, Object> result) {
+        JSONObject rtn = new JSONObject();
+        rtn.put("AA",result.get("A"));
+        rtn.put("BB",result.get("B"));
+        rtn.put("CC",result.get("C"));
+        return rtn;
+    }
+
+    private List<Runnable> getTask1(Map<String, Object> result, List<String> errorList) {
+       List<Runnable> runnable = new ArrayList<>();
+       runnable.add(getTask2("A",result,errorList,()->{
+         return Arrays.asList("A");
+       }));
+        runnable.add(getTask2("B",result,errorList,()->{
+            return Arrays.asList("B");
+        }));
+        runnable.add(getTask2("C",result,errorList,()->{
+            return Arrays.asList("C");
+        }));
+        return  runnable;
+    }
+
+    private <T> Runnable getTask2(String name, Map<String, Object> map, List<String> errorList,GetData getData) {
+        return () -> {
+            try {
+                map.put(name,getData.get());
+            } catch (Exception e) {
+                errorList.add(name);
+            }
+        };
+    }
+
+    @GetMapping("/online")
+    public String online1() throws Exception {
+        log.info("online");
+        return "online";   }
+        @GetMapping("/online2")
     public String online() throws Exception {
         log.info("online");
        // return "online";

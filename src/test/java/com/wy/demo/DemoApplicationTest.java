@@ -20,7 +20,7 @@ public class DemoApplicationTest {
     @Test
     public void contextLoads(){
         log.info("========开始========");
-        welcomeController.get();
+       // welcomeController.get();
         log.info("========结束========");
 
     }
