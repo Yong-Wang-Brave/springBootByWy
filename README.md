@@ -490,3 +490,14 @@ D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
 20240723 自定义线程池 实现同步异步 
 文件夹：xianchengshi
 
+
+20240816 rabbitmq的登录与使用
+登录：
+
+1  D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
+2 cmd
+3   http://127.0.0.1:15672/ 
+      guest    guest
+20240819  springboot引入redis缓存 @Cacheable
+
+目录：RedisConfiguration.java

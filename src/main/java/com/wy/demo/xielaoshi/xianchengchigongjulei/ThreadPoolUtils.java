@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 public class ThreadPoolUtils {
     private static final Logger log = LoggerFactory.getLogger(ThreadPoolUtils.class);
     private static volatile ConcurrentHashMap<String, ThreadPoolExecutor> executorMap = new ConcurrentHashMap<>();
-    public static final String POOL_DEAULT_NAME = "pool-default";
+    public static final String POOL_DEAULT_NAME = "pool-deault";
 
     public ThreadPoolUtils() {
 

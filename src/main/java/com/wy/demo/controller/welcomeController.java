@@ -13,6 +13,7 @@ import com.wy.demo.bejson_gen_beans.cn.json.pojo.Children;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.JsonRootBean;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Message;
 import com.wy.demo.bejson_gen_beans.cn.json.pojo.Meta;
+import com.wy.demo.config.CacheModelDefiend;
 import com.wy.demo.controller.Service.SortCourseService;
 import com.wy.demo.controller.dto.Student;
 import com.wy.demo.controller.dto.User;
@@ -30,8 +31,10 @@ import com.wy.demo.zhidingshujuyuan.MerchantTransactional;
 import lombok.extern.log4j.Log4j2;
 import org.slf4j.MDC;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.context.ApplicationContext;
 import org.springframework.web.bind.annotation.*;
+
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -91,6 +94,7 @@ SortCourseService sortCourseService;
         return DruidStatManagerFacade.getInstance().getDataSourceStatDataList();
     }
     @GetMapping("/get")
+   //ss @Cacheable(value=CacheModelDefiend.KEY_HOUR_HALF)
     public JSONObject get() throws InterruptedException {
         log.info("get");
         Map<String,Object> result =new ConcurrentHashMap<>();
@@ -98,6 +102,14 @@ SortCourseService sortCourseService;
         ThreadPoolService.execute(ThreadPoolExecuteTypeEnum.ASY,getTask1(result,errorList));
         Thread.sleep(3000);
         return buildResult1(result);
+    }
+
+    @GetMapping("/get1")
+    @Cacheable(value = CacheModelDefiend.KEY_HOUR_HALF)
+    public String get1()  {
+        log.info("get1");
+
+        return CacheModelDefiend.KEY_HOUR_HALF;
     }
 
     private JSONObject buildResult1(Map<String, Object> result) {
