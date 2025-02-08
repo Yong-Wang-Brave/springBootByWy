@@ -503,3 +503,43 @@ D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
 目录：RedisConfiguration.java
 
 20250208 目录：自定义注解
+
+20250208 
+数据字典：
+见tupian目录。
+数据权限
+第一部分：
+资源管理
+id   12898080080
+资源编号 rct_fac_province
+资源名称 保理省份资源
+应用编码 dsadas9089dsada
+应用名称 风险资产管理平台
+数据维度  {"keyName":"风险资管平台保理省份","priority":0,"key":"rctFacProvince"}
+操作人
+修改时间
+状态 开启 关闭
+第二部分 数据标签 （资源管理对应的数据标签列表）
+id: 8989890979
+数据标签编号：12122312312001 
+数据标签名称： 保理催收-甘肃省
+资源编号
+资源名称：保理省份资源
+所属应用：风险资产管理平台
+数据维度：{"rctFacProvince":"620000"}  对应的数据字典 dict_type: province  dict_value: 620000 dict_label: 甘肃省
+分类
+标签
+备注
+操作人
+修改时间
+状态 开启关闭
+关联部门岗位（第三部分： 关联人的的信息 um 姓名 状态 修改时间）
+
+第四部分：实践
+1）调接口查询 
+查询入参:当前登录人账号
+        rct_fac_province
+出参:第二部分对应的id集合，查表
+2 注入 。
+入参：rct_fac_province;rctFacProvince;620000
+出参：找到入参对应的id，落表
