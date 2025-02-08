@@ -501,3 +501,5 @@ D:\ruanjian\rabbitmq\rabbitmq_server-3.13.2\sbin
 20240819  springboot引入redis缓存 @Cacheable
 
 目录：RedisConfiguration.java
+
+20250208 目录：自定义注解

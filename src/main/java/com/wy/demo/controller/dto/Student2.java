@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotEmpty;
+import java.math.BigDecimal;
 
 @Data
 @AllArgsConstructor
@@ -20,4 +21,6 @@ public class Student2 {
     String cardNo;
 
     String cardNo1;
+
+
 }
