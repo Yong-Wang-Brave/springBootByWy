@@ -543,3 +543,5 @@ id: 8989890979
 2 注入 。
 入参：rct_fac_province;rctFacProvince;620000
 出参：找到入参对应的id，落表
+
+20250531 如何打印出sql拼接的sql，把配置文件的info 改成debug就行
